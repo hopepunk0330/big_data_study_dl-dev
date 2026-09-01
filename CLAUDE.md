@@ -14,6 +14,8 @@
 
 **하네스는 이전 프로젝트에서 필요해서 통째로 이식해온 자산이다 — 지금 이 프로젝트에서 당장 안 쓰는 문서·스크립트·에이전트라도 임의로 삭제하지 않는다.** A/B 테스트·프론트엔드·보고서 관련 자산(`ab-test-app-workflow.md`, `ui-ux-designer`·`dev-qa` 등)은 해당 워크스트림을 시작할 때 참고한다.
 
+**`git-workflow.md` 2절의 "조건부 이식"(2026-09-01 신설) 규칙은 이 저장소에 소급 적용하지 않는다.** 그 규칙은 순수 연구·스터디 저장소로 포크할 때 `full-stack-engineer`·`ui-ux-designer`·`design-qa`·`dev-qa`와 `ab-test-app-workflow.md`·`stats-dashboard-design-reference.md`를 **복사 대상에서 빼라**는 *포크 시점* 지침이다. dl-dev는 그 규칙이 신설되기 전에 이미 전체를 이식했고, 사용자가 전체 보존을 명시적으로 선택했다 — 따라서 이 저장소에서 그 목록을 근거로 삭제를 제안하지 않는다. 다음번에 이 하네스를 또 다른 스터디 저장소로 포크할 때는 2절 규칙을 그대로 따르면 된다.
+
 단 `docs/harness/report-tools/`는 **그대로 실행 가능한 것과 참고용으로만 남긴 것이 섞여 있다**. `git-workflow.md` 6절이 규정하듯 `verify_scr004_*.mjs`처럼 이전 프로젝트 고유 DOM(`.p3-sheet`·`#pv4-confirm` 등)에 강결합된 스크립트는 **이 저장소에서 실행해도 동작하지 않는다** — 기법 참고용으로 보존한 것이므로 그대로 돌리려 하지 말고 새로 작성한다. 범용 도구(`svg_to_png.mjs`·`html_to_pdf.mjs`·`inspect_svg.mjs`·`inspect_page.mjs`·`measure_pages.mjs`·`shot_pages.mjs`·`find_by_text.mjs`)만 그대로 재사용 가능하다.
 
 ### 하네스를 `main`에서 관리한다 — worktree 분리는 나중에 (2026-09-01 결정)
