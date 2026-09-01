@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 830" width="1240" height="830" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="830" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <circle cx="42" cy="46" r="14" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M42,40 L42,50 M37,45 L47,45" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">7월 나이브 예측 — 두 가정, 두 전망, 백테스트로 실측한 신뢰도</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">A안(성장외삽) vs B안(요일계절성)</text>
+  <text x="82" y="150" font-size="20" font-weight="bold" fill="#2563eb">111.6억 vs 101.7억</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">차이 9.9억원(9.70%) — 성장 반영 여부의 격차</text>
+
+  <rect x="440" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="462" y="118" font-size="13" fill="#6b7280">6월 백테스트 오차(1~5월로 학습)</text>
+  <text x="462" y="150" font-size="20" font-weight="bold" fill="#e53935">A +5.15% / B -9.17%</text>
+  <text x="462" y="168" font-size="11.5" fill="#9ca3af">A안이 더 정확 -> 권고 근거</text>
+
+  <rect x="820" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="842" y="118" font-size="13" fill="#6b7280">7월 전망 구간(권고)</text>
+  <text x="842" y="150" font-size="20" font-weight="bold" fill="#2563eb">보수 101.7억~낙관 111.6억</text>
+  <text x="842" y="168" font-size="11.5" fill="#9ca3af">점추정은 A안(백테스트 우위) 기준</text>
+
+  <!-- bar chart -->
+  <text x="66" y="222" font-size="17" font-weight="bold" fill="#111">월별 순매출 추이(1~6월 실측) + 7월 전망 2안</text>
+  <line x1="100" y1="460" x2="1140" y2="460" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <rect x="135.5" y="443.8" width="76.5" height="16.2" fill="#93c5fd"/>
+  <text x="173.8" y="435.8" font-size="11" fill="#374151" text-anchor="middle">55.3억</text>
+  <text x="173.8" y="478" font-size="12" fill="#6b7280" text-anchor="middle">1월</text>
+  <rect x="263.0" y="426.8" width="76.5" height="33.2" fill="#93c5fd"/>
+  <text x="301.2" y="418.8" font-size="11" fill="#374151" text-anchor="middle">60.8억</text>
+  <text x="301.2" y="478" font-size="12" fill="#6b7280" text-anchor="middle">2월</text>
+  <rect x="390.5" y="382.5" width="76.5" height="77.5" fill="#93c5fd"/>
+  <text x="428.8" y="374.5" font-size="11" fill="#374151" text-anchor="middle">75.2억</text>
+  <text x="428.8" y="478" font-size="12" fill="#6b7280" text-anchor="middle">3월</text>
+  <rect x="518.0" y="363.1" width="76.5" height="96.9" fill="#93c5fd"/>
+  <text x="556.2" y="355.1" font-size="11" fill="#374151" text-anchor="middle">81.5억</text>
+  <text x="556.2" y="478" font-size="12" fill="#6b7280" text-anchor="middle">4월</text>
+  <rect x="645.5" y="329.8" width="76.5" height="130.2" fill="#93c5fd"/>
+  <text x="683.8" y="321.8" font-size="11" fill="#374151" text-anchor="middle">92.3억</text>
+  <text x="683.8" y="478" font-size="12" fill="#6b7280" text-anchor="middle">5월</text>
+  <rect x="773.0" y="302.9" width="76.5" height="157.1" fill="#93c5fd"/>
+  <text x="811.2" y="294.9" font-size="11" fill="#374151" text-anchor="middle">101.1억</text>
+  <text x="811.2" y="478" font-size="12" fill="#6b7280" text-anchor="middle">6월</text>
+  <rect x="900.5" y="270.6" width="76.5" height="189.4" fill="#2563eb"/>
+  <text x="938.8" y="262.6" font-size="11" fill="#374151" text-anchor="middle">111.6억</text>
+  <text x="938.8" y="478" font-size="12" fill="#6b7280" text-anchor="middle">7월A</text>
+  <rect x="1028.0" y="301.0" width="76.5" height="159.0" fill="#dc2626"/>
+  <text x="1066.2" y="293.0" font-size="11" fill="#374151" text-anchor="middle">101.7억</text>
+  <text x="1066.2" y="478" font-size="12" fill="#6b7280" text-anchor="middle">7월B</text>
+
+  <!-- forecast range bracket -->
+  <path d="M900.5,240 L900.5,232 L1104.5,232 L1104.5,240" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+  <text x="1002.5" y="224" font-size="12" fill="#6b7280" text-anchor="middle">전망 구간(보수~낙관)</text>
+
+  <!-- legend -->
+  <rect x="135" y="500" width="16" height="16" fill="#93c5fd"/>
+  <text x="158" y="513" font-size="12" fill="#374151">실측(1~6월)</text>
+  <rect x="300" y="500" width="16" height="16" fill="#2563eb"/>
+  <text x="323" y="513" font-size="12" fill="#374151">A안(성장 외삽, 낙관)</text>
+  <rect x="520" y="500" width="16" height="16" fill="#dc2626"/>
+  <text x="543" y="513" font-size="12" fill="#374151">B안(요일 계절성, 보수)</text>
+
+  <!-- backtest section -->
+  <text x="66" y="560" font-size="17" font-weight="bold" fill="#111">백테스트 — 1~5월로 6월(실제 101.1억)을 예측했을 때</text>
+  <rect x="66" y="572" width="110" height="4" rx="2" fill="#dc2626"/>
+
+  <rect x="60" y="588" width="540" height="100" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="614" font-size="14" font-weight="bold" fill="#1d4ed8">A안 백테스트: 106.3억 예측</text>
+  <text x="82" y="638" font-size="13" fill="#374151">실제 101.1억 대비 <tspan font-weight="bold" fill="#e53935">+5.15%</tspan> 오차</text>
+  <text x="82" y="662" font-size="12" fill="#6b7280">3~5월 평균성장률(15.12%)을 5월에 외삽</text>
+
+  <rect x="640" y="588" width="540" height="100" rx="12" fill="#ffffff" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="662" y="614" font-size="14" font-weight="bold" fill="#dc2626">B안 백테스트: 91.8억 예측</text>
+  <text x="662" y="638" font-size="13" fill="#374151">실제 101.1억 대비 <tspan font-weight="bold" fill="#e53935">-9.17%</tspan> 오차</text>
+  <text x="662" y="662" font-size="12" fill="#6b7280">5월 요일패턴을 6월 달력에 대입(성장 미반영)</text>
+
+  <!-- conclusion box -->
+  <rect x="60" y="714" width="1120" height="98" rx="14" fill="#fff5f5" stroke="#e53935" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="86" y="744" font-size="15" font-weight="bold" fill="#e53935">권고: A안(성장 외삽) 우선, 보수~낙관 구간 병기</text>
+  <text x="86" y="770" font-size="13" fill="#374151">|A안 오차 5.15%| &lt; |B안 오차 9.17%| — B안은 실제 성장을 반영 못해 과소예측한다. 점추정 111.6억 원을 우선하되,</text>
+  <text x="86" y="792" font-size="13" fill="#374151">101.7억~111.6억 구간으로 함께 제시하고, 이는 회귀·시계열 모델이 아닌 단순 외삽/계절성 반복임을 병기한다.</text>
+</svg>

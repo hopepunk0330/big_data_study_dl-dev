@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 900" width="1240" height="900" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow28" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="900" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <circle cx="42" cy="46" r="14" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M42,36 L42,46 L49,50" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">청크 순회 DAU 파이프라인 — 정확성 검증과 처리시간 실측</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="360" height="86" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">청크 DAU·이벤트건수 vs 전량 적재</text>
+  <text x="82" y="150" font-size="22" font-weight="bold" fill="#16a34a">182일 전부 완전일치</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">.equals() 검증 통과</text>
+
+  <rect x="440" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="462" y="118" font-size="13" fill="#6b7280">customer_id 결측(익명 방문)</text>
+  <text x="462" y="150" font-size="22" font-weight="bold" fill="#2563eb">35.00%</text>
+  <text x="462" y="168" font-size="11.5" fill="#9ca3af">DAU 분모에서 제외</text>
+
+  <rect x="820" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="842" y="118" font-size="13" fill="#6b7280">청크크기(5만/20만/50만) 시간차</text>
+  <text x="842" y="150" font-size="22" font-weight="bold" fill="#374151">차이 미미</text>
+  <text x="842" y="168" font-size="11.5" fill="#9ca3af">100만행 규모에선 속도이득 없음</text>
+
+  <!-- pipeline heading -->
+  <text x="66" y="222" font-size="17" font-weight="bold" fill="#111">파이프라인 흐름 — 청크 경계를 넘는 고객은 set로만 정확히 셀 수 있다</text>
+
+  <!-- source file icon -->
+  <rect x="140" y="246" width="50" height="60" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="2"/>
+  <line x1="149" y1="262" x2="181" y2="262" stroke="#6b7280" stroke-width="1.5"/>
+  <line x1="149" y1="274" x2="181" y2="274" stroke="#6b7280" stroke-width="1.5"/>
+  <line x1="149" y1="286" x2="181" y2="286" stroke="#6b7280" stroke-width="1.5"/>
+  <text x="165" y="322" font-size="10.5" fill="#6b7280" text-anchor="middle">web_logs</text>
+  <text x="165" y="335" font-size="10.5" fill="#6b7280" text-anchor="middle">.csv(100만행)</text>
+  <line x1="192" y1="276" x2="360" y2="270" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow28)"/>
+
+  <!-- chunk boxes -->
+  <rect x="365" y="242" width="150" height="56" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="440" y="266" font-size="12.5" font-weight="bold" fill="#1e40af" text-anchor="middle">청크1</text>
+  <text x="440" y="284" font-size="10.5" fill="#3b82f6" text-anchor="middle">(chunksize행)</text>
+
+  <rect x="545" y="242" width="150" height="56" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="620" y="266" font-size="12.5" font-weight="bold" fill="#1e40af" text-anchor="middle">청크2</text>
+  <text x="620" y="284" font-size="10.5" fill="#3b82f6" text-anchor="middle">(chunksize행)</text>
+
+  <rect x="725" y="242" width="150" height="56" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="800" y="266" font-size="12.5" font-weight="bold" fill="#1e40af" text-anchor="middle">청크N(마지막)</text>
+  <text x="800" y="284" font-size="10.5" fill="#3b82f6" text-anchor="middle">(나머지 행)</text>
+
+  <!-- connectors: chunk bottoms -> collector line -->
+  <line x1="440" y1="298" x2="440" y2="316" stroke="#9ca3af" stroke-width="1.8"/>
+  <line x1="620" y1="298" x2="620" y2="316" stroke="#9ca3af" stroke-width="1.8"/>
+  <line x1="800" y1="298" x2="800" y2="316" stroke="#9ca3af" stroke-width="1.8"/>
+  <line x1="440" y1="316" x2="890" y2="316" stroke="#9ca3af" stroke-width="1.8"/>
+  <line x1="530" y1="316" x2="530" y2="332" stroke="#9ca3af" stroke-width="1.8" marker-end="url(#arrow28)"/>
+  <line x1="890" y1="316" x2="890" y2="332" stroke="#9ca3af" stroke-width="1.8" marker-end="url(#arrow28)"/>
+
+  <!-- accumulator boxes -->
+  <rect x="365" y="332" width="330" height="60" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="530" y="358" font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">날짜별 customer_id set.update()</text>
+  <text x="530" y="378" font-size="11" fill="#6b7280" text-anchor="middle">(같은 고객 여러 청크 등장해도 중복 자동 제거)</text>
+
+  <rect x="725" y="332" width="330" height="60" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="890" y="358" font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">날짜×event_type 건수 dict 합산</text>
+  <text x="890" y="378" font-size="11" fill="#6b7280" text-anchor="middle">(건수는 청크마다 단순히 더하면 된다)</text>
+
+  <!-- arrows down to final -->
+  <line x1="530" y1="392" x2="530" y2="408" stroke="#9ca3af" stroke-width="1.8" marker-end="url(#arrow28)"/>
+  <line x1="890" y1="392" x2="890" y2="408" stroke="#9ca3af" stroke-width="1.8" marker-end="url(#arrow28)"/>
+
+  <!-- final boxes -->
+  <rect x="365" y="408" width="330" height="66" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5" filter="url(#cardShadow)"/>
+  <circle cx="393" cy="428" r="11" fill="none" stroke="#16a34a" stroke-width="2.2"/>
+  <path d="M388,428 L392,433 L399,422" stroke="#16a34a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="530" y="434" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">DAU = len(날짜별 set)</text>
+  <text x="530" y="456" font-size="11" fill="#166534" text-anchor="middle">182일 전량적재와 완전 일치</text>
+
+  <rect x="725" y="408" width="330" height="66" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5" filter="url(#cardShadow)"/>
+  <circle cx="753" cy="428" r="11" fill="none" stroke="#16a34a" stroke-width="2.2"/>
+  <path d="M748,428 L752,433 L759,422" stroke="#16a34a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="890" y="434" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">날짜×유형 이벤트건수 표</text>
+  <text x="890" y="456" font-size="11" fill="#166534" text-anchor="middle">182일 전량적재와 완전 일치</text>
+
+  <!-- timing heading -->
+  <text x="66" y="518" font-size="17" font-weight="bold" fill="#111">청크 크기별 처리시간(초) — 100만 행 규모에선 속도 이득이 없다</text>
+
+  <line x1="330" y1="662" x2="330" y2="662" stroke="none"/>
+  <text x="270" y="586" font-size="13" fill="#374151" text-anchor="end">5만</text>
+  <rect x="280" y="568" width="358" height="26" rx="4" fill="#93c5fd"/>
+  <text x="648" y="586" font-size="12.5" font-weight="bold" fill="#111">≈0.83초</text>
+
+  <text x="270" y="626" font-size="13" fill="#374151" text-anchor="end">20만(권장)</text>
+  <rect x="280" y="608" width="339" height="26" rx="4" fill="#60a5fa"/>
+  <text x="629" y="626" font-size="12.5" font-weight="bold" fill="#111">≈0.79초</text>
+
+  <text x="270" y="666" font-size="13" fill="#374151" text-anchor="end">50만</text>
+  <rect x="280" y="648" width="341" height="26" rx="4" fill="#60a5fa"/>
+  <text x="631" y="666" font-size="12.5" font-weight="bold" fill="#111">≈0.79초</text>
+
+  <text x="270" y="706" font-size="13" fill="#374151" text-anchor="end">전량 적재</text>
+  <rect x="280" y="688" width="176" height="26" rx="4" fill="#2563eb"/>
+  <text x="466" y="706" font-size="12.5" font-weight="bold" fill="#111">≈0.41초 (더 빠름)</text>
+
+  <!-- conclusion box -->
+  <rect x="60" y="742" width="1120" height="140" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="86" y="774" font-size="16" font-weight="bold" fill="#111">청크 처리 = 속도가 아니라 메모리 상한 대비</text>
+  <text x="86" y="804" font-size="13.5" fill="#374151">100만 행 규모에서는 청크 크기(5만~50만) 간 시간 차이가 미미하고, 파이썬 반복문 관리비용 때문에 전량 적재보다 오히려 느리다.</text>
+  <text x="86" y="828" font-size="13.5" fill="#374151">그럼에도 이 구조를 만드는 이유는 데이터가 억 단위로 커지면 전량 적재 자체가 불가능해지기 때문 — 그때는 청크가 유일한 선택지다.</text>
+  <text x="86" y="858" font-size="12.5" fill="#e53935" font-weight="bold">핵심: 정답은 "날짜별 set에 누적 후 크기를 세는 것" — 청크마다 nunique()를 더하면 중복 계산되어 틀린다.</text>
+</svg>

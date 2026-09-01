@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="900" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">코호트별 1인당 누적 마진 곡선 — 지속 누적형</text>
+  <rect x="40" y="66" width="110" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">1월 코호트(4,038명) 기준, 경과월별 1인당 누적 순매출·마진</text>
+  <text x="150" y="132" font-size="13" font-weight="bold" fill="#2563eb">1월 코호트(4,038명) 1인당 누적마진 추이</text>
+
+  <!-- axes -->
+  <line x1="150" y1="150" x2="150" y2="575" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="130" y1="560" x2="1060" y2="560" stroke="#9ca3af" stroke-width="1.5"/>
+
+  <!-- gridlines + y labels -->
+  <g font-size="12" fill="#9ca3af">
+    <line x1="150" y1="560" x2="1050" y2="560" stroke="#e5e7eb"/>
+    <text x="140" y="564" text-anchor="end">0</text>
+    <line x1="150" y1="478" x2="1050" y2="478" stroke="#e5e7eb"/>
+    <text x="140" y="482" text-anchor="end">50만</text>
+    <line x1="150" y1="396" x2="1050" y2="396" stroke="#e5e7eb"/>
+    <text x="140" y="400" text-anchor="end">100만</text>
+    <line x1="150" y1="314" x2="1050" y2="314" stroke="#e5e7eb"/>
+    <text x="140" y="318" text-anchor="end">150만</text>
+    <line x1="150" y1="232" x2="1050" y2="232" stroke="#e5e7eb"/>
+    <text x="140" y="236" text-anchor="end">200만</text>
+    <line x1="150" y1="150" x2="1050" y2="150" stroke="#e5e7eb"/>
+    <text x="140" y="154" text-anchor="end">250만(원)</text>
+  </g>
+
+  <!-- x tick labels -->
+  <g font-size="12" fill="#374151" text-anchor="middle">
+    <text x="150" y="580">0개월</text>
+    <text x="330" y="580">1개월</text>
+    <text x="510" y="580">2개월</text>
+    <text x="690" y="580">3개월</text>
+    <text x="870" y="580">4개월</text>
+    <text x="1050" y="580">5개월</text>
+  </g>
+
+  <!-- curve -->
+  <polyline points="150,508.7 330,456.2 510,391.7 690,321.4 870,242.7 1050,155.2" fill="none" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="150" cy="508.7" r="5" fill="#2563eb"/>
+  <circle cx="330" cy="456.2" r="5" fill="#2563eb"/>
+  <circle cx="510" cy="391.7" r="5" fill="#2563eb"/>
+  <circle cx="690" cy="321.4" r="5" fill="#2563eb"/>
+  <circle cx="870" cy="242.7" r="5" fill="#2563eb"/>
+  <circle cx="1050" cy="155.2" r="5" fill="#2563eb"/>
+
+  <text x="205" y="490.7" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">312,825원</text>
+  <text x="690" y="303.4" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">1,454,788원</text>
+  <text x="1062" y="159" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="start">2,468,255원</text>
+
+  <!-- 가속 콜아웃 -->
+  <line x1="960" y1="199" x2="960" y2="260" stroke="#dc2626" stroke-width="1.5"/>
+  <path d="M960,199 l-6,10 h12 z" fill="#dc2626"/>
+  <rect x="850" y="260" width="240" height="50" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="970" y="282" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">월별 증분이 오히려 커짐</text>
+  <text x="970" y="300" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">→ "지속 누적형" (초기 집중형 아님)</text>
+
+  <!-- 하단 카드 2개 -->
+  <g>
+    <rect x="40" y="630" width="550" height="230" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="40" y="630" width="550" height="36" rx="14" fill="#6b7280"/>
+    <rect x="40" y="652" width="550" height="14" fill="#6b7280"/>
+    <rect x="60" y="640" width="16" height="14" rx="2" fill="#fff"/>
+    <line x1="63" y1="638" x2="63" y2="643" stroke="#6b7280" stroke-width="1.5"/>
+    <line x1="73" y1="638" x2="73" y2="643" stroke="#6b7280" stroke-width="1.5"/>
+    <text x="88" y="654" font-size="15" font-weight="bold" fill="#fff">관측 한계 · 가정 3가지</text>
+
+    <text x="64" y="694" font-size="13" font-weight="bold" fill="#111">① 90일 안에 마진으로 획득비를 회수해야 한다는</text>
+    <text x="64" y="712" font-size="13" fill="#6b7280">재무 정책 가정 — 실제 재무팀 기준과 다를 수 있음</text>
+
+    <text x="64" y="748" font-size="13" font-weight="bold" fill="#111">② 1~3월 전부(5,207명) + 4월 6명(3.3%)만 반영</text>
+    <text x="64" y="766" font-size="13" fill="#6b7280">— 4월 176명·5·6월 코호트는 90일 창이 안 닫힘</text>
+
+    <text x="64" y="802" font-size="13" font-weight="bold" fill="#111">③ 평균(92만 원) 대신 중앙값(46만 원)을 사용</text>
+    <text x="64" y="820" font-size="13" fill="#6b7280">— 문제 17처럼 상위 소수에 의한 왜곡을 배제</text>
+  </g>
+
+  <g>
+    <rect x="610" y="630" width="550" height="230" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="610" y="630" width="550" height="36" rx="14" fill="#2563eb"/>
+    <rect x="610" y="652" width="550" height="14" fill="#2563eb"/>
+    <circle cx="632" cy="647" r="9" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="632" cy="647" r="4" fill="#fff"/>
+    <text x="654" y="654" font-size="15" font-weight="bold" fill="#fff">90일 마진 기준 획득비(CAC) 상한 제안</text>
+
+    <text x="634" y="694" font-size="13" fill="#6b7280">1인당 90일 마진 중앙값 (관측 완료 코호트만)</text>
+    <text x="634" y="738" font-size="34" font-weight="bold" fill="#1d4ed8">460,713원</text>
+
+    <text x="634" y="770" font-size="12" fill="#6b7280">평균 920,875원</text>
+    <rect x="634" y="778" width="300" height="18" rx="9" fill="#bfdbfe"/>
+    <text x="944" y="792" font-size="12" fill="#374151">평균(참고, 상위 왜곡 있음)</text>
+
+    <text x="634" y="822" font-size="12" fill="#1d4ed8" font-weight="bold">중앙값 460,713원 (채택)</text>
+    <rect x="634" y="828" width="150" height="18" rx="9" fill="#1d4ed8"/>
+  </g>
+</svg>

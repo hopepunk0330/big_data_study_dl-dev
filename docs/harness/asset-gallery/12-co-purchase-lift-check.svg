@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 726" width="1200" height="726" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="726" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">동시구매 착시 걷어내기 — 인기 효과 vs 진짜 연관(lift)</text>
+  <rect x="40" y="66" width="110" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">동시구매 "건수"만 보면 베스트셀러가 항상 1위 — lift(향상도)로 보정하면 진짜 신호만 남는다</text>
+
+  <!-- 카테고리 lift 분포 (number line) -->
+  <text x="40" y="146" font-size="15" font-weight="bold" fill="#374151">카테고리 15개 쌍의 lift는 전부 0.99~1.01 (사실상 1, 뚜렷한 연관 없음)</text>
+  <line x1="60" y1="196" x2="1140" y2="196" stroke="#d1d5db" stroke-width="2"/>
+  <!-- ticks: 0.85 .. 1.10 mapped x=60..1140 -->
+  <g font-size="12" fill="#9ca3af" text-anchor="middle">
+    <line x1="60" y1="191" x2="60" y2="201" stroke="#9ca3af"/><text x="60" y="216">0.85</text>
+    <line x1="276" y1="191" x2="276" y2="201" stroke="#9ca3af"/><text x="276" y="216">0.90</text>
+    <line x1="492" y1="191" x2="492" y2="201" stroke="#9ca3af"/><text x="492" y="216">0.95</text>
+    <line x1="708" y1="191" x2="708" y2="201" stroke="#e53935"/><text x="708" y="216" fill="#e53935" font-weight="bold">1.00(무관)</text>
+    <line x1="924" y1="191" x2="924" y2="201" stroke="#9ca3af"/><text x="924" y="216">1.05</text>
+    <line x1="1140" y1="191" x2="1140" y2="201" stroke="#9ca3af"/><text x="1140" y="216">1.10</text>
+  </g>
+  <!-- band showing observed cluster 0.9912~1.0059 (x = 60 + (v-0.85)/0.25*1080) -->
+  <rect x="670.1" y="188" width="63.3" height="16" rx="8" fill="#60a5fa"/>
+  <text x="701.7" y="178" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">0.9912~1.0059</text>
+  <!-- 1.00(무관) 기준선을 밴드 위로 다시 그려서(뒤 요소가 앞을 덮으므로) 관측 구간이 기준점을 그대로 감싼다는 것을 보여준다 -->
+  <line x1="708" y1="180" x2="708" y2="204" stroke="#e53935" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- ===== 착시 카드 (좌) ===== -->
+  <g>
+    <rect x="40" y="260" width="550" height="300" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="40" y="260" width="550" height="40" rx="14" fill="#e53935"/>
+    <rect x="40" y="286" width="550" height="14" fill="#e53935"/>
+    <path d="M64,268 l10,17 h-20 z" fill="#ffffff"/>
+    <text x="64" y="283" font-size="11" font-weight="bold" fill="#e53935" text-anchor="middle">!</text>
+    <text x="90" y="286" font-size="17" font-weight="bold" fill="#fff">동시구매 1위 = 착시</text>
+
+    <rect x="72" y="330" width="180" height="36" rx="18" fill="#dbeafe"/>
+    <text x="162" y="353" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">데일리 시집</text>
+    <line x1="252" y1="348" x2="338" y2="348" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,4"/>
+    <circle cx="295" cy="348" r="11" fill="#fee2e2" stroke="#e53935" stroke-width="1.5"/>
+    <text x="295" y="352" font-size="12" font-weight="bold" fill="#e53935" text-anchor="middle">×</text>
+    <rect x="338" y="330" width="180" height="36" rx="18" fill="#dbeafe"/>
+    <text x="428" y="353" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">코어 스피커</text>
+
+    <text x="72" y="410" font-size="14" fill="#374151">동시구매 <tspan font-weight="bold">3,133건</tspan> (전체 1위)</text>
+    <text x="72" y="438" font-size="14" fill="#374151">A 판매 29,653건 · B 판매 17,805건 (둘 다 초베스트셀러)</text>
+    <rect x="72" y="454" width="150" height="28" rx="14" fill="#fee2e2"/>
+    <text x="147" y="473" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">lift 0.9988 (≈1)</text>
+    <text x="72" y="510" font-size="13" fill="#6b7280">→ 그냥 둘 다 잘 팔릴 뿐, 서로 끌어당기지 않는다</text>
+    <text x="72" y="536" font-size="13" fill="#6b7280">동시구매 상위 5쌍 중 4쌍에 "데일리 시집"이 등장</text>
+  </g>
+
+  <!-- ===== 진짜 후보 카드 (우) ===== -->
+  <g>
+    <rect x="610" y="260" width="550" height="300" rx="14" fill="#ffffff" stroke="#86efac" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="610" y="260" width="550" height="40" rx="14" fill="#16a34a"/>
+    <rect x="610" y="286" width="550" height="14" fill="#16a34a"/>
+    <circle cx="634" cy="280" r="11" fill="#ffffff"/>
+    <path d="M628,280 l4,5 l8,-9" stroke="#16a34a" stroke-width="2.5" fill="none"/>
+    <text x="656" y="286" font-size="17" font-weight="bold" fill="#fff">lift 검증 통과 — 번들 후보 3건</text>
+
+    <!-- row 1 -->
+    <rect x="634" y="322" width="165" height="32" rx="16" fill="#f3f4f6"/>
+    <text x="716" y="343" font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">데일리 원두커피</text>
+    <line x1="799" y1="338" x2="849" y2="338" stroke="#16a34a" stroke-width="2.5"/>
+    <circle cx="824" cy="338" r="5" fill="#16a34a"/>
+    <rect x="849" y="322" width="165" height="32" rx="16" fill="#f3f4f6"/>
+    <text x="931" y="343" font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">코어 의자</text>
+    <rect x="1026" y="322" width="100" height="32" rx="16" fill="#dcfce7"/>
+    <text x="1076" y="343" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">lift 2.00</text>
+    <text x="634" y="372" font-size="12" fill="#6b7280">동시구매 38건 · "재택 근무 세트" 컨셉</text>
+
+    <!-- row 2 -->
+    <rect x="634" y="398" width="165" height="32" rx="16" fill="#f3f4f6"/>
+    <text x="716" y="419" font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">스탠다드 홍차</text>
+    <line x1="799" y1="414" x2="849" y2="414" stroke="#16a34a" stroke-width="2.5"/>
+    <circle cx="824" cy="414" r="5" fill="#16a34a"/>
+    <rect x="849" y="398" width="165" height="32" rx="16" fill="#f3f4f6"/>
+    <text x="931" y="419" font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">스탠다드 초콜릿</text>
+    <rect x="1026" y="398" width="100" height="32" rx="16" fill="#dcfce7"/>
+    <text x="1076" y="419" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">lift 1.86</text>
+    <text x="634" y="448" font-size="12" fill="#6b7280">동시구매 31건 · "티타임 스낵 세트" 컨셉</text>
+
+    <!-- row 3 -->
+    <rect x="634" y="474" width="165" height="32" rx="16" fill="#f3f4f6"/>
+    <text x="716" y="495" font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">베이직 침대프레임</text>
+    <line x1="799" y1="490" x2="849" y2="490" stroke="#16a34a" stroke-width="2.5"/>
+    <circle cx="824" cy="490" r="5" fill="#16a34a"/>
+    <rect x="849" y="474" width="165" height="32" rx="16" fill="#f3f4f6"/>
+    <text x="931" y="495" font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">스탠다드 선반</text>
+    <rect x="1026" y="474" width="100" height="32" rx="16" fill="#dcfce7"/>
+    <text x="1076" y="495" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">lift 1.77</text>
+    <text x="634" y="524" font-size="12" fill="#6b7280">동시구매 32건 · "신혼/자취 세팅" 컨셉</text>
+  </g>
+
+  <!-- 하단 공식/유의사항 -->
+  <rect x="40" y="596" width="1120" height="90" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="64" y="628" font-size="14" fill="#374151"><tspan font-weight="bold">lift(A,B) = P(A,B) / (P(A)×P(B))</tspan> — 1이면 무관, 1보다 크면 양의 연관, 작으면 음의 연관</text>
+  <text x="64" y="656" font-size="13" fill="#e53935" font-weight="bold">유의: 위 3건 모두 동시구매 31~38건으로 표본이 크지 않다 — 전사 확대 전 소규모 A/B 테스트로 먼저 검증할 것</text>
+</svg>

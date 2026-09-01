@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="legendGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <circle cx="42" cy="46" r="14" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M42,36 L42,46 L49,50" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">요일×시간대 전환 패턴 — 트래픽과 전환은 따로 논다</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="350" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">168개 셀 전환율 표준편차 vs 기대 잡음</text>
+  <text x="82" y="150" font-size="22" font-weight="bold" fill="#2563eb">1.26%p ≈ 1.17%p</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">(순수 샘플링 잡음 수준, 실제 패턴 아님)</text>
+
+  <rect x="425" y="92" width="350" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="447" y="118" font-size="13" fill="#6b7280">트래픽 상위5 ∩ 전환율 상위5 (요일x시간)</text>
+  <text x="447" y="150" font-size="22" font-weight="bold" fill="#e53935">0개 겹침</text>
+  <text x="447" y="168" font-size="11.5" fill="#9ca3af">잘 팔리는 시간 ≠ 잘 팔리는(전환) 시간</text>
+
+  <rect x="790" y="92" width="350" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="812" y="118" font-size="13" fill="#6b7280">요일별 전환율 범위 (최대-최소)</text>
+  <text x="812" y="150" font-size="22" font-weight="bold" fill="#2563eb">27.67% ~ 28.40%</text>
+  <text x="812" y="168" font-size="11.5" fill="#9ca3af">화-금 차이 0.73%p, 사실상 균일</text>
+
+  <!-- heatmap section label -->
+  <text x="66" y="206" font-size="17" font-weight="bold" fill="#111">요일×시간대 전환율 히트맵 (168셀, 셀당 최소 1,253세션)</text>
+
+  <text x="159.0" y="230" font-size="11" fill="#6b7280" text-anchor="middle">0시</text>
+  <text x="279.0" y="230" font-size="11" fill="#6b7280" text-anchor="middle">3시</text>
+  <text x="399.0" y="230" font-size="11" fill="#6b7280" text-anchor="middle">6시</text>
+  <text x="519.0" y="230" font-size="11" fill="#6b7280" text-anchor="middle">9시</text>
+  <text x="639.0" y="230" font-size="11" fill="#6b7280" text-anchor="middle">12시</text>
+  <text x="759.0" y="230" font-size="11" fill="#6b7280" text-anchor="middle">15시</text>
+  <text x="879.0" y="230" font-size="11" fill="#6b7280" text-anchor="middle">18시</text>
+  <text x="999.0" y="230" font-size="11" fill="#6b7280" text-anchor="middle">21시</text>
+  <text x="126" y="260.0" font-size="13" fill="#374151" text-anchor="end">월</text>
+  <text x="126" y="290.0" font-size="13" fill="#374151" text-anchor="end">화</text>
+  <text x="126" y="320.0" font-size="13" fill="#374151" text-anchor="end">수</text>
+  <text x="126" y="350.0" font-size="13" fill="#374151" text-anchor="end">목</text>
+  <text x="126" y="380.0" font-size="13" fill="#374151" text-anchor="end">금</text>
+  <text x="126" y="410.0" font-size="13" fill="#374151" text-anchor="end">토</text>
+  <text x="126" y="440.0" font-size="13" fill="#374151" text-anchor="end">일</text>
+  <rect x="140" y="240" width="38" height="28" fill="#bbd0f7"/>
+  <rect x="180" y="240" width="38" height="28" fill="#4f77e2"/>
+  <rect x="220" y="240" width="38" height="28" fill="#6287e5"/>
+  <rect x="260" y="240" width="38" height="28" fill="#4e76e1"/>
+  <rect x="300" y="240" width="38" height="28" fill="#6a8de7"/>
+  <rect x="340" y="240" width="38" height="28" fill="#89a7ed"/>
+  <rect x="380" y="240" width="38" height="28" fill="#91adef"/>
+  <rect x="420" y="240" width="38" height="28" fill="#6186e5"/>
+  <rect x="460" y="240" width="38" height="28" fill="#7798ea"/>
+  <rect x="500" y="240" width="38" height="28" fill="#9ab5f1"/>
+  <rect x="540" y="240" width="38" height="28" fill="#6e90e8"/>
+  <rect x="580" y="240" width="38" height="28" fill="#94b0ef"/>
+  <rect x="620" y="240" width="38" height="28" fill="#4d75e1"/>
+  <rect x="660" y="240" width="38" height="28" fill="#3b67de"/>
+  <rect x="700" y="240" width="38" height="28" fill="#9bb5f1"/>
+  <rect x="740" y="240" width="38" height="28" fill="#6186e5"/>
+  <rect x="780" y="240" width="38" height="28" fill="#6185e5"/>
+  <rect x="820" y="240" width="38" height="28" fill="#5f84e5"/>
+  <rect x="860" y="240" width="38" height="28" fill="#7c9ceb"/>
+  <rect x="900" y="240" width="38" height="28" fill="#97b2f0"/>
+  <rect x="940" y="240" width="38" height="28" fill="#84a2ec"/>
+  <rect x="980" y="240" width="38" height="28" fill="#557ce3"/>
+  <rect x="1020" y="240" width="38" height="28" fill="#7d9deb"/>
+  <rect x="1060" y="240" width="38" height="28" fill="#7f9eeb"/>
+  <rect x="140" y="270" width="38" height="28" fill="#8aa7ed"/>
+  <rect x="180" y="270" width="38" height="28" fill="#698de7"/>
+  <rect x="220" y="270" width="38" height="28" fill="#7d9deb"/>
+  <rect x="260" y="270" width="38" height="28" fill="#6b8ee7"/>
+  <rect x="300" y="270" width="38" height="28" fill="#a8c0f3"/>
+  <rect x="340" y="270" width="38" height="28" fill="#a6bef3"/>
+  <rect x="380" y="270" width="38" height="28" fill="#9ab5f1"/>
+  <rect x="420" y="270" width="38" height="28" fill="#7294e9"/>
+  <rect x="460" y="270" width="38" height="28" fill="#1d4ed8"/>
+  <rect x="500" y="270" width="38" height="28" fill="#3662dd"/>
+  <rect x="540" y="270" width="38" height="28" fill="#6c8fe7"/>
+  <rect x="580" y="270" width="38" height="28" fill="#9ab4f1"/>
+  <rect x="620" y="270" width="38" height="28" fill="#8ba9ee"/>
+  <rect x="660" y="270" width="38" height="28" fill="#6b8ee7"/>
+  <rect x="700" y="270" width="38" height="28" fill="#6387e6"/>
+  <rect x="740" y="270" width="38" height="28" fill="#2c5adb"/>
+  <rect x="780" y="270" width="38" height="28" fill="#6185e5"/>
+  <rect x="820" y="270" width="38" height="28" fill="#7092e8"/>
+  <rect x="860" y="270" width="38" height="28" fill="#4771e0"/>
+  <rect x="900" y="270" width="38" height="28" fill="#809feb"/>
+  <rect x="940" y="270" width="38" height="28" fill="#7495e9"/>
+  <rect x="980" y="270" width="38" height="28" fill="#8fabee"/>
+  <rect x="1020" y="270" width="38" height="28" fill="#587fe3"/>
+  <rect x="1060" y="270" width="38" height="28" fill="#86a4ed"/>
+  <rect x="140" y="300" width="38" height="28" fill="#6286e5"/>
+  <rect x="180" y="300" width="38" height="28" fill="#668ae6"/>
+  <rect x="220" y="300" width="38" height="28" fill="#81a0ec"/>
+  <rect x="260" y="300" width="38" height="28" fill="#7496e9"/>
+  <rect x="300" y="300" width="38" height="28" fill="#8eabee"/>
+  <rect x="340" y="300" width="38" height="28" fill="#8fabee"/>
+  <rect x="380" y="300" width="38" height="28" fill="#7d9ceb"/>
+  <rect x="420" y="300" width="38" height="28" fill="#5e83e5"/>
+  <rect x="460" y="300" width="38" height="28" fill="#7a9aea"/>
+  <rect x="500" y="300" width="38" height="28" fill="#6f91e8"/>
+  <rect x="540" y="300" width="38" height="28" fill="#4b74e1"/>
+  <rect x="580" y="300" width="38" height="28" fill="#9db7f1"/>
+  <rect x="620" y="300" width="38" height="28" fill="#8ca9ee"/>
+  <rect x="660" y="300" width="38" height="28" fill="#6388e6"/>
+  <rect x="700" y="300" width="38" height="28" fill="#99b3f0"/>
+  <rect x="740" y="300" width="38" height="28" fill="#446edf"/>
+  <rect x="780" y="300" width="38" height="28" fill="#9db7f1"/>
+  <rect x="820" y="300" width="38" height="28" fill="#436ddf"/>
+  <rect x="860" y="300" width="38" height="28" fill="#4c75e1"/>
+  <rect x="900" y="300" width="38" height="28" fill="#7a9aea"/>
+  <rect x="940" y="300" width="38" height="28" fill="#7697e9"/>
+  <rect x="980" y="300" width="38" height="28" fill="#8facee"/>
+  <rect x="1020" y="300" width="38" height="28" fill="#82a1ec"/>
+  <rect x="1060" y="300" width="38" height="28" fill="#5279e2"/>
+  <rect x="140" y="330" width="38" height="28" fill="#5179e2"/>
+  <rect x="180" y="330" width="38" height="28" fill="#bacff7"/>
+  <rect x="220" y="330" width="38" height="28" fill="#6f91e8"/>
+  <rect x="260" y="330" width="38" height="28" fill="#7a9aea"/>
+  <rect x="300" y="330" width="38" height="28" fill="#567de3"/>
+  <rect x="340" y="330" width="38" height="28" fill="#96b2f0"/>
+  <rect x="380" y="330" width="38" height="28" fill="#7394e9"/>
+  <rect x="420" y="330" width="38" height="28" fill="#90adef"/>
+  <rect x="460" y="330" width="38" height="28" fill="#8aa7ed"/>
+  <rect x="500" y="330" width="38" height="28" fill="#597fe4"/>
+  <rect x="540" y="330" width="38" height="28" fill="#4871e0"/>
+  <rect x="580" y="330" width="38" height="28" fill="#8fabee"/>
+  <rect x="620" y="330" width="38" height="28" fill="#7e9eeb"/>
+  <rect x="660" y="330" width="38" height="28" fill="#7495e9"/>
+  <rect x="700" y="330" width="38" height="28" fill="#7596e9"/>
+  <rect x="740" y="330" width="38" height="28" fill="#a2bbf2"/>
+  <rect x="780" y="330" width="38" height="28" fill="#92aeef"/>
+  <rect x="820" y="330" width="38" height="28" fill="#98b3f0"/>
+  <rect x="860" y="330" width="38" height="28" fill="#aec5f5"/>
+  <rect x="900" y="330" width="38" height="28" fill="#8ba8ee"/>
+  <rect x="940" y="330" width="38" height="28" fill="#7f9feb"/>
+  <rect x="980" y="330" width="38" height="28" fill="#96b1f0"/>
+  <rect x="1020" y="330" width="38" height="28" fill="#7394e9"/>
+  <rect x="1060" y="330" width="38" height="28" fill="#698ce7"/>
+  <rect x="140" y="360" width="38" height="28" fill="#6589e6"/>
+  <rect x="180" y="360" width="38" height="28" fill="#82a1ec"/>
+  <rect x="220" y="360" width="38" height="28" fill="#c0d4f8"/>
+  <rect x="260" y="360" width="38" height="28" fill="#89a7ed"/>
+  <rect x="300" y="360" width="38" height="28" fill="#3c67de"/>
+  <rect x="340" y="360" width="38" height="28" fill="#87a5ed"/>
+  <rect x="380" y="360" width="38" height="28" fill="#afc6f5"/>
+  <rect x="420" y="360" width="38" height="28" fill="#90acef"/>
+  <rect x="460" y="360" width="38" height="28" fill="#afc6f5"/>
+  <rect x="500" y="360" width="38" height="28" fill="#94b0ef"/>
+  <rect x="540" y="360" width="38" height="28" fill="#6186e5"/>
+  <rect x="580" y="360" width="38" height="28" fill="#87a5ed"/>
+  <rect x="620" y="360" width="38" height="28" fill="#89a6ed"/>
+  <rect x="660" y="360" width="38" height="28" fill="#6a8de7"/>
+  <rect x="700" y="360" width="38" height="28" fill="#7394e9"/>
+  <rect x="740" y="360" width="38" height="28" fill="#6186e5"/>
+  <rect x="780" y="360" width="38" height="28" fill="#597fe4"/>
+  <rect x="820" y="360" width="38" height="28" fill="#92aeef"/>
+  <rect x="860" y="360" width="38" height="28" fill="#6d90e8"/>
+  <rect x="900" y="360" width="38" height="28" fill="#b4caf6"/>
+  <rect x="940" y="360" width="38" height="28" fill="#4d75e1"/>
+  <rect x="980" y="360" width="38" height="28" fill="#aac2f4"/>
+  <rect x="1020" y="360" width="38" height="28" fill="#bfd3f8"/>
+  <rect x="1060" y="360" width="38" height="28" fill="#5f85e5"/>
+  <rect x="140" y="390" width="38" height="28" fill="#6d90e8"/>
+  <rect x="180" y="390" width="38" height="28" fill="#698de7"/>
+  <rect x="220" y="390" width="38" height="28" fill="#a2bbf2"/>
+  <rect x="260" y="390" width="38" height="28" fill="#98b3f0"/>
+  <rect x="300" y="390" width="38" height="28" fill="#95b1f0"/>
+  <rect x="340" y="390" width="38" height="28" fill="#95b1f0"/>
+  <rect x="380" y="390" width="38" height="28" fill="#6287e5"/>
+  <rect x="420" y="390" width="38" height="28" fill="#91adef"/>
+  <rect x="460" y="390" width="38" height="28" fill="#9eb8f1"/>
+  <rect x="500" y="390" width="38" height="28" fill="#7f9eeb"/>
+  <rect x="540" y="390" width="38" height="28" fill="#83a2ec"/>
+  <rect x="580" y="390" width="38" height="28" fill="#6e90e8"/>
+  <rect x="620" y="390" width="38" height="28" fill="#809feb"/>
+  <rect x="660" y="390" width="38" height="28" fill="#6388e6"/>
+  <rect x="700" y="390" width="38" height="28" fill="#95b1f0"/>
+  <rect x="740" y="390" width="38" height="28" fill="#4670e0"/>
+  <rect x="780" y="390" width="38" height="28" fill="#6f91e8"/>
+  <rect x="820" y="390" width="38" height="28" fill="#6c8fe7"/>
+  <rect x="860" y="390" width="38" height="28" fill="#87a5ed"/>
+  <rect x="900" y="390" width="38" height="28" fill="#6a8de7"/>
+  <rect x="940" y="390" width="38" height="28" fill="#89a7ed"/>
+  <rect x="980" y="390" width="38" height="28" fill="#81a0ec"/>
+  <rect x="1020" y="390" width="38" height="28" fill="#a3bcf2"/>
+  <rect x="1060" y="390" width="38" height="28" fill="#dbeafe"/>
+  <rect x="140" y="420" width="38" height="28" fill="#92aeef"/>
+  <rect x="180" y="420" width="38" height="28" fill="#6589e6"/>
+  <rect x="220" y="420" width="38" height="28" fill="#80a0eb"/>
+  <rect x="260" y="420" width="38" height="28" fill="#5b80e4"/>
+  <rect x="300" y="420" width="38" height="28" fill="#7a9aea"/>
+  <rect x="340" y="420" width="38" height="28" fill="#7294e9"/>
+  <rect x="380" y="420" width="38" height="28" fill="#96b2f0"/>
+  <rect x="420" y="420" width="38" height="28" fill="#7193e8"/>
+  <rect x="460" y="420" width="38" height="28" fill="#6489e6"/>
+  <rect x="500" y="420" width="38" height="28" fill="#7898ea"/>
+  <rect x="540" y="420" width="38" height="28" fill="#6a8de7"/>
+  <rect x="580" y="420" width="38" height="28" fill="#6e91e8"/>
+  <rect x="620" y="420" width="38" height="28" fill="#91adef"/>
+  <rect x="660" y="420" width="38" height="28" fill="#88a6ed"/>
+  <rect x="700" y="420" width="38" height="28" fill="#7697e9"/>
+  <rect x="740" y="420" width="38" height="28" fill="#6488e6"/>
+  <rect x="780" y="420" width="38" height="28" fill="#8aa8ed"/>
+  <rect x="820" y="420" width="38" height="28" fill="#bfd3f8"/>
+  <rect x="860" y="420" width="38" height="28" fill="#5f84e5"/>
+  <rect x="900" y="420" width="38" height="28" fill="#9cb6f1"/>
+  <rect x="940" y="420" width="38" height="28" fill="#acc3f4"/>
+  <rect x="980" y="420" width="38" height="28" fill="#5e84e5"/>
+  <rect x="1020" y="420" width="38" height="28" fill="#799aea"/>
+  <rect x="1060" y="420" width="38" height="28" fill="#668ae6"/>
+  <circle cx="399.0" cy="254.0" r="7" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="439.0" cy="254.0" r="7" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="799.0" cy="254.0" r="7" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="599.0" cy="254.0" r="7" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="279.0" cy="254.0" r="7" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="479.0" cy="284.0" r="7" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="759.0" cy="284.0" r="7" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="519.0" cy="284.0" r="7" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="679.0" cy="254.0" r="7" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="319.0" cy="374.0" r="7" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+
+  <!-- legend: color scale -->
+  <text x="140" y="470" font-size="12" fill="#6b7280">전환율 낮음</text>
+  <rect x="230" y="458" width="200" height="14" rx="3" fill="url(#legendGrad)"/>
+  <text x="440" y="470" font-size="12" fill="#6b7280">전환율 높음 (24.19%~31.75%)</text>
+
+  <!-- legend: markers -->
+  <circle cx="700" cy="465" r="7" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="714" y="470" font-size="12" fill="#374151">트래픽 상위5 셀</text>
+  <circle cx="860" cy="465" r="7" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="874" y="470" font-size="12" fill="#374151">전환율 상위5 셀</text>
+
+  <!-- conclusion box -->
+  <rect x="60" y="510" width="1080" height="240" rx="14" fill="#fff5f5" stroke="#e53935" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="86" y="546" font-size="16" font-weight="bold" fill="#e53935">결론 — "저녁·주말 전환 우위" 가설은 이 데이터에서 성립하지 않는다</text>
+  <text x="86" y="576" font-size="13.5" fill="#374151">168개 요일x시간대 셀의 전환율 실측 표준편차(1.26%p)가 순수 샘플링 잡음 하에서 기대되는 표준오차(1.17%p)와</text>
+  <text x="86" y="598" font-size="13.5" fill="#374151">거의 같다 — 즉 관측된 24.19~31.75%의 셀 간 차이는 진짜 시간 효과가 아니라 잡음이다. 트래픽 상위5 시간대</text>
+  <text x="86" y="620" font-size="13.5" fill="#374151">(월 6·7·16·11·3시)와 전환율 상위5 시간대(화 8·15·9시, 월 13시, 금 4시)는 <tspan font-weight="bold" fill="#e53935">단 하나도 겹치지 않는다.</tspan></text>
+  <text x="86" y="642" font-size="13.5" fill="#374151">요일별로도 화(28.40%)~금(27.67%) 차이가 0.73%p에 불과해 "주말이 더 잘 팔린다"는 근거도 없다.</text>
+  <text x="86" y="674" font-size="13.5" font-weight="bold" fill="#111">입찰 조정 의견: 이 데이터만으로는 특정 요일·시간대에 입찰을 강화/축소할 근거가 없다.</text>
+  <text x="86" y="696" font-size="13.5" fill="#374151">시간대 차등입찰을 강행하려면 먼저 수 주 단위 A/B 실험으로 이 균일성이 재현되는지부터 검증해야 하며,</text>
+  <text x="86" y="718" font-size="13.5" fill="#374151">그 전까지는 트래픽에 비례한 균등 배분이 총 구매 건수 관점에서 더 안전한 기본 전략이다.</text>
+</svg>

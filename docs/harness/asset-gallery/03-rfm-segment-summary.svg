@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 816" width="1000" height="816" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="headerGrad3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="redGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="816" fill="#f4f5f7"/>
+  <rect x="20" y="20" width="960" height="776" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" filter="url(#cardShadow3)"/>
+
+  <!-- header -->
+  <rect x="20" y="20" width="960" height="104" rx="20" fill="url(#headerGrad3)"/>
+  <rect x="20" y="84" width="960" height="40" fill="url(#headerGrad3)"/>
+  <text x="52" y="56" font-size="14" fill="#bfdbfe" letter-spacing="1">문제 03 · RFM 세그먼트</text>
+  <text x="52" y="90" font-size="26" font-weight="bold" fill="#ffffff">고객 세그먼트 — 누가 매출을 만드는가</text>
+
+  <!-- KPI cards (header bottom 124 -> gap 24 -> top 148) -->
+  <g>
+    <rect x="44" y="148" width="280" height="100" rx="12" fill="#fef2f2"/>
+    <text x="66" y="176" font-size="13" fill="#991b1b">챔피언 (인원 23.3%)</text>
+    <text x="66" y="214" font-size="26" font-weight="bold" fill="#e53935">매출 67.4%</text>
+
+    <rect x="348" y="148" width="280" height="100" rx="12" fill="#eff6ff"/>
+    <text x="370" y="176" font-size="13" fill="#1e40af">휴면 (인원 24.4%)</text>
+    <text x="370" y="214" font-size="26" font-weight="bold" fill="#2563eb">매출 6.2%</text>
+
+    <rect x="652" y="148" width="280" height="100" rx="12" fill="#f3f4f6"/>
+    <text x="674" y="176" font-size="13" fill="#4b5563">RFM 대상 고객수</text>
+    <text x="674" y="214" font-size="26" font-weight="bold" fill="#374151">4,950명</text>
+  </g>
+
+  <!-- chart section title (KPI bottom 248 -> title 288, gap40) -->
+  <text x="52" y="288" font-size="18" font-weight="bold" fill="#111">세그먼트별 인원 비중 vs 매출 비중</text>
+  <rect x="52" y="298" width="56" height="4" rx="2" fill="#2563eb"/>
+
+  <!-- legend -->
+  <rect x="700" y="278" width="14" height="14" rx="3" fill="#60a5fa"/>
+  <text x="720" y="290" font-size="12" fill="#374151">인원 비중</text>
+  <rect x="800" y="278" width="14" height="14" rx="3" fill="url(#redGrad2)"/>
+  <text x="820" y="290" font-size="12" fill="#374151">매출 비중</text>
+
+  <!-- axis guide -->
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="200" y1="316" x2="200" y2="634"/>
+    <line x1="343" y1="316" x2="343" y2="634"/>
+    <line x1="486" y1="316" x2="486" y2="634"/>
+    <line x1="629" y1="316" x2="629" y2="634"/>
+  </g>
+  <g font-size="11" fill="#9ca3af" text-anchor="middle">
+    <text x="200" y="310">0%</text>
+    <text x="343" y="310">20%</text>
+    <text x="486" y="310">40%</text>
+    <text x="629" y="310">60%</text>
+  </g>
+
+  <!-- rows (content top 322, row height 54) -->
+  <!-- 챔피언 -->
+  <text x="44" y="342" font-size="14" font-weight="bold" fill="#111">챔피언</text>
+  <rect x="200" y="322" width="166.5" height="16" rx="3" fill="#60a5fa"/>
+  <text x="374" y="335" font-size="12" fill="#1e40af">23.3%</text>
+  <rect x="200" y="342" width="481.3" height="16" rx="3" fill="url(#redGrad2)"/>
+  <text x="689" y="355" font-size="12" font-weight="bold" fill="#e53935">67.4%</text>
+
+  <!-- 충성 고객 -->
+  <text x="44" y="396" font-size="14" fill="#111">충성 고객</text>
+  <rect x="200" y="376" width="69.9" height="16" rx="3" fill="#60a5fa"/>
+  <text x="277" y="389" font-size="12" fill="#1e40af">9.8%</text>
+  <rect x="200" y="396" width="58.9" height="16" rx="3" fill="url(#redGrad2)"/>
+  <text x="266" y="409" font-size="12" fill="#1e3a5f">8.3%</text>
+
+  <!-- 잠재 충성 -->
+  <text x="44" y="450" font-size="14" fill="#111">잠재 충성</text>
+  <rect x="200" y="430" width="106.1" height="16" rx="3" fill="#60a5fa"/>
+  <text x="314" y="443" font-size="12" fill="#1e40af">14.9%</text>
+  <rect x="200" y="450" width="36.6" height="16" rx="3" fill="url(#redGrad2)"/>
+  <text x="244" y="463" font-size="12" fill="#1e3a5f">5.1%</text>
+
+  <!-- 이탈 위험 -->
+  <text x="44" y="504" font-size="14" fill="#111">이탈 위험</text>
+  <rect x="200" y="484" width="111.4" height="16" rx="3" fill="#60a5fa"/>
+  <text x="319" y="497" font-size="12" fill="#1e40af">15.6%</text>
+  <rect x="200" y="504" width="63.5" height="16" rx="3" fill="url(#redGrad2)"/>
+  <text x="271" y="517" font-size="12" fill="#1e3a5f">8.9%</text>
+
+  <!-- 휴면 -->
+  <text x="44" y="558" font-size="14" fill="#111">휴면</text>
+  <rect x="200" y="538" width="174.3" height="16" rx="3" fill="#60a5fa"/>
+  <text x="382" y="551" font-size="12" fill="#1e40af">24.4%</text>
+  <rect x="200" y="558" width="44.1" height="16" rx="3" fill="url(#redGrad2)"/>
+  <text x="252" y="571" font-size="12" fill="#1e3a5f">6.2%</text>
+
+  <!-- 기타 -->
+  <text x="44" y="612" font-size="14" fill="#111">기타</text>
+  <rect x="200" y="592" width="86.1" height="16" rx="3" fill="#60a5fa"/>
+  <text x="294" y="605" font-size="12" fill="#1e40af">12.1%</text>
+  <rect x="200" y="612" width="29.8" height="16" rx="3" fill="url(#redGrad2)"/>
+  <text x="238" y="625" font-size="12" fill="#1e3a5f">4.2%</text>
+
+  <!-- conclusion (content bottom 646 -> box top 686, gap40) -->
+  <rect x="44" y="686" width="912" height="100" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="68" y="716" font-size="16" font-weight="bold" fill="#1e3a8a">결론</text>
+  <text x="68" y="744" font-size="15" fill="#1e293b">전체 고객의 <tspan font-weight="bold" fill="#e53935">23.3%인 '챔피언'이 상반기 매출의 67.4%</tspan>를 만든다 — 우량 고객 감사·독점 혜택에 예산을 집중한다.</text>
+  <text x="68" y="768" font-size="15" fill="#1e293b">반대로 <tspan font-weight="bold">'휴면'은 인원 24.4%인데 매출은 6.2%뿐</tspan> — 일괄 발송 대신 재방문 계기(win-back)형 메시지가 필요하다.</text>
+</svg>

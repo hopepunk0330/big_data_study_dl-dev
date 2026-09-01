@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" width="920" height="620" font-family="'Noto Sans KR','Malgun Gothic','AppleGothic',sans-serif">
+<defs>
+<filter id="cardShadow1" x="-10%" y="-10%" width="120%" height="120%">
+<feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+</filter>
+</defs>
+<rect x="10" y="10" width="900" height="600" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#cardShadow1)"/>
+<text x="40" y="46" font-size="12" font-weight="700" fill="#0369a1" letter-spacing="0.06em">STYLE REFERENCE — 목표선 z-order</text>
+<text x="40" y="72" font-size="17" font-weight="800" fill="#14335c">비교 막대 + 목표선(대시) — 선을 막대보다 나중에 그려 위(z-order 상단)로 오게 한다</text>
+<text x="40" y="94" font-size="12" fill="#64748b">목표 통과/미달성 항목을 원형 배지(체크/엑스)로 표시. 이 아래는 실제 리포트 인라인 SVG를 그대로 옮긴 것.</text>
+<text x="40" y="112" font-size="12" fill="#64748b">좌표·수치는 이 프로젝트 고유값이니 무시하고 "선이 막대 rect보다 마크업 순서상 뒤에 온다"는 z-order 기법만 참고한다.</text>
+<g transform="translate(20,40)">
+<rect x="40" y="190.282" width="800" height="249.718" fill="#f0f9ff"/>
+<text x="40" y="97" font-size="11" font-weight="700" fill="#64748b">목표 통과 여부</text>
+<circle cx="194" cy="93" r="11" fill="#0369a1"/>
+<path d="M 188,93 L 192,97 L 200,87" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="358" cy="93" r="11" fill="#b91c1c"/>
+<path d="M 353,88 L 363,98 M 353,98 L 363,88" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="522" cy="93" r="11" fill="#b91c1c"/>
+<path d="M 517,88 L 527,98 M 517,98 L 527,88" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="686" cy="93" r="11" fill="#b91c1c"/>
+<path d="M 681,88 L 691,98 M 681,98 L 691,88" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="40" y1="440" x2="840" y2="440" stroke="#dbe2ec" stroke-width="1.2"/>
+<rect x="129.0" y="194.708" width="130" height="245.292" rx="3" fill="#0369a1"/>
+<text x="194" y="212" font-size="9.4" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.05em">달성</text>
+<line x1="129" y1="217" x2="259" y2="217" stroke="#ffffff" stroke-opacity="0.32" stroke-width="1"/>
+<text x="194.0" y="180.308" font-size="20" font-weight="800" fill="#0369a1" text-anchor="middle">0.4489</text>
+<text x="194.0" y="468.8" font-size="13.416" fill="#1a1a1a" text-anchor="middle">Ridge</text>
+<text x="194.0" y="494" font-size="11.538" fill="#94a3b8" text-anchor="middle">70.7초</text>
+<rect x="293.0" y="152.579" width="130" height="287.421" rx="3" fill="#94a3b8"/>
+<text x="358.0" y="138.179" font-size="16.1" font-weight="800" fill="#94a3b8" text-anchor="middle">0.5260</text>
+<text x="358.0" y="468.8" font-size="13.416" fill="#1a1a1a" text-anchor="middle">CatBoost</text>
+<text x="358.0" y="494" font-size="11.538" fill="#94a3b8" text-anchor="middle">1,200.5초</text>
+<rect x="457.0" y="152.087" width="130" height="287.913" rx="3" fill="#94a3b8"/>
+<text x="522.0" y="137.687" font-size="16.1" font-weight="800" fill="#94a3b8" text-anchor="middle">0.5269</text>
+<text x="522.0" y="468.8" font-size="13.416" fill="#1a1a1a" text-anchor="middle">XGBoost</text>
+<text x="522.0" y="494" font-size="11.538" fill="#94a3b8" text-anchor="middle">596.1초</text>
+<rect x="621.0" y="148.808" width="130" height="291.192" rx="3" fill="#94a3b8"/>
+<text x="686.0" y="134.408" font-size="16.1" font-weight="800" fill="#94a3b8" text-anchor="middle">0.5329</text>
+<text x="686.0" y="468.8" font-size="13.416" fill="#1a1a1a" text-anchor="middle">LightGBM</text>
+<text x="686.0" y="494" font-size="11.538" fill="#94a3b8" text-anchor="middle">1,255.6초</text>
+<line x1="40" y1="190.282" x2="840" y2="190.282" stroke="#b91c1c" stroke-width="2.6" stroke-dasharray="9,5"/>
+<text x="845" y="177" font-size="14" fill="#b91c1c" text-anchor="end" font-weight="800" paint-order="stroke" stroke="#ffffff" stroke-width="3.2" stroke-linejoin="round">목표 0.4570</text>
+</g>
+</svg>

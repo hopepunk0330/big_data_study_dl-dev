@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow5" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="headerGrad5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="800" fill="#f4f5f7"/>
+  <rect x="20" y="20" width="960" height="760" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" filter="url(#cardShadow5)"/>
+
+  <!-- header -->
+  <rect x="20" y="20" width="960" height="104" rx="20" fill="url(#headerGrad5)"/>
+  <rect x="20" y="84" width="960" height="40" fill="url(#headerGrad5)"/>
+  <text x="52" y="56" font-size="14" fill="#bfdbfe" letter-spacing="1">문제 05 · 첫 구매 코호트 리텐션</text>
+  <text x="52" y="90" font-size="26" font-weight="bold" fill="#ffffff">M+1 리텐션은 왜 코호트마다 계속 떨어지나</text>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="44" y="148" width="280" height="100" rx="12" fill="#eff6ff"/>
+    <text x="66" y="176" font-size="13" fill="#1e40af">1월 코호트 M+1 리텐션</text>
+    <text x="66" y="214" font-size="26" font-weight="bold" fill="#2563eb">83.2%</text>
+
+    <rect x="348" y="148" width="280" height="100" rx="12" fill="#fef2f2"/>
+    <text x="370" y="176" font-size="13" fill="#991b1b">5월 코호트 M+1 리텐션</text>
+    <text x="370" y="214" font-size="26" font-weight="bold" fill="#e53935">0.6%</text>
+
+    <rect x="652" y="148" width="280" height="100" rx="12" fill="#f3f4f6"/>
+    <text x="674" y="176" font-size="13" fill="#4b5563">6월 코호트 M+1</text>
+    <text x="674" y="214" font-size="26" font-weight="bold" fill="#374151">관측 불가</text>
+  </g>
+
+  <!-- section: matrix -->
+  <text x="52" y="288" font-size="18" font-weight="bold" fill="#111">코호트 × 경과월(M+n) 리텐션율 매트릭스 (%)</text>
+  <rect x="52" y="298" width="56" height="4" rx="2" fill="#2563eb"/>
+
+  <!-- grid -->
+  <g>
+    <text x="194.0" y="316" font-size="12" fill="#6b7280" text-anchor="middle">M+0</text>
+    <text x="274.0" y="316" font-size="12" fill="#6b7280" text-anchor="middle">M+1</text>
+    <text x="354.0" y="316" font-size="12" fill="#6b7280" text-anchor="middle">M+2</text>
+    <text x="434.0" y="316" font-size="12" fill="#6b7280" text-anchor="middle">M+3</text>
+    <text x="514.0" y="316" font-size="12" fill="#6b7280" text-anchor="middle">M+4</text>
+    <text x="594.0" y="316" font-size="12" fill="#6b7280" text-anchor="middle">M+5</text>
+
+    <text x="54" y="349" font-size="13" font-weight="bold" fill="#111">1월</text>
+    <rect x="154" y="326" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="192.0" y="349" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">100.0</text>
+    <rect x="234" y="326" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="272.0" y="349" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">83.2</text>
+    <rect x="314" y="326" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="352.0" y="349" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">88.5</text>
+    <rect x="394" y="326" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="432.0" y="349" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">89.1</text>
+    <rect x="474" y="326" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="512.0" y="349" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">90.4</text>
+    <rect x="554" y="326" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="592.0" y="349" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">92.4</text>
+
+    <text x="54" y="389" font-size="13" font-weight="bold" fill="#111">2월</text>
+    <rect x="154" y="366" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="192.0" y="389" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">100.0</text>
+    <rect x="234" y="366" width="76" height="36" rx="4" fill="#3b82f6"/>
+    <text x="272.0" y="389" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">72.3</text>
+    <rect x="314" y="366" width="76" height="36" rx="4" fill="#3b82f6"/>
+    <text x="352.0" y="389" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">76.1</text>
+    <rect x="394" y="366" width="76" height="36" rx="4" fill="#3b82f6"/>
+    <text x="432.0" y="389" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">75.8</text>
+    <rect x="474" y="366" width="76" height="36" rx="4" fill="#3b82f6"/>
+    <text x="512.0" y="389" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">78.8</text>
+    <rect x="554" y="366" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="592.0" y="389" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+
+    <text x="54" y="429" font-size="13" font-weight="bold" fill="#111">3월</text>
+    <rect x="154" y="406" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="192.0" y="429" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">100.0</text>
+    <rect x="234" y="406" width="76" height="36" rx="4" fill="#60a5fa"/>
+    <text x="272.0" y="429" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">44.0</text>
+    <rect x="314" y="406" width="76" height="36" rx="4" fill="#60a5fa"/>
+    <text x="352.0" y="429" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">44.0</text>
+    <rect x="394" y="406" width="76" height="36" rx="4" fill="#60a5fa"/>
+    <text x="432.0" y="429" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">48.2</text>
+    <rect x="474" y="406" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="512.0" y="429" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="554" y="406" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="592.0" y="429" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+
+    <text x="54" y="469" font-size="13" font-weight="bold" fill="#111">4월</text>
+    <rect x="154" y="446" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="192.0" y="469" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">100.0</text>
+    <rect x="234" y="446" width="76" height="36" rx="4" fill="#bfdbfe"/>
+    <text x="272.0" y="469" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">16.8</text>
+    <rect x="314" y="446" width="76" height="36" rx="4" fill="#bfdbfe"/>
+    <text x="352.0" y="469" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">18.5</text>
+    <rect x="394" y="446" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="432.0" y="469" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="474" y="446" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="512.0" y="469" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="554" y="446" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="592.0" y="469" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+
+    <text x="54" y="509" font-size="13" font-weight="bold" fill="#111">5월</text>
+    <rect x="154" y="486" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="192.0" y="509" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">100.0</text>
+    <rect x="234" y="486" width="76" height="36" rx="4" fill="#bfdbfe" stroke="#e53935" stroke-width="2.5"/>
+    <text x="272.0" y="509" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">0.6</text>
+    <rect x="314" y="486" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="352.0" y="509" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="394" y="486" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="432.0" y="509" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="474" y="486" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="512.0" y="509" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="554" y="486" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="592.0" y="509" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+
+    <text x="54" y="549" font-size="13" font-weight="bold" fill="#111">6월</text>
+    <rect x="154" y="526" width="76" height="36" rx="4" fill="#1d4ed8"/>
+    <text x="192.0" y="549" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">100.0</text>
+    <rect x="234" y="526" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="272.0" y="549" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="314" y="526" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="352.0" y="549" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="394" y="526" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="432.0" y="549" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="474" y="526" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="512.0" y="549" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+    <rect x="554" y="526" width="76" height="36" rx="4" fill="#f3f4f6"/>
+    <text x="592.0" y="549" font-size="12" font-weight="bold" fill="#9ca3af" text-anchor="middle">-</text>
+  </g>
+
+  <text x="670" y="349" font-size="12" fill="#6b7280">회색 "-" = 관측 자체가</text>
+  <text x="670" y="366" font-size="12" fill="#6b7280">불가능한 미래 구간</text>
+  <text x="670" y="383" font-size="12" fill="#6b7280">(0%이 아니라 결측)</text>
+
+  <!-- conclusion -->
+  <rect x="44" y="606" width="912" height="160" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="68" y="636" font-size="16" font-weight="bold" fill="#1e3a8a">결론</text>
+  <text x="68" y="664" font-size="15" fill="#1e293b">M+1 리텐션은 <tspan font-weight="bold" fill="#e53935">1월 83.2% → 2월 72.3% → 3월 44.0% → 4월 16.8% → 5월 0.6%로 계속 하락</tspan>한다.</text>
+  <text x="68" y="690" font-size="15" fill="#1e293b">코호트 크기도 4,165명 → 786 → 307 → 184 → 169명으로 함께 줄어, 뒤로 갈수록 "이번이 처음이자 마지막"인 단발성 신규가 늘어난다는 뜻이다.</text>
+  <text x="68" y="716" font-size="15" fill="#1e293b"><tspan font-weight="bold">우하단 빈칸(회색 "-")은 재구매율 0%가 아니라 "7월 데이터가 없어 관측 자체가 불가능"</tspan>한 셀이다 — 0으로 채우면</text>
+  <text x="68" y="740" font-size="15" fill="#1e293b">최근 코호트일수록 리텐션이 나빠 보이는 착시가 생긴다.</text>
+</svg>

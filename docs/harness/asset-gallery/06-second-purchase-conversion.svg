@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 742" width="1000" height="742" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow6" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="headerGrad6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="742" fill="#f4f5f7"/>
+  <rect x="20" y="20" width="960" height="702" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" filter="url(#cardShadow6)"/>
+
+  <!-- header -->
+  <rect x="20" y="20" width="960" height="104" rx="20" fill="url(#headerGrad6)"/>
+  <rect x="20" y="84" width="960" height="40" fill="url(#headerGrad6)"/>
+  <text x="52" y="56" font-size="14" fill="#bfdbfe" letter-spacing="1">문제 06 · 2회차 구매 전환</text>
+  <text x="52" y="90" font-size="26" font-weight="bold" fill="#ffffff">"절반이 사라진다"는 소문의 진위</text>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="44" y="148" width="280" height="100" rx="12" fill="#eff6ff"/>
+    <text x="66" y="176" font-size="13" fill="#1e40af">전체 30일 2회차 전환율</text>
+    <text x="66" y="214" font-size="26" font-weight="bold" fill="#2563eb">74.6%</text>
+    <text x="66" y="234" font-size="11" fill="#3b82f6">"절반만 남는다"는 소문은 사실 아님</text>
+
+    <rect x="348" y="148" width="280" height="100" rx="12" fill="#fef2f2"/>
+    <text x="370" y="176" font-size="13" fill="#991b1b">가장 낮은 조합(app×식품)</text>
+    <text x="370" y="214" font-size="26" font-weight="bold" fill="#e53935">65.5%</text>
+    <text x="370" y="234" font-size="11" fill="#b91c1c">표본 113명 · 평균보다 9.1%p 낮음</text>
+
+    <rect x="652" y="148" width="280" height="100" rx="12" fill="#f3f4f6"/>
+    <text x="674" y="176" font-size="13" fill="#4b5563">채널별 전환율 범위</text>
+    <text x="674" y="214" font-size="24" font-weight="bold" fill="#374151">73.3% ~ 75.5%</text>
+    <text x="674" y="234" font-size="11" fill="#6b7280">app · store · web</text>
+  </g>
+
+  <!-- chart -->
+  <text x="52" y="288" font-size="18" font-weight="bold" fill="#111">전환율이 가장 낮은 채널 × 카테고리 조합 (표본 20명 이상)</text>
+  <rect x="52" y="298" width="56" height="4" rx="2" fill="#2563eb"/>
+
+  <!-- axis -->
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="250" y1="316" x2="250" y2="544"/>
+    <line x1="375" y1="316" x2="375" y2="544"/>
+    <line x1="500" y1="316" x2="500" y2="544"/>
+    <line x1="625" y1="316" x2="625" y2="544"/>
+    <line x1="750" y1="316" x2="750" y2="544"/>
+  </g>
+  <g font-size="11" fill="#9ca3af" text-anchor="middle">
+    <text x="250" y="310">0%</text>
+    <text x="375" y="310">25%</text>
+    <text x="500" y="310">50%</text>
+    <text x="625" y="310">75%</text>
+    <text x="750" y="310">100%</text>
+  </g>
+
+  <!-- reference line: 전체 평균 74.62% -->
+  <line x1="623.1" y1="316" x2="623.1" y2="544" stroke="#e53935" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="623.1" y="538" font-size="11" font-weight="bold" fill="#e53935" text-anchor="middle">전체 평균 74.6%</text>
+
+  <!-- bars (값 라벨은 기준선과 겹치지 않도록 x=655로 고정 정렬) -->
+  <text x="44" y="342" font-size="13" fill="#111">app × 식품 (113명)</text>
+  <rect x="250" y="322" width="327.5" height="24" rx="4" fill="#e53935"/>
+  <text x="655" y="339" font-size="12" font-weight="bold" fill="#e53935">65.5%</text>
+
+  <text x="44" y="386" font-size="13" fill="#111">store × 도서 (110명)</text>
+  <rect x="250" y="366" width="354.6" height="24" rx="4" fill="#93c5fd"/>
+  <text x="655" y="383" font-size="12" fill="#1e40af">70.9%</text>
+
+  <text x="44" y="430" font-size="13" fill="#111">store × 뷰티 (56명)</text>
+  <rect x="250" y="410" width="357.2" height="24" rx="4" fill="#93c5fd"/>
+  <text x="655" y="427" font-size="12" fill="#1e40af">71.4%</text>
+
+  <text x="44" y="474" font-size="13" fill="#111">store × 의류 (75명)</text>
+  <rect x="250" y="454" width="360.0" height="24" rx="4" fill="#93c5fd"/>
+  <text x="655" y="471" font-size="12" fill="#1e40af">72.0%</text>
+
+  <text x="44" y="518" font-size="13" fill="#111">web × 의류 (315명)</text>
+  <rect x="250" y="498" width="365.1" height="24" rx="4" fill="#93c5fd"/>
+  <text x="655" y="515" font-size="12" fill="#1e40af">73.0%</text>
+
+  <!-- conclusion -->
+  <rect x="44" y="582" width="912" height="140" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="68" y="612" font-size="16" font-weight="bold" fill="#1e3a8a">결론 — 개선 과제</text>
+  <text x="68" y="640" font-size="15" fill="#1e293b">"신규 고객 절반이 사라진다"는 소문은 <tspan font-weight="bold">사실이 아니다</tspan> — 전체 30일 2회차 전환율은 74.6%다.</text>
+  <text x="68" y="666" font-size="15" fill="#1e293b">다만 <tspan font-weight="bold" fill="#e53935">app에서 식품을 첫 구매한 고객군만 65.5%로 뚜렷하게 낮다</tspan>(표본 113명, 평균보다 9.1%p 낮음).</text>
+  <text x="68" y="692" font-size="15" fill="#1e293b"><tspan font-weight="bold">개선 과제</tspan>: app × 식품 첫 구매 경험 점검. <tspan font-weight="bold">가설</tspan> — 식품은 재구매 주기가 짧아야 정상인데, 배송 신선도·품절 등 앱 주문 경험이 이를 막고 있을 가능성.</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 780" width="1240" height="780" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="780" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <circle cx="42" cy="46" r="14" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M35,46 L40,51 L50,39" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">주간 매출과 4주 이동평균 — 톱니가 사라지고 추세만 남는다</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">이동평균 안정구간 성장률(1/28→6/30)</text>
+  <text x="82" y="150" font-size="22" font-weight="bold" fill="#2563eb">+84.53%</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">원계열 첫주-끝주 비교(+93.92%)보다 신뢰도 높음</text>
+
+  <rect x="440" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="462" y="118" font-size="13" fill="#6b7280">4주 이동평균 방향전환</text>
+  <text x="462" y="150" font-size="22" font-weight="bold" fill="#2563eb">1회* / 21구간</text>
+  <text x="462" y="168" font-size="11.5" fill="#9ca3af">*NaN 비교 아티팩트 — 실질 방향전환 0회(단조증가)</text>
+
+  <rect x="820" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="842" y="118" font-size="13" fill="#6b7280">일별 vs 주간 등락률 표준편차</text>
+  <text x="842" y="150" font-size="22" font-weight="bold" fill="#e53935">19.22%p vs 4.71%p</text>
+  <text x="842" y="168" font-size="11.5" fill="#9ca3af">일별 변동성이 주간의 약 4.1배</text>
+
+  <!-- chart section -->
+  <text x="66" y="222" font-size="17" font-weight="bold" fill="#111">주간 순매출(원계열, 연한 선) vs 4주 이동평균(굵은 선)</text>
+
+  <!-- axis -->
+  <line x1="90" y1="500" x2="1150" y2="500" stroke="#d1d5db" stroke-width="1.5"/>
+  <line x1="90" y1="248" x2="90" y2="500" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="80" y="264" font-size="12" fill="#6b7280" text-anchor="end">23.6억</text>
+  <text x="80" y="484" font-size="12" fill="#6b7280" text-anchor="end">12.2억</text>
+
+  <!-- weekly raw line (jagged, light) -->
+  <polyline points="90.0,480.0 132.4,471.1 174.8,472.6 217.2,466.5 259.6,443.1 302.0,429.5 344.4,438.4 386.8,428.8 429.2,409.1 471.6,401.4 514.0,388.8 556.4,386.1 598.8,389.3 641.2,344.2 683.6,347.4 726.0,338.6 768.4,353.6 810.8,307.9 853.2,312.3 895.6,312.5 938.0,309.8 980.4,295.9 1022.8,260.5 1065.2,282.2 1107.6,270.5 1150.0,260.0"
+    fill="none" stroke="#93c5fd" stroke-width="2"/>
+
+  <!-- 4-week moving average line (bold, smooth, monotonic) -->
+  <polyline points="217.2,472.6 259.6,463.3 302.0,452.9 344.4,444.4 386.8,434.9 429.2,426.4 471.6,419.4 514.0,407.0 556.4,396.3 598.8,391.4 641.2,377.1 683.6,366.7 726.0,354.9 768.4,345.9 810.8,336.9 853.2,328.1 895.6,321.6 938.0,310.6 980.4,307.6 1022.8,294.7 1065.2,287.1 1107.6,277.3 1150.0,268.3"
+    fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- markers: first/last MA points -->
+  <circle cx="217.2" cy="472.6" r="6" fill="#2563eb"/>
+  <circle cx="1150.0" cy="268.3" r="6" fill="#2563eb"/>
+  <text x="217.2" y="450" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">12.6억(1/28)</text>
+  <text x="1112" y="252" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">23.2억(6/30)</text>
+
+  <!-- legend -->
+  <line x1="90" y1="540" x2="120" y2="540" stroke="#93c5fd" stroke-width="2"/>
+  <text x="128" y="544" font-size="12" fill="#374151">주간 순매출(원계열) — 25구간 중 8개(32%) 하락 포함</text>
+  <line x1="500" y1="540" x2="530" y2="540" stroke="#2563eb" stroke-width="4"/>
+  <text x="538" y="544" font-size="12" fill="#374151">4주 이동평균 — 22구간 전부 상승</text>
+
+  <!-- conclusion box -->
+  <rect x="60" y="570" width="1120" height="176" rx="14" fill="#fff5f5" stroke="#e53935" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="86" y="604" font-size="16" font-weight="bold" fill="#e53935">보고 문구 — 일별 등락에 반응하지 말아야 하는 이유</text>
+  <text x="86" y="634" font-size="13.5" fill="#374151">일별 등락률의 표준편차(19.22%p)는 주간 등락률(4.71%p)의 약 4.1배다 — 일별 매출은 61% 확률로 전일과 방향이</text>
+  <text x="86" y="656" font-size="13.5" fill="#374151">뒤집히는 반면(109/180구간), 4주 이동평균은 22개 구간 내내 단 한 번도 하락하지 않았다.</text>
+  <text x="86" y="686" font-size="13.5" font-weight="bold" fill="#111">"어제 좋았다/오늘 나빴다"는 대부분 이 정도 변동성의 정상 범위 안에 있는 잡음이며,</text>
+  <text x="86" y="708" font-size="13.5" font-weight="bold" fill="#111">방향을 판단하려면 최소 4주 이상 누적된 값으로 봐야 한다 — 그래야 하루짜리 우연과 진짜 추세 전환을 구분할 수 있다.</text>
+  <text x="86" y="732" font-size="12.5" fill="#6b7280">2024 상반기(26개 주, 전부 온전한 W-SUN 7일 단위) 순매출 원장 기준</text>
+</svg>

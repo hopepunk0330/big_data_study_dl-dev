@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 900" width="1320" height="900" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="dropArrow" markerWidth="12" markerHeight="12" refX="5" refY="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L5,8 L10,0 Z" fill="#e53935"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1320" height="900" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <circle cx="42" cy="46" r="14" fill="#2563eb"/>
+  <circle cx="42" cy="41" r="5" fill="#fff"/>
+  <path d="M32,54 Q42,44 52,54 L52,58 L32,58 Z" fill="#fff"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">세션 퍼널 — view → cart → purchase 단계별 이탈</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- funnel bars: x=80 start, scale 640px = 245,430 sessions -->
+  <!-- stage1 방문 -->
+  <rect x="80" y="110" width="640" height="70" rx="10" fill="#2563eb" filter="url(#cardShadow)"/>
+  <text x="736" y="140" font-size="17" font-weight="bold" fill="#111">방문(전체 세션)</text>
+  <text x="736" y="164" font-size="15" fill="#2563eb" font-weight="bold">245,430건 (100.00%)</text>
+
+  <!-- drop 1: 방문->view -->
+  <line x1="100" y1="180" x2="100" y2="216" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#dropArrow)"/>
+  <text x="130" y="204" font-size="13" fill="#6b7280">view 없는 세션 18,084건(7.37%) 이탈</text>
+
+  <!-- stage2 view -->
+  <rect x="80" y="220" width="593" height="70" rx="10" fill="#3b82f6" filter="url(#cardShadow)"/>
+  <text x="689" y="250" font-size="17" font-weight="bold" fill="#111">view 도달</text>
+  <text x="689" y="274" font-size="15" fill="#2563eb" font-weight="bold">227,346건 (92.63%)</text>
+
+  <!-- drop 2: view->cart (biggest raw loss) -->
+  <line x1="100" y1="290" x2="100" y2="326" stroke="#e53935" stroke-width="3" marker-end="url(#dropArrow)"/>
+  <text x="130" y="308" font-size="13.5" font-weight="bold" fill="#e53935">view→cart: 132,479건(58.27%) 이탈 — 절대 손실 최대</text>
+
+  <!-- stage3 cart -->
+  <rect x="80" y="330" width="247" height="70" rx="10" fill="#60a5fa" filter="url(#cardShadow)"/>
+  <text x="343" y="360" font-size="17" font-weight="bold" fill="#111">cart 도달</text>
+  <text x="343" y="384" font-size="15" fill="#2563eb" font-weight="bold">94,867건 (38.65%)</text>
+
+  <!-- drop 3: cart->purchase(경유만) (biggest rate loss) -->
+  <line x1="100" y1="400" x2="100" y2="436" stroke="#e53935" stroke-width="3" marker-end="url(#dropArrow)"/>
+  <text x="130" y="418" font-size="13.5" font-weight="bold" fill="#e53935">cart→purchase(경유): 68,915건(72.64%) 이탈 — 이탈률 최대</text>
+
+  <!-- stage4 purchase -->
+  <rect x="80" y="440" width="179" height="70" rx="10" fill="#93c5fd" filter="url(#cardShadow)"/>
+  <text x="275" y="470" font-size="17" font-weight="bold" fill="#111">purchase 도달</text>
+  <text x="275" y="494" font-size="15" fill="#2563eb" font-weight="bold">68,770건 (28.02%)</text>
+
+  <!-- bracket connecting cart+purchase rows to side callout -->
+  <path d="M850,330 C895,330 895,510 850,510" fill="none" stroke="#dc2626" stroke-width="2"/>
+
+  <!-- side callout: 즉시구매 규칙 -->
+  <rect x="900" y="230" width="380" height="270" rx="14" fill="#eef2f7" filter="url(#cardShadow)"/>
+  <path d="M930,258 L946,286 L914,286 Z" fill="#dc2626"/>
+  <text x="946" y="282" font-size="15" font-weight="bold" fill="#334155" text-anchor="middle">!</text>
+  <text x="960" y="272" font-size="16" font-weight="bold" fill="#1e3a5f">즉시구매(cart 생략) 규칙</text>
+  <text x="930" y="308" font-size="13" fill="#334155">purchase 68,770건 중 <tspan font-weight="bold" fill="#e53935">42,818건(62.26%)</tspan></text>
+  <text x="930" y="328" font-size="13" fill="#334155">이 cart 없이 바로 구매 — cart 경유는</text>
+  <text x="930" y="348" font-size="13" fill="#334155">오히려 소수(25,952건, 37.74%)다.</text>
+  <text x="930" y="378" font-size="13" fill="#334155">· view 있고 cart 생략: 38,906건</text>
+  <text x="930" y="398" font-size="13" fill="#334155">· view도 없이 즉시구매: 3,912건</text>
+  <text x="930" y="428" font-size="13" fill="#1e3a5f" font-weight="bold">→ 즉시구매는 무효 처리하지 않고</text>
+  <text x="930" y="448" font-size="13" fill="#1e3a5f" font-weight="bold">purchase 도달로 인정하되, cart→</text>
+  <text x="930" y="468" font-size="13" fill="#1e3a5f" font-weight="bold">purchase 전환율은 cart 경유만 분모</text>
+  <text x="930" y="488" font-size="13" fill="#1e3a5f" font-weight="bold">·분자로 삼아 착시를 분리한다.</text>
+
+  <!-- experiment ideas section title -->
+  <text x="66" y="550" font-size="19" font-weight="bold" fill="#111">개선 실험 아이디어 2건</text>
+  <rect x="66" y="560" width="90" height="4" rx="2" fill="#2563eb"/>
+
+  <!-- card 1 -->
+  <rect x="60" y="596" width="590" height="260" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="100" cy="636" r="16" fill="#2563eb"/>
+  <path d="M92,636 h16 M100,628 v16" stroke="#fff" stroke-width="2.5"/>
+  <text x="126" y="642" font-size="16" font-weight="bold" fill="#111">① 카트 방치(cart abandonment) 개선</text>
+  <text x="90" y="674" font-size="13" fill="#374151">카트에 담고도 <tspan fill="#e53935" font-weight="bold">72.64%</tspan>가 결제로</text>
+  <text x="90" y="696" font-size="13" fill="#374151">이어지지 않는다. 이탈 시도(exit-intent)</text>
+  <text x="90" y="718" font-size="13" fill="#374151">팝업, 무료배송 임계값 안내, 재고·가격</text>
+  <text x="90" y="740" font-size="13" fill="#374151">인상 임박 알림을 A/B 테스트해</text>
+  <text x="90" y="762" font-size="13" fill="#374151">cart→purchase 전환율(27.36%) 개선을</text>
+  <text x="90" y="784" font-size="13" fill="#374151">목표로 한다.</text>
+  <text x="90" y="820" font-size="12.5" fill="#6b7280">측정지표: cart→purchase 전환율,</text>
+  <text x="90" y="840" font-size="12.5" fill="#6b7280">카트 방치 후 재방문율</text>
+
+  <!-- card 2 -->
+  <rect x="670" y="596" width="590" height="260" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="710" cy="636" r="16" fill="#2563eb"/>
+  <path d="M702,636 L708,644 L720,628" stroke="#fff" stroke-width="2.5" fill="none"/>
+  <text x="736" y="642" font-size="16" font-weight="bold" fill="#111">② 즉시구매(원클릭) 경로 강화</text>
+  <text x="700" y="674" font-size="13" fill="#374151">전체 구매의 <tspan fill="#e53935" font-weight="bold">62.26%</tspan>가 이미 cart 없이</text>
+  <text x="700" y="696" font-size="13" fill="#374151">즉시구매다. view 화면에 '바로구매'</text>
+  <text x="700" y="718" font-size="13" fill="#374151">CTA를 더 눈에 띄게 배치해 view→</text>
+  <text x="700" y="740" font-size="13" fill="#374151">purchase 직접 전환을 추가로 높인다.</text>
+  <text x="700" y="762" font-size="13" fill="#374151">단, cart 우회로 연관상품 교차판매가</text>
+  <text x="700" y="784" font-size="13" fill="#374151">줄 수 있어 객단가도 함께 관찰한다.</text>
+  <text x="700" y="820" font-size="12.5" fill="#6b7280">측정지표: view→purchase 직접전환율,</text>
+  <text x="700" y="840" font-size="12.5" fill="#6b7280">주문당 라인수(교차판매 대리지표)</text>
+</svg>

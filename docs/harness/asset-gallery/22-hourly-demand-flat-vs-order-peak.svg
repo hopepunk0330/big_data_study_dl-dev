@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 830" width="1240" height="830" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="830" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <circle cx="42" cy="46" r="14" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M42,36 L42,46 L49,50" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">일중 수요 프로파일 — 24시간 내내 거의 평평하다</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">전체 24시간 표준편차/평균</text>
+  <text x="82" y="150" font-size="22" font-weight="bold" fill="#2563eb">1.0% (0.38건)</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">기대 잡음 수준(0.46건)과 비슷하거나 작음</text>
+
+  <rect x="440" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="462" y="118" font-size="13" fill="#6b7280">피크 시간(상위 25%, 6개)</text>
+  <text x="462" y="150" font-size="20" font-weight="bold" fill="#2563eb">7·10·12·13·14·20시</text>
+  <text x="462" y="168" font-size="11.5" fill="#9ca3af">채널별 피크와 부분적으로만 겹침</text>
+
+  <rect x="820" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="842" y="118" font-size="13" fill="#6b7280">평일 vs 주말 시간당 건수</text>
+  <text x="842" y="150" font-size="20" font-weight="bold" fill="#e53935">34.4건 vs 48.8건</text>
+  <text x="842" y="168" font-size="11.5" fill="#9ca3af">총량은 다르지만 시간대 굴곡은 둘 다 평평</text>
+
+  <!-- bar chart -->
+  <text x="66" y="222" font-size="17" font-weight="bold" fill="#111">시간대별 일평균 주문건수 (24칸, 진한 막대 = 피크 6개 시간)</text>
+  <line x1="100" y1="460" x2="1140" y2="460" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <rect x="106.5" y="368.0" width="30.3" height="92.0" fill="#93c5fd"/>
+  <rect x="149.8" y="352.0" width="30.3" height="108.0" fill="#93c5fd"/>
+  <rect x="193.2" y="374.0" width="30.3" height="86.0" fill="#93c5fd"/>
+  <rect x="236.5" y="367.0" width="30.3" height="93.0" fill="#93c5fd"/>
+  <rect x="279.8" y="339.0" width="30.3" height="121.0" fill="#93c5fd"/>
+  <rect x="323.2" y="402.0" width="30.3" height="58.0" fill="#93c5fd"/>
+  <rect x="366.5" y="426.0" width="30.3" height="34.0" fill="#93c5fd"/>
+  <rect x="409.8" y="302.0" width="30.3" height="158.0" fill="#2563eb"/>
+  <rect x="453.2" y="353.0" width="30.3" height="107.0" fill="#93c5fd"/>
+  <rect x="496.5" y="367.0" width="30.3" height="93.0" fill="#93c5fd"/>
+  <rect x="539.8" y="313.0" width="30.3" height="147.0" fill="#2563eb"/>
+  <rect x="583.2" y="352.0" width="30.3" height="108.0" fill="#93c5fd"/>
+  <rect x="626.5" y="309.0" width="30.3" height="151.0" fill="#2563eb"/>
+  <rect x="669.8" y="309.0" width="30.3" height="151.0" fill="#2563eb"/>
+  <rect x="713.2" y="330.0" width="30.3" height="130.0" fill="#2563eb"/>
+  <rect x="756.5" y="334.0" width="30.3" height="126.0" fill="#93c5fd"/>
+  <rect x="799.8" y="439.0" width="30.3" height="21.0" fill="#93c5fd"/>
+  <rect x="843.2" y="334.0" width="30.3" height="126.0" fill="#93c5fd"/>
+  <rect x="886.5" y="370.0" width="30.3" height="90.0" fill="#93c5fd"/>
+  <rect x="929.8" y="405.0" width="30.3" height="55.0" fill="#93c5fd"/>
+  <rect x="973.2" y="294.0" width="30.3" height="166.0" fill="#2563eb"/>
+  <rect x="1016.5" y="391.0" width="30.3" height="69.0" fill="#93c5fd"/>
+  <rect x="1059.8" y="374.0" width="30.3" height="86.0" fill="#93c5fd"/>
+  <rect x="1103.2" y="360.0" width="30.3" height="100.0" fill="#93c5fd"/>
+
+  <text x="122" y="478" font-size="11" fill="#6b7280" text-anchor="middle">0시</text>
+  <text x="425" y="478" font-size="11" fill="#6b7280" text-anchor="middle">7시</text>
+  <text x="641.5" y="478" font-size="11" fill="#6b7280" text-anchor="middle">12시</text>
+  <text x="988" y="478" font-size="11" fill="#6b7280" text-anchor="middle">20시</text>
+  <text x="1118" y="478" font-size="11" fill="#6b7280" text-anchor="middle">23시</text>
+  <text x="90" y="304" font-size="11" fill="#9ca3af" text-anchor="end">39.1건</text>
+  <text x="90" y="464" font-size="11" fill="#9ca3af" text-anchor="end">37.5건</text>
+
+  <!-- concept contrast -->
+  <text x="66" y="524" font-size="17" font-weight="bold" fill="#111">"주문 피크" vs 문제 09 "세션 전환 피크" — 다른 질문</text>
+  <rect x="66" y="536" width="110" height="4" rx="2" fill="#dc2626"/>
+
+  <rect x="60" y="552" width="540" height="120" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="580" font-size="14" font-weight="bold" fill="#1d4ed8">주문 피크 (이 문제)</text>
+  <text x="82" y="606" font-size="12.5" fill="#374151">실제로 결제까지 완료된 건수(절대량)</text>
+  <text x="82" y="628" font-size="12.5" fill="#374151">→ CS·출고 인력이 처리할 실제 업무량</text>
+  <text x="82" y="650" font-size="12.5" fill="#374151">이 데이터: 24시간 내내 거의 평평</text>
+
+  <path d="M600,612 L640,612" stroke="#9ca3af" stroke-width="2" fill="none"/>
+  <text x="620" y="600" font-size="12" fill="#9ca3af" text-anchor="middle">vs</text>
+
+  <rect x="640" y="552" width="540" height="120" rx="12" fill="#ffffff" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="662" y="580" font-size="14" font-weight="bold" fill="#dc2626">세션 전환 피크 (문제 09)</text>
+  <text x="662" y="606" font-size="12.5" fill="#374151">방문 세션 중 구매 전환 비율(상대 지표)</text>
+  <text x="662" y="628" font-size="12.5" fill="#374151">→ 광고 입찰 강화/축소 판단 근거</text>
+  <text x="662" y="650" font-size="12.5" fill="#374151">문제 09 결론: 요일x시간 전환율도 잡음 수준</text>
+
+  <!-- conclusion box -->
+  <rect x="60" y="700" width="1120" height="110" rx="14" fill="#fff5f5" stroke="#e53935" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="86" y="732" font-size="15" font-weight="bold" fill="#e53935">운영 배치 제안: 특정 시간대 편중 배치의 근거가 없다</text>
+  <text x="86" y="760" font-size="13" fill="#374151">실측 표준편차(0.38건)가 24시간 균일분포 가정 시 기대 잡음(0.46건)과 비슷하거나 작다 — 절대량·비율 지표 모두</text>
+  <text x="86" y="782" font-size="13" fill="#374151">시간대 효과가 없다는 결론에 도달했지만, 이는 두 지표가 항상 같이 움직인다는 뜻은 아니다. 24시간 균등 배치를 기본값으로,</text>
+  <text x="86" y="800" font-size="12" fill="#6b7280">주말은 평일보다 시간당 약 14건 더 많은 만큼 총원만 소폭 늘린다.</text>
+</svg>

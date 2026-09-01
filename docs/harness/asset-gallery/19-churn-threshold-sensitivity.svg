@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="850" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">재구매 간격 P90=13일 — "90일 이탈" 통념은 너무 느슨하다</text>
+  <rect x="40" y="66" width="110" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">재구매 간격 표본 162,519건(주문 1회뿐인 841명 제외) 기준, 기준선 후보별 6/30 시점 이탈률</text>
+
+  <!-- 표본 안내 배지 -->
+  <rect x="730" y="118" width="430" height="20" rx="10" fill="#e5e7eb"/>
+  <text x="945" y="132" font-size="12" fill="#374151" text-anchor="middle">P75 = 5일 · P90 = 13일 (재구매 고객의 90%가 13일 내 복귀)</text>
+
+  <!-- axes -->
+  <line x1="150" y1="150" x2="150" y2="575" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="130" y1="560" x2="1060" y2="560" stroke="#9ca3af" stroke-width="1.5"/>
+
+  <g font-size="12" fill="#9ca3af">
+    <line x1="150" y1="560" x2="1050" y2="560" stroke="#e5e7eb"/>
+    <text x="140" y="564" text-anchor="end">0%</text>
+    <line x1="150" y1="443" x2="1050" y2="443" stroke="#e5e7eb"/>
+    <text x="140" y="447" text-anchor="end">10%</text>
+    <line x1="150" y1="326" x2="1050" y2="326" stroke="#e5e7eb"/>
+    <text x="140" y="330" text-anchor="end">20%</text>
+    <line x1="150" y1="209" x2="1050" y2="209" stroke="#e5e7eb"/>
+    <text x="140" y="213" text-anchor="end">30%(이탈률)</text>
+  </g>
+
+  <!-- bars -->
+  <rect x="150" y="182" width="120" height="378" fill="#93c5fd"/>
+  <text x="210" y="172" font-size="15" font-weight="bold" fill="#1d4ed8" text-anchor="middle">32.28%</text>
+  <text x="210" y="580" font-size="12" fill="#374151" text-anchor="middle">P90</text>
+  <text x="210" y="597" font-size="12" fill="#374151" text-anchor="middle">(13일)</text>
+
+  <rect x="330" y="371" width="120" height="189" fill="#dc2626"/>
+  <text x="390" y="361" font-size="15" font-weight="bold" fill="#dc2626" text-anchor="middle">16.16%</text>
+  <text x="390" y="580" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">30일</text>
+  <text x="390" y="597" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">(권고)</text>
+
+  <rect x="510" y="451" width="120" height="109" fill="#bfdbfe"/>
+  <text x="570" y="441" font-size="15" font-weight="bold" fill="#1d4ed8" text-anchor="middle">9.30%</text>
+  <text x="570" y="580" font-size="12" fill="#374151" text-anchor="middle">60일</text>
+
+  <rect x="690" y="487" width="120" height="73" fill="#ffffff" stroke="#e53935" stroke-width="2"/>
+  <text x="750" y="477" font-size="15" font-weight="bold" fill="#dc2626" text-anchor="middle">6.21%</text>
+  <text x="750" y="580" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">90일</text>
+  <text x="750" y="597" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">(기존 통념)</text>
+
+  <rect x="870" y="516" width="120" height="44" fill="#bfdbfe"/>
+  <text x="930" y="506" font-size="15" font-weight="bold" fill="#1d4ed8" text-anchor="middle">3.73%</text>
+  <text x="930" y="580" font-size="12" fill="#374151" text-anchor="middle">120일</text>
+
+  <!-- 90일과 30일 비교 화살표 -->
+  <path d="M390,340 C390,210 750,210 750,458" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="570" y="322" font-size="12" fill="#6b7280" text-anchor="middle">같은 고객, 기준선 하나로 이탈률 5배 이상 차이</text>
+
+  <!-- 하단 카드 2개 -->
+  <g>
+    <rect x="40" y="650" width="550" height="160" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="40" y="650" width="550" height="36" rx="14" fill="#dc2626"/>
+    <rect x="40" y="672" width="550" height="14" fill="#dc2626"/>
+    <text x="64" y="674" font-size="15" font-weight="bold" fill="#fff">권고 기준선: 30일</text>
+
+    <text x="64" y="716" font-size="13" fill="#374151">P90(13일)의 약 2배 여유 — 정상적인 재구매 텀의</text>
+    <text x="64" y="736" font-size="13" fill="#374151">자연스러운 변동까지 이탈로 오분류하지 않는다.</text>
+    <text x="64" y="768" font-size="13" font-weight="bold" fill="#dc2626">기존 90일 대비 이탈률이 6.21%→16.16%로 상승</text>
+    <text x="64" y="786" font-size="13" font-weight="bold" fill="#dc2626">— 실제 이탈 위험을 과소평가해왔을 가능성.</text>
+  </g>
+
+  <g>
+    <rect x="610" y="650" width="550" height="160" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="610" y="650" width="550" height="36" rx="14" fill="#6b7280"/>
+    <rect x="610" y="672" width="550" height="14" fill="#6b7280"/>
+    <circle cx="634" cy="668" r="9" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line x1="634" y1="668" x2="634" y2="663" stroke="#fff" stroke-width="1.5"/>
+    <line x1="634" y1="668" x2="638" y2="671" stroke="#fff" stroke-width="1.5"/>
+    <text x="656" y="674" font-size="15" font-weight="bold" fill="#fff">검열(censoring) — 이탈 미확정 고객</text>
+
+    <text x="634" y="716" font-size="13" fill="#374151">최근 13일(P90) 이내 구매한 고객 다수는 "아직 돌아올</text>
+    <text x="634" y="736" font-size="13" fill="#374151">시간이 남아있을 뿐" — 이탈 여부가 확정되지 않았다.</text>
+    <text x="634" y="768" font-size="13" font-weight="bold" fill="#111">관측 종료일(6/30)이 임의로 자른 시점일 뿐,</text>
+    <text x="634" y="786" font-size="13" font-weight="bold" fill="#111">이 고객들을 "이탈 아님"으로 단정할 수 없다.</text>
+  </g>
+</svg>

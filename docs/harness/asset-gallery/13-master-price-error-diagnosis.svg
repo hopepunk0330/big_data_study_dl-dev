@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="860" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">마이너스 마진의 정체 — 진짜 역마진 0건, 마스터 오류 54건</text>
+  <rect x="40" y="66" width="104" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">products.price 500건 중 이상 레코드 54건(형식오염 46·0원 5·음수 3) — 전부 실제로는 하나의 정상 가격에 팔렸다</text>
+
+  <!-- 이상 유형 4개 카드 -->
+  <g>
+    <rect x="40" y="130" width="255" height="110" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="64" y="164" font-size="14" fill="#6b7280">형식 오염</text>
+    <text x="64" y="200" font-size="30" font-weight="bold" fill="#dc2626">46건</text>
+    <text x="64" y="222" font-size="11" fill="#9ca3af">'14,200' · '12300원'</text>
+  </g>
+  <g>
+    <rect x="315" y="130" width="255" height="110" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="339" y="164" font-size="14" fill="#6b7280">0원</text>
+    <text x="339" y="200" font-size="30" font-weight="bold" fill="#dc2626">5건</text>
+    <text x="339" y="222" font-size="11" fill="#9ca3af">price = 0</text>
+  </g>
+  <g>
+    <rect x="590" y="130" width="255" height="110" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="614" y="164" font-size="14" fill="#6b7280">음수</text>
+    <text x="614" y="200" font-size="30" font-weight="bold" fill="#dc2626">3건</text>
+    <text x="614" y="222" font-size="11" fill="#9ca3af">price &lt; 0</text>
+  </g>
+  <g>
+    <rect x="865" y="130" width="295" height="110" rx="14" fill="#ffffff" stroke="#86efac" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="889" y="164" font-size="14" fill="#15803d">유효(양수) 중 마스터 기준 역마진</text>
+    <text x="889" y="200" font-size="30" font-weight="bold" fill="#16a34a">0건</text>
+    <text x="889" y="222" font-size="11" fill="#9ca3af">446건 유효 가격 중</text>
+  </g>
+
+  <!-- 진단 판정 -->
+  <rect x="40" y="270" width="1120" height="80" rx="14" fill="#ffffff" stroke="#86efac" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="76" cy="310" r="16" fill="#dcfce7"/>
+  <path d="M68,310 l6,7 l12,-14" stroke="#16a34a" stroke-width="3" fill="none"/>
+  <text x="104" y="304" font-size="15" font-weight="bold" fill="#111">판정: 이상 54개 상품 <tspan fill="#16a34a">전부</tspan> 실제 거래단가가 min=max(단일가)로 일관됨</text>
+  <text x="104" y="328" font-size="13" fill="#6b7280">→ "손해 보고 판다"가 아니라 100% 마스터 기록 실수 — 실거래 단가는 항상 정상적이고 원가 위에 있다</text>
+
+  <!-- 마진 비교 (waterfall-ish bars) -->
+  <text x="40" y="400" font-size="20" font-weight="bold" fill="#111">54개 이상 상품의 마진 — 두 기준 비교 (2024 H1)</text>
+  <rect x="40" y="412" width="88" height="5" rx="2.5" fill="#e53935"/>
+
+  <!-- baseline zero line -->
+  <line x1="120" y1="620" x2="1120" y2="620" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="1130" y="624" font-size="12" fill="#9ca3af">0원</text>
+
+  <!-- bar 1: 마스터 기준(오염 방치) -->
+  <rect x="220" y="620" width="220" height="140" fill="#fca5a5"/>
+  <rect x="220" y="480" width="220" height="0" fill="none"/>
+  <text x="330" y="470" font-size="15" font-weight="bold" fill="#dc2626" text-anchor="middle">마스터 price 기준</text>
+  <text x="330" y="494" font-size="13" fill="#6b7280" text-anchor="middle">(오염값 방치, NaN→0)</text>
+  <text x="330" y="668" font-size="18" font-weight="bold" fill="#dc2626" text-anchor="middle">-28.8억 원</text>
+
+  <!-- bar 2: 실제 거래단가 기준 -->
+  <rect x="720" y="546" width="220" height="74" fill="#86efac"/>
+  <text x="830" y="495" font-size="15" font-weight="bold" fill="#15803d" text-anchor="middle">실제 거래단가 기준</text>
+  <text x="830" y="519" font-size="13" fill="#6b7280" text-anchor="middle">(order_items.unit_price)</text>
+  <text x="830" y="590" font-size="18" font-weight="bold" fill="#15803d" text-anchor="middle">+14.9억 원</text>
+
+  <!-- gap arrow -->
+  <line x1="470" y1="600" x2="700" y2="580" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <rect x="500" y="556" width="170" height="30" rx="15" fill="#dbeafe"/>
+  <text x="585" y="577" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">차이 43.7억 원</text>
+
+  <text x="40" y="800" font-size="13" fill="#374151">54개 상품 판매수량 210,552개(2024 H1 순매출 대상) · 전체 상품 마진(106.8억 원) 중 13.92%가 이 54개 상품에서 나온다</text>
+  <text x="40" y="828" font-size="13" fill="#e53935" font-weight="bold">마스터 price를 고치지 않고 그대로 매출/마진 계산에 쓰면, 실제로는 흑자인 54개 상품이 43.7억 원 규모의 "가짜 적자"로 보고된다</text>
+</svg>

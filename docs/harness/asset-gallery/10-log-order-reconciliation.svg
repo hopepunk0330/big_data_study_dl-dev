@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 940" width="1200" height="940" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="940" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <rect x="28" y="32" width="28" height="28" rx="4" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M28,42 h28 M40,32 v28" stroke="#2563eb" stroke-width="2"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">로그-주문 대사 — 왜 web 채널로 한정해야 하는가</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards: 채널 한정 근거 -->
+  <rect x="60" y="92" width="530" height="86" rx="12" fill="#fff5f5" stroke="#e53935" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">전체 채널 대비 로그 커버리지 (app·store 포함)</text>
+  <text x="82" y="150" font-size="24" font-weight="bold" fill="#e53935">47.74% (유실 과대추정)</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">로그purchase 80,359 / 유효주문(전체) 168,312</text>
+
+  <rect x="610" y="92" width="530" height="86" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="632" y="118" font-size="13" fill="#6b7280">web 채널만 대비 로그 커버리지 (올바른 기준)</text>
+  <text x="632" y="150" font-size="24" font-weight="bold" fill="#2563eb">86.97%</text>
+  <text x="632" y="168" font-size="11.5" fill="#9ca3af">로그purchase 80,359 / 유효 web 주문 92,399 — app/store는 애초에 로그에 안 잡히는 채널</text>
+
+  <!-- 월별 대사 차트 -->
+  <text x="66" y="212" font-size="17" font-weight="bold" fill="#111">월별 대사 — 유효 web 주문수 vs 로그 purchase 건수</text>
+  <rect x="900" y="196" width="16" height="16" fill="#2563eb"/>
+  <text x="922" y="209" font-size="12.5" fill="#374151">유효 web 주문수</text>
+  <rect x="1050" y="196" width="16" height="16" fill="#dc2626"/>
+  <text x="1072" y="209" font-size="12.5" fill="#374151">로그 purchase</text>
+
+  <line x1="130" y1="420" x2="920" y2="420" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <rect x="150.0" y="332.5" width="46" height="87.5" fill="#2563eb" rx="3"/>
+  <rect x="204.0" y="310.2" width="46" height="109.8" fill="#dc2626" rx="3"/>
+  <text x="173.0" y="326.5" font-size="10.5" fill="#2563eb" text-anchor="middle" font-weight="bold">10,974</text>
+  <text x="227.0" y="304.2" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="bold">13,760</text>
+  <text x="200.0" y="440" font-size="13" fill="#374151" text-anchor="middle">1월</text>
+
+  <rect x="280.0" y="324.7" width="46" height="95.3" fill="#2563eb" rx="3"/>
+  <rect x="334.0" y="317.8" width="46" height="102.2" fill="#dc2626" rx="3"/>
+  <text x="303.0" y="318.7" font-size="10.5" fill="#2563eb" text-anchor="middle" font-weight="bold">11,945</text>
+  <text x="357.0" y="311.8" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="bold">12,811</text>
+  <text x="330.0" y="440" font-size="13" fill="#374151" text-anchor="middle">2월</text>
+
+  <rect x="410.0" y="298.6" width="46" height="121.4" fill="#2563eb" rx="3"/>
+  <rect x="464.0" y="311.9" width="46" height="108.1" fill="#dc2626" rx="3"/>
+  <text x="433.0" y="292.6" font-size="10.5" fill="#2563eb" text-anchor="middle" font-weight="bold">15,218</text>
+  <text x="487.0" y="305.9" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="bold">13,548</text>
+  <text x="460.0" y="440" font-size="13" fill="#374151" text-anchor="middle">3월</text>
+
+  <rect x="540.0" y="292.8" width="46" height="127.2" fill="#2563eb" rx="3"/>
+  <rect x="594.0" y="314.8" width="46" height="105.2" fill="#dc2626" rx="3"/>
+  <text x="563.0" y="286.8" font-size="10.5" fill="#2563eb" text-anchor="middle" font-weight="bold">15,946</text>
+  <text x="617.0" y="308.8" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="bold">13,193</text>
+  <text x="590.0" y="440" font-size="13" fill="#374151" text-anchor="middle">4월</text>
+
+  <rect x="670.0" y="274.3" width="46" height="145.7" fill="#2563eb" rx="3"/>
+  <rect x="724.0" y="309.8" width="46" height="110.2" fill="#dc2626" rx="3"/>
+  <text x="693.0" y="268.3" font-size="10.5" fill="#2563eb" text-anchor="middle" font-weight="bold">18,259</text>
+  <text x="747.0" y="303.8" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="bold">13,820</text>
+  <text x="720.0" y="440" font-size="13" fill="#374151" text-anchor="middle">5월</text>
+
+  <rect x="800.0" y="260.0" width="46" height="160.0" fill="#2563eb" rx="3"/>
+  <rect x="854.0" y="314.5" width="46" height="105.5" fill="#dc2626" rx="3"/>
+  <text x="823.0" y="254.0" font-size="10.5" fill="#2563eb" text-anchor="middle" font-weight="bold">20,057</text>
+  <text x="877.0" y="308.5" font-size="10.5" fill="#dc2626" text-anchor="middle" font-weight="bold">13,227</text>
+  <text x="850.0" y="440" font-size="13" fill="#374151" text-anchor="middle">6월</text>
+
+  <text x="960" y="330" font-size="12.5" fill="#e53935" font-weight="bold">1월: 로그&gt;주문</text>
+  <text x="960" y="348" font-size="12.5" fill="#e53935" font-weight="bold">6월: 로그&lt;주문</text>
+  <text x="960" y="368" font-size="11.5" fill="#6b7280">방향이 뒤집힌다 —</text>
+  <text x="960" y="384" font-size="11.5" fill="#6b7280">일정한 유실률이 아니다</text>
+
+  <!-- 고객x일 대사 -->
+  <text x="66" y="478" font-size="17" font-weight="bold" fill="#111">고객×일 단위 대사 (merge indicator)</text>
+
+  <rect x="90" y="500" width="300" height="120" rx="12" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="240" y="530" font-size="14" fill="#374151" text-anchor="middle">주문에만 있음</text>
+  <text x="240" y="568" font-size="26" font-weight="bold" fill="#374151" text-anchor="middle">64,487건</text>
+  <text x="240" y="592" font-size="11.5" fill="#9ca3af" text-anchor="middle">(left_only)</text>
+
+  <rect x="450" y="500" width="300" height="120" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" filter="url(#cardShadow)"/>
+  <text x="600" y="530" font-size="14" fill="#1e40af" text-anchor="middle">매칭(both)</text>
+  <text x="600" y="568" font-size="26" font-weight="bold" fill="#2563eb" text-anchor="middle">3,149건</text>
+  <text x="600" y="592" font-size="11.5" fill="#3b82f6" text-anchor="middle">주문기준 4.66% / 로그기준 7.58%</text>
+
+  <rect x="810" y="500" width="300" height="120" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="960" y="530" font-size="14" fill="#334155" text-anchor="middle">로그에만 있음</text>
+  <text x="960" y="568" font-size="26" font-weight="bold" fill="#dc2626" text-anchor="middle">38,382건</text>
+  <text x="960" y="592" font-size="11.5" fill="#1e3a5f" text-anchor="middle">(right_only)</text>
+
+  <line x1="390" y1="560" x2="450" y2="560" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="750" y1="560" x2="810" y2="560" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- 고객 유니버스 겹침 (ID 불일치가 원인이 아님) -->
+  <rect x="90" y="644" width="1020" height="70" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="112" y="672" font-size="13.5" fill="#166534" font-weight="bold">매칭 실패는 고객 ID 불일치 때문이 아니다:</text>
+  <text x="112" y="694" font-size="13" fill="#166534">유효 web 주문 고객 5,370명 중 <tspan font-weight="bold">4,819명(89.74%)</tspan>이 로그에도 언젠가(날짜 무관) purchase 기록이 있다 — 고객 자체는 겹치는데 "같은 날" 매칭만 4.66%다.</text>
+
+  <!-- 가이드라인 -->
+  <rect x="60" y="740" width="1080" height="180" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="86" y="772" font-size="16" font-weight="bold" fill="#111">로그 기반 지표 사용 가이드라인</text>
+  <text x="86" y="802" font-size="13" fill="#374151">1. web_logs는 사이트 행동 기록이므로 반드시 orders의 web 채널로 한정해 비교한다 — 전체 채널로 대조하면 유실률이 52%p까지 과대 계상된다.</text>
+  <text x="86" y="828" font-size="13" fill="#374151">2. 월별 총량조차 방향이 뒤집히고(1월 로그초과·6월 로그부족) 고객×일 매칭률이 5% 안팎이라, 로그 구매건수는 정밀 대사가 아니라 트렌드 참고용으로만 쓴다.</text>
+  <text x="86" y="854" font-size="13" fill="#374151">3. customer_id 결측 로그(purchase의 34.91%)는 원천적으로 매칭 불가이므로 별도 리스크로 관리하고, 의사결정에는 항상 주문 시스템 수치를 우선한다.</text>
+  <text x="86" y="890" font-size="12.5" fill="#e53935" font-weight="bold">핵심: 로그는 "방향"은 참고할 수 있어도 "정확한 값"으로는 재무 수치를 대체할 수 없다.</text>
+</svg>

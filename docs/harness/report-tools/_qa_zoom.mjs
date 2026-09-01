@@ -1,0 +1,13 @@
+import { chromium } from 'playwright';
+const REPORT = '/Users/aydana/dev/portfolio/bigdata/01-ML_mercari price_2608/docs/reports/20260829_가격UX_결과보고서/report.html';
+const OUT = '/private/tmp/claude-501/-Users-aydana-dev-portfolio-bigdata-01-ML-mercari-price-2608/d056a67f-f716-4b00-a7c6-8d6cbcc6c31f/scratchpad';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1000, height: 1400 }, deviceScaleFactor: 3 });
+await page.goto('file://' + REPORT);
+const pages = await page.$$('.page');
+const el = pages[97];
+await el.scrollIntoViewIfNeeded();
+const box = await el.boundingBox();
+console.log(box);
+await page.screenshot({ path: `${OUT}/ch8_page_97_zoom.png`, clip: { x: box.x, y: box.y+70, width: box.width, height: 260 } });
+await browser.close();

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" width="880" height="700" font-family="'Noto Sans KR','Malgun Gothic','AppleGothic',sans-serif">
+<defs>
+<clipPath id="clip-c1"><rect x="0" y="0" width="880" height="700" rx="14"/></clipPath>
+</defs>
+
+<text x="40" y="46" font-size="11.5" font-weight="700" fill="#1d4ed8" letter-spacing="1.6">6.3 SHAP 개별 피처(3차)</text>
+<text x="40" y="72" font-size="18" font-weight="800" fill="#14335c">개별 피처 상위 10 — 범주형이 상위권을 지배하는 역설</text>
+<text x="40" y="98" font-size="11.5" fill="#64748b">155,526열의 96.4%가 TF-IDF인데도, 개별 순위는 상태·배송비·카테고리 같은 소수 범주형이 지배한다.</text>
+<text x="40" y="136" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">condition=1(최상)</text>
+<line x1="311.40000000000003" y1="148" x2="311.40000000000003" y2="176" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="311.40000000000003" y="152" width="99.2503125" height="20" rx="3" fill="#1d4ed8"/>
+<text x="644" y="166.4" font-size="10.5" font-weight="700" fill="#1d4ed8">+0.1215</text>
+<text x="40" y="188" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">shipping(판매자 부담)</text>
+<line x1="311.40000000000003" y1="200" x2="311.40000000000003" y2="228" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="225.95487500000002" y="204" width="85.445125" height="20" rx="3" fill="#b91c1c"/>
+<text x="644" y="218.4" font-size="10.5" font-weight="700" fill="#b91c1c">-0.1046</text>
+<text x="40" y="240" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">condition=2</text>
+<line x1="311.40000000000003" y1="252" x2="311.40000000000003" y2="280" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="311.40000000000003" y="256" width="89.61118750000001" height="20" rx="3" fill="#1d4ed8"/>
+<text x="644" y="270.4" font-size="10.5" font-weight="700" fill="#1d4ed8">+0.1097</text>
+<text x="40" y="292" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">cat_main=Beauty</text>
+<line x1="311.40000000000003" y1="304" x2="311.40000000000003" y2="332" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="225.46475000000004" y="308" width="85.93525000000001" height="20" rx="3" fill="#b91c1c"/>
+<text x="644" y="322.4" font-size="10.5" font-weight="700" fill="#b91c1c">-0.1052</text>
+<text x="40" y="344" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">cat_main=Electronics</text>
+<line x1="311.40000000000003" y1="356" x2="311.40000000000003" y2="384" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="311.40000000000003" y="360" width="174.89293750000002" height="20" rx="3" fill="#1d4ed8"/>
+<text x="644" y="374.4" font-size="10.5" font-weight="700" fill="#1d4ed8">+0.2141</text>
+<text x="40" y="396" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">brand=missing</text>
+<line x1="311.40000000000003" y1="408" x2="311.40000000000003" y2="436" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="279.05175" y="412" width="32.34825000000001" height="20" rx="3" fill="#b91c1c"/>
+<text x="644" y="426.4" font-size="10.5" font-weight="700" fill="#b91c1c">-0.0396</text>
+<text x="40" y="448" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">cat_sub1=Shoes</text>
+<line x1="311.40000000000003" y1="460" x2="311.40000000000003" y2="488" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="311.40000000000003" y="464" width="254.70162500000006" height="20" rx="3" fill="#1d4ed8"/>
+<text x="644" y="478.4" font-size="10.5" font-weight="700" fill="#1d4ed8">+0.3118</text>
+<text x="40" y="500" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">condition=3</text>
+<line x1="311.40000000000003" y1="512" x2="311.40000000000003" y2="540" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="311.40000000000003" y="516" width="40.598687500000004" height="20" rx="3" fill="#1d4ed8"/>
+<text x="644" y="530.4" font-size="10.5" font-weight="700" fill="#1d4ed8">+0.0497</text>
+<text x="40" y="552" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">cat_sub1=Athletic Apparel</text>
+<line x1="311.40000000000003" y1="564" x2="311.40000000000003" y2="592" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="311.40000000000003" y="568" width="74.49900000000002" height="20" rx="3" fill="#1d4ed8"/>
+<text x="644" y="582.4" font-size="10.5" font-weight="700" fill="#1d4ed8">+0.0912</text>
+<text x="40" y="604" font-size="11" fill="#1a1a1a" font-family="'Menlo','Consolas',monospace">desc_tfidf=&quot;and&quot;</text>
+<line x1="311.40000000000003" y1="616" x2="311.40000000000003" y2="644" stroke="#dbe2ec" stroke-width="1"/>
+<rect x="311.40000000000003" y="620" width="19.441625000000005" height="20" rx="3" fill="#1d4ed8"/>
+<text x="644" y="634.4" font-size="10.5" font-weight="700" fill="#1d4ed8">+0.0238</text>
+<text x="40" y="668" font-size="10" fill="#94a3b8">막대 길이 = 활성 시 평균 SHAP(방향) · 파랑 = 가격 상승 · 빨강 = 가격 하락</text>
+<line x1="40" y1="666" x2="840" y2="666" stroke="#dbe2ec" stroke-width="1"/>
+<text x="40" y="680" font-size="10" fill="#94a3b8">가격 제시 방식 UX 실험 결과 보고서</text>
+<text x="840" y="680" font-size="10" fill="#94a3b8" text-anchor="end">05_final_model_round3.ipynb · shap.LinearExplainer</text>
+</svg>

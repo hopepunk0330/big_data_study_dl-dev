@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 908" width="1200" height="908" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="908" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">할인, 정당화되려면 판매의 59.9%가 "할인 덕"이었어야 한다</text>
+  <rect x="40" y="66" width="104" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">2024 H1 · 가정을 명시한 시뮬레이션(동일 수량 / 20%·50% 감소) — "일어나지 않은 세계"를 상상한 결과</text>
+
+  <!-- KPI row -->
+  <g>
+    <rect x="40" y="130" width="360" height="120" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="64" y="162" font-size="14" fill="#6b7280">실제(할인 반영) 총마진</text>
+    <text x="64" y="204" font-size="26" font-weight="bold" fill="#1d4ed8">106.8억 원</text>
+  </g>
+  <g>
+    <rect x="420" y="130" width="360" height="120" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="444" y="162" font-size="14" fill="#6b7280">할인으로 포기한 마진(동일수량 가정)</text>
+    <text x="444" y="204" font-size="26" font-weight="bold" fill="#dc2626">155.4억 원</text>
+  </g>
+  <g>
+    <rect x="800" y="130" width="360" height="120" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2.5" filter="url(#cardShadow)"/>
+    <text x="824" y="162" font-size="14" fill="#6b7280">손익분기 감소율 x*</text>
+    <text x="824" y="204" font-size="26" font-weight="bold" fill="#dc2626">59.88%</text>
+  </g>
+
+  <!-- scenario bars -->
+  <text x="40" y="290" font-size="20" font-weight="bold" fill="#111">시나리오별 총마진 비교</text>
+  <rect x="40" y="302" width="88" height="5" rx="2.5" fill="#2563eb"/>
+
+  <line x1="140" y1="568" x2="1140" y2="568" stroke="#d1d5db" stroke-width="1.5"/>
+  <line x1="960" y1="474" x2="1140" y2="474" stroke="#2563eb" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="1140" y="468" font-size="12" fill="#2563eb" text-anchor="end">실제 마진선(106.8억)</text>
+
+  <!-- 실제 -->
+  <rect x="180" y="474" width="150" height="94" fill="#2563eb"/>
+  <text x="255" y="462" font-size="15" font-weight="bold" fill="#1d4ed8" text-anchor="middle">106.8억</text>
+  <text x="255" y="592" font-size="13" fill="#374151" text-anchor="middle">실제(할인 O)</text>
+
+  <!-- 동일수량 -->
+  <rect x="380" y="338" width="150" height="230" fill="#86efac"/>
+  <text x="455" y="326" font-size="15" font-weight="bold" fill="#15803d" text-anchor="middle">262.2억</text>
+  <text x="455" y="592" font-size="13" fill="#374151" text-anchor="middle">동일수량(할인無)</text>
+
+  <!-- 20% 감소 -->
+  <rect x="580" y="384" width="150" height="184" fill="#4ade80"/>
+  <text x="655" y="372" font-size="15" font-weight="bold" fill="#15803d" text-anchor="middle">210.3억</text>
+  <text x="655" y="592" font-size="13" fill="#374151" text-anchor="middle">20% 감소</text>
+
+  <!-- 50% 감소 -->
+  <rect x="780" y="452" width="150" height="116" fill="#bbf7d0"/>
+  <text x="855" y="440" font-size="15" font-weight="bold" fill="#15803d" text-anchor="middle">132.4억</text>
+  <text x="855" y="592" font-size="13" fill="#374151" text-anchor="middle">50% 감소</text>
+
+  <!-- assumptions box -->
+  <rect x="40" y="636" width="1120" height="110" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="64" y="668" font-size="14" font-weight="bold" fill="#111">가정 (명시)</text>
+  <text x="64" y="694" font-size="13" fill="#374151">동일수량 가정은 "할인이 없어도 똑같이 팔렸다"는 비현실적으로 낙관적인 상한 — 20%/50% 감소 시나리오로 현실적 범위를 함께 본다.</text>
+  <text x="64" y="718" font-size="13" fill="#374151">정가 라인(원래도 할인 없이 팔리던 물량)은 세 시나리오 모두 그대로 두고, 할인 라인에만 수량 감소를 적용한다.</text>
+
+  <!-- conclusion -->
+  <rect x="40" y="762" width="1120" height="120" rx="14" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="64" y="796" font-size="15" font-weight="bold" fill="#dc2626">결론</text>
+  <text x="64" y="822" font-size="14" fill="#374151">할인 판매 수량 중 최소 <tspan font-weight="bold" fill="#dc2626">59.88%</tspan>가 "할인이 없었으면 안 팔렸을" 진짜 증분 수요였어야 지금의 할인 정책이 손해가 아니다.</text>
+  <text x="64" y="848" font-size="14" fill="#374151">할인이 실제로 판매량을 그렇게까지 늘렸는지는 이 데이터만으로 증명할 수 없다 — A/B 테스트 등 별도 검증이 필요하다.</text>
+</svg>

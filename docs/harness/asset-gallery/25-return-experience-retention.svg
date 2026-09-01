@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 906" width="1240" height="906" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="906" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <circle cx="42" cy="46" r="14" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M35,40 L49,52 M49,40 L35,52" stroke="#2563eb" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">반품 경험과 재구매 — 활동수준을 통제해도 격차는 남는다</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">60일 재구매율 격차(층화 전)</text>
+  <text x="82" y="150" font-size="22" font-weight="bold" fill="#2563eb">12.5%p</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">경험군 97.7% vs 비교군 85.2%</text>
+
+  <rect x="440" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="462" y="118" font-size="13" fill="#6b7280">활동수준 재가중 후 격차</text>
+  <text x="462" y="150" font-size="22" font-weight="bold" fill="#e53935">9.6%p (잔존)</text>
+  <text x="462" y="168" font-size="11.5" fill="#9ca3af">24%는 활동차이로 설명, 76%는 잔존</text>
+
+  <rect x="820" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="842" y="118" font-size="13" fill="#6b7280">저활동군(0~1건) 구간 격차</text>
+  <text x="842" y="150" font-size="22" font-weight="bold" fill="#2563eb">27.2%p</text>
+  <text x="842" y="168" font-size="11.5" fill="#9ca3af">고활동군(7건+)은 천장효과로 격차 소멸</text>
+
+  <!-- proxy timeline -->
+  <text x="66" y="222" font-size="17" font-weight="bold" fill="#111">두 군의 기준 시점 부여(프록시) — 대칭 규칙</text>
+  <rect x="66" y="234" width="110" height="4" rx="2" fill="#dc2626"/>
+
+  <rect x="60" y="250" width="1120" height="128" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="100" cy="288" r="10" fill="#dc2626"/>
+  <text x="120" y="293" font-size="13" font-weight="bold" fill="#111">반품경험군(2,318명): 1~4월 첫 returned 주문 시각 = 기준 시점(프록시)</text>
+  <line x1="100" y1="308" x2="900" y2="308" stroke="#93c5fd" stroke-width="3"/>
+  <circle cx="100" cy="308" r="6" fill="#dc2626"/>
+  <path d="M900,300 L900,316" stroke="#2563eb" stroke-width="2"/>
+  <text x="906" y="313" font-size="12" fill="#2563eb">기준+60일</text>
+
+  <circle cx="100" cy="340" r="10" fill="#dc2626"/>
+  <text x="120" y="345" font-size="13" font-weight="bold" fill="#111">비교군(2,932명): 1~4월 delivered 주문 중 무작위 1건(seed=42) = 기준 시점</text>
+  <line x1="100" y1="360" x2="900" y2="360" stroke="#93c5fd" stroke-width="3"/>
+  <circle cx="100" cy="360" r="6" fill="#dc2626"/>
+  <path d="M900,352 L900,368" stroke="#2563eb" stroke-width="2"/>
+  <text x="906" y="365" font-size="12" fill="#2563eb">기준+60일</text>
+
+  <!-- bar chart -->
+  <text x="66" y="422" font-size="17" font-weight="bold" fill="#111">사전 활동 수준(4구간)별 60일 재구매율 — 저활동군에서 격차가 가장 크다</text>
+  <rect x="66" y="434" width="110" height="4" rx="2" fill="#dc2626"/>
+  <line x1="140" y1="700" x2="1140" y2="700" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <rect x="177.5" y="537.0" width="75.0" height="163.0" fill="#dc2626"/>
+  <rect x="258.5" y="673.0" width="75.0" height="27.0" fill="#fca5a5"/>
+  <text x="265.0" y="722" font-size="13" fill="#6b7280" text-anchor="middle">0~1건</text>
+
+  <rect x="427.5" y="508.0" width="75.0" height="192.0" fill="#dc2626"/>
+  <rect x="508.5" y="520.5" width="75.0" height="179.5" fill="#fca5a5"/>
+  <text x="515.0" y="722" font-size="13" fill="#6b7280" text-anchor="middle">2~3건</text>
+
+  <rect x="677.5" y="504.5" width="75.0" height="195.5" fill="#dc2626"/>
+  <rect x="758.5" y="508.0" width="75.0" height="192.0" fill="#fca5a5"/>
+  <text x="765.0" y="722" font-size="13" fill="#6b7280" text-anchor="middle">4~6건</text>
+
+  <rect x="927.5" y="500.0" width="75.0" height="200.0" fill="#dc2626"/>
+  <rect x="1008.5" y="502.0" width="75.0" height="198.0" fill="#fca5a5"/>
+  <text x="1015.0" y="722" font-size="13" fill="#6b7280" text-anchor="middle">7건+</text>
+
+  <text x="215" y="527" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">92.6%</text>
+  <text x="296" y="663" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">65.4%</text>
+  <text x="465" y="498" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">98.4%</text>
+  <text x="546" y="510" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">95.9%</text>
+  <text x="715" y="494" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">99.1%</text>
+  <text x="796" y="498" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">98.4%</text>
+  <text x="965" y="490" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">100%</text>
+  <text x="1046" y="492" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">99.6%</text>
+
+  <rect x="440" y="748" width="16" height="16" fill="#dc2626"/>
+  <text x="463" y="761" font-size="12" fill="#374151">반품경험군</text>
+  <rect x="560" y="748" width="16" height="16" fill="#fca5a5"/>
+  <text x="583" y="761" font-size="12" fill="#374151">비교군</text>
+
+  <!-- conclusion box -->
+  <rect x="60" y="790" width="1120" height="100" rx="14" fill="#fff5f5" stroke="#e53935" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="86" y="818" font-size="15" font-weight="bold" fill="#e53935">판정: "반품 경험 = 이탈"이라는 CS팀 주장은 뒷받침되지 않는다</text>
+  <text x="86" y="844" font-size="13" fill="#374151">활동 수준을 통제한 뒤에도 격차가 반대 방향(경험군이 더 높음)으로 남는다 — 다만 반품 발생 시각이 미관측이라</text>
+  <text x="86" y="868" font-size="12" fill="#6b7280">주문 시각을 프록시로 썼고, 비교군 기준 시점은 인위적으로 무작위 부여된 값이라는 한계가 있어 인과관계로는 단정할 수 없다.</text>
+</svg>

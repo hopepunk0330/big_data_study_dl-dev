@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">6개월 실현 LTV — 평균이 아니라 분포로 봐야 하는 이유</text>
+  <rect x="40" y="66" width="110" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">2024 H1 순매출 대상, 고객 5,720명 · 관측된 6개월치 실현 가치(예측 LTV 아님)</text>
+
+  <!-- 매출LTV 카드 -->
+  <g>
+    <rect x="40" y="130" width="550" height="300" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="40" y="130" width="550" height="40" rx="14" fill="#2563eb"/>
+    <rect x="40" y="156" width="550" height="14" fill="#2563eb"/>
+    <text x="315" y="156" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">매출 LTV</text>
+
+    <text x="64" y="200" font-size="13" fill="#6b7280">평균</text>
+    <text x="64" y="224" font-size="20" font-weight="bold" fill="#111">8,148,395원</text>
+    <text x="64" y="260" font-size="13" fill="#6b7280">중앙값</text>
+    <text x="64" y="284" font-size="20" font-weight="bold" fill="#1d4ed8">3,590,926원</text>
+    <text x="64" y="320" font-size="13" fill="#6b7280">P90</text>
+    <text x="64" y="342" font-size="16" fill="#374151">12,929,847원</text>
+    <text x="64" y="376" font-size="13" fill="#6b7280">P99</text>
+    <text x="64" y="398" font-size="16" fill="#374151">78,586,393원</text>
+
+    <rect x="380" y="188" width="146" height="56" rx="10" fill="#fee2e2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="453" y="210" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">평균÷중앙값</text>
+    <text x="453" y="232" font-size="20" font-weight="bold" fill="#dc2626" text-anchor="middle">2.27배</text>
+  </g>
+
+  <!-- 마진LTV 카드 -->
+  <g>
+    <rect x="610" y="130" width="550" height="300" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="610" y="130" width="550" height="40" rx="14" fill="#60a5fa"/>
+    <rect x="610" y="156" width="550" height="14" fill="#60a5fa"/>
+    <text x="885" y="156" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">마진(기여이익) LTV</text>
+
+    <text x="634" y="200" font-size="13" fill="#6b7280">평균</text>
+    <text x="634" y="224" font-size="20" font-weight="bold" fill="#111">1,866,810원</text>
+    <text x="634" y="260" font-size="13" fill="#6b7280">중앙값</text>
+    <text x="634" y="284" font-size="20" font-weight="bold" fill="#1d4ed8">819,872원</text>
+    <text x="634" y="320" font-size="13" fill="#6b7280">P90</text>
+    <text x="634" y="342" font-size="16" fill="#374151">3,020,857원</text>
+    <text x="634" y="376" font-size="13" fill="#6b7280">P99</text>
+    <text x="634" y="398" font-size="16" fill="#374151">18,577,424원</text>
+
+    <rect x="950" y="188" width="146" height="56" rx="10" fill="#fee2e2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="1023" y="210" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">평균÷중앙값</text>
+    <text x="1023" y="232" font-size="20" font-weight="bold" fill="#dc2626" text-anchor="middle">2.28배</text>
+  </g>
+
+  <!-- 집중도 섹션 -->
+  <text x="40" y="474" font-size="18" font-weight="bold" fill="#111">고객 수로는 10%, 가치로는 58% — 상위 10%(572명)에 쏠린 집중도</text>
+  <rect x="40" y="486" width="96" height="5" rx="2.5" fill="#dc2626"/>
+
+  <!-- Row1: 사람 아이콘 + 인원 기준 바 -->
+  <circle cx="118" cy="509" r="9" fill="#dc2626"/>
+  <path d="M104,528 q14,-15 28,0 z" fill="#dc2626"/>
+  <text x="150" y="516" font-size="13" fill="#374151">고객 수 기준 (전체 5,720명)</text>
+
+  <rect x="100" y="530" width="1000" height="40" rx="6" fill="#dbeafe"/>
+  <rect x="100" y="530" width="100" height="40" rx="6" fill="#dc2626"/>
+  <text x="150" y="555" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">10%</text>
+  <text x="650" y="555" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">나머지 90% (5,148명)</text>
+
+  <!-- Row2: 동전 아이콘 + 가치 기준 바 -->
+  <circle cx="118" cy="592" r="11" fill="#dc2626"/>
+  <text x="118" y="597" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">₩</text>
+  <text x="150" y="597" font-size="13" fill="#374151">매출LTV 가치 기준 (전체 합)</text>
+
+  <rect x="100" y="610" width="1000" height="40" rx="6" fill="#dbeafe"/>
+  <rect x="100" y="610" width="582" height="40" rx="6" fill="#dc2626"/>
+  <text x="391" y="635" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">58.24%</text>
+  <text x="891" y="635" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">41.76%</text>
+
+  <!-- 두 바를 잇는 대각 연결선: "인원 10%가 가치로는 58%까지 벌어진다" -->
+  <line x1="200" y1="570" x2="682" y2="610" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- 하단 결론 콜아웃 -->
+  <rect x="40" y="690" width="1120" height="90" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="64" y="722" font-size="14" font-weight="bold" fill="#111">평균 LTV로 획득비를 정하면 안 되는 이유: 평균(매출 814만·마진 187만 원)은 상위 10%가 가치의 58% 이상을</text>
+  <text x="64" y="744" font-size="14" font-weight="bold" fill="#dc2626">끌어올린 결과다 — 절반의 고객은 마진LTV 중앙값이 82만 원에 불과해, 5만 원 CAC 주장의 전제와 맞지 않는다.</text>
+  <text x="64" y="766" font-size="12" fill="#6b7280">6개월 실현 LTV일 뿐 — 예측(평생) LTV로 확대 해석하지 않는다.</text>
+</svg>

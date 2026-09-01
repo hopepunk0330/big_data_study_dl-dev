@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1006" width="1240" height="1006" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="1006" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <rect x="28" y="32" width="28" height="28" rx="4" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M28,42 h28 M40,32 v28" stroke="#2563eb" stroke-width="2"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">web_logs 100만 행 메모리 최적화 — naive 대비 최대 6.52배 절감</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">naive 적재(옵션 없음)</text>
+  <text x="82" y="150" font-size="22" font-weight="bold" fill="#374151">80.80 MB</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">event_time·session_id·event_type가 대부분</text>
+
+  <rect x="440" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="462" y="118" font-size="13" fill="#6b7280">전체 6열 최적화(다운캐스트+category+datetime)</text>
+  <text x="462" y="150" font-size="22" font-weight="bold" fill="#2563eb">28.79 MB</text>
+  <text x="462" y="168" font-size="11.5" fill="#9ca3af">naive 대비 2.81배 절감</text>
+
+  <rect x="820" y="92" width="360" height="86" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="842" y="118" font-size="13" fill="#6b7280">usecols(3열) + 최적화 (DAU 용도)</text>
+  <text x="842" y="150" font-size="22" font-weight="bold" fill="#2563eb">12.40 MB</text>
+  <text x="842" y="168" font-size="11.5" fill="#9ca3af">naive 대비 6.52배 절감</text>
+
+  <!-- bar chart -->
+  <text x="66" y="222" font-size="17" font-weight="bold" fill="#111">단계별 총 메모리(MB) — naive → 전체 최적화 → usecols(3열)</text>
+  <line x1="280" y1="430" x2="1140" y2="430" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <text x="270" y="270" font-size="13" fill="#374151" text-anchor="end">naive</text>
+  <rect x="280" y="250" width="817.5" height="30" rx="4" fill="#93c5fd"/>
+  <text x="1105" y="270" font-size="13" font-weight="bold" fill="#111">80.80 MB</text>
+
+  <text x="270" y="330" font-size="13" fill="#374151" text-anchor="end">전체 6열</text>
+  <rect x="280" y="310" width="291.3" height="30" rx="4" fill="#60a5fa"/>
+  <text x="600" y="330" font-size="13" font-weight="bold" fill="#111">28.79 MB (2.81배↓)</text>
+
+  <text x="270" y="390" font-size="13" fill="#374151" text-anchor="end">usecols(3열)</text>
+  <rect x="280" y="370" width="125.4" height="30" rx="4" fill="#2563eb"/>
+  <text x="435" y="390" font-size="13" font-weight="bold" fill="#111">12.40 MB (6.52배↓)</text>
+
+  <!-- category 유불리 section -->
+  <text x="66" y="480" font-size="17" font-weight="bold" fill="#111">category 유·불리 실측 — "고유값 비율"이 기준이지 "있냐 없냐"가 아니다</text>
+
+  <rect x="60" y="504" width="360" height="180" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="90" cy="536" r="14" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+  <path d="M83,536 L88,542 L98,528" stroke="#16a34a" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="114" y="541" font-size="14" font-weight="bold" fill="#166534">event_type — 유리</text>
+  <text x="82" y="572" font-size="12" fill="#374151">고유값 4개 (전체의 0.0004%)</text>
+  <text x="82" y="596" font-size="12" fill="#374151">12,721,848B → 1,000,055B</text>
+  <text x="82" y="620" font-size="18" font-weight="bold" fill="#16a34a">-11.18 MB</text>
+  <text x="82" y="654" font-size="11" fill="#6b7280">범주가 극소수라 코드(int8)로</text>
+  <text x="82" y="670" font-size="11" fill="#6b7280">치환하는 효과가 가장 크다</text>
+
+  <rect x="440" y="504" width="360" height="180" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="470" cy="536" r="14" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+  <path d="M463,536 L468,542 L478,528" stroke="#16a34a" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="494" y="541" font-size="14" font-weight="bold" fill="#166534">session_id — 유리</text>
+  <text x="462" y="572" font-size="12" fill="#374151">고유값 245,430개 (전체의 24.5%)</text>
+  <text x="462" y="596" font-size="12" fill="#374151">21,000,000B → 9,184,709B</text>
+  <text x="462" y="620" font-size="18" font-weight="bold" fill="#16a34a">-11.27 MB</text>
+  <text x="462" y="654" font-size="11" fill="#6b7280">24.5%는 행수보다 "훨씬" 적은</text>
+  <text x="462" y="670" font-size="11" fill="#6b7280">축에 속해 여전히 이득이다</text>
+
+  <rect x="820" y="504" width="360" height="180" rx="12" fill="#fff5f5" stroke="#e53935" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="850" cy="536" r="14" fill="none" stroke="#e53935" stroke-width="2.5"/>
+  <path d="M844,530 L856,542 M856,530 L844,542" stroke="#e53935" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="874" y="541" font-size="14" font-weight="bold" fill="#e53935">event_time — 불리</text>
+  <text x="842" y="572" font-size="12" fill="#374151">고유값 968,778개 (전체의 96.9%)</text>
+  <text x="842" y="596" font-size="12" fill="#374151">27,000,000B → 30,278,104B (category)</text>
+  <text x="842" y="620" font-size="18" font-weight="bold" fill="#e53935">+3.13 MB (손해)</text>
+  <text x="842" y="654" font-size="11" fill="#6b7280">거의 행마다 값이 달라 코드+사전</text>
+  <text x="842" y="670" font-size="11" fill="#6b7280">두 벌을 다 들고 있는 셈 → datetime64가 정답</text>
+
+  <!-- legacy dtype callout -->
+  <rect x="60" y="710" width="1120" height="108" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="86" y="738" font-size="13.5" font-weight="bold" fill="#1e3a5f">버전 참고: 레거시 object dtype으로 강제로 읽으면(pandas 3.0 이전 환경과 유사)</text>
+  <text x="86" y="762" font-size="13" fill="#334155">deep=True 220.99MB vs deep=False 45.78MB — deep=False가 실제 메모리를 4.83배 과소평가한다.</text>
+  <text x="86" y="780" font-size="13" fill="#334155">이 환경(pandas 3.0.3)은 기본값(str dtype)이 이미 이 문제를 상당 부분 피해간다.</text>
+  <text x="86" y="802" font-size="11.5" fill="#1e3a5f">→ 그래도 "습관적으로 deep=True를 쓴다"는 원칙 자체는 다른 환경을 위해 유지한다.</text>
+
+  <!-- conclusion box -->
+  <rect x="60" y="842" width="1120" height="140" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="86" y="874" font-size="16" font-weight="bold" fill="#111">배포 기준 — load_web_logs_light(path, usecols=None)</text>
+  <text x="86" y="904" font-size="13.5" fill="#374151">숫자열은 다운캐스트, 저카디널리티 문자열(고유값 비율 낮음)만 category, 행마다 다른 event_time은 datetime64로 파싱한다.</text>
+  <text x="86" y="928" font-size="13.5" fill="#374151">목적에 필요한 열만 usecols로 지정하면 6.52배까지 추가 절감된다 — 팀 전체에 이 함수 하나만 배포하면 된다.</text>
+  <text x="86" y="958" font-size="12.5" fill="#e53935" font-weight="bold">핵심: 절대 MB 수치가 아니라 "naive 대비 몇 배 줄었는가"라는 방향과 배율이 이 장 전체의 결론이다.</text>
+</svg>

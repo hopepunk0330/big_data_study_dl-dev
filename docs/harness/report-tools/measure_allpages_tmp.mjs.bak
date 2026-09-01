@@ -1,0 +1,24 @@
+import { chromium } from 'playwright';
+import path from 'path';
+
+const file = process.argv[2];
+const url = 'file://' + path.resolve(file);
+
+const browser = await chromium.launch();
+const page = await browser.newPage();
+await page.goto(url, { waitUntil: 'networkidle' });
+await page.emulateMedia({ media: 'print' });
+
+const A4_MAX = 933.543307; // page.pdf() margin-adjusted budget
+
+const info = await page.evaluate((A4_MAX) => {
+  const pages = Array.from(document.querySelectorAll('.page'));
+  return pages.map((p, i) => {
+    const r = p.getBoundingClientRect();
+    return { idx: i, cls: p.className, height: r.height, excess: r.height - A4_MAX };
+  }).filter(x => x.excess > 0);
+}, A4_MAX);
+
+console.log(JSON.stringify(info, null, 2));
+console.log('overflow count:', info.length);
+await browser.close();

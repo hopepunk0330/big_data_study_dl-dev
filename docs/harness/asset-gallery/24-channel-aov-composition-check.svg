@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 920" width="1240" height="920" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="920" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <circle cx="42" cy="46" r="14" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M34,46 L42,53 L52,38" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">앱 vs 웹 객단가 — 연령 구성을 봐도 차이는 원래 없었다</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">단순 비교 (앱-웹 AOV 차이)</text>
+  <text x="82" y="150" font-size="22" font-weight="bold" fill="#e53935">z = 0.61</text>
+  <text x="82" y="168" font-size="11.5" fill="#9ca3af">982원(0.33%) 차이, 통계적으로 무의미</text>
+
+  <rect x="440" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="462" y="118" font-size="13" fill="#6b7280">앱·웹 연령대 구성비 최대 격차</text>
+  <text x="462" y="150" font-size="22" font-weight="bold" fill="#2563eb">0.6%p</text>
+  <text x="462" y="168" font-size="11.5" fill="#9ca3af">두 채널의 연령 구성은 거의 동일</text>
+
+  <rect x="820" y="92" width="360" height="86" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="842" y="118" font-size="13" fill="#6b7280">구성 보정 효과(앱 AOV 재가중)</text>
+  <text x="842" y="150" font-size="22" font-weight="bold" fill="#2563eb">-10원</text>
+  <text x="842" y="168" font-size="11.5" fill="#9ca3af">301,382원 → 301,372원, 사실상 무변화</text>
+
+  <!-- AOV horizontal bars -->
+  <text x="66" y="222" font-size="17" font-weight="bold" fill="#111">채널별 AOV (막대 길이가 거의 같다 — 축은 295,000~306,000원 확대)</text>
+  <line x1="280" y1="245" x2="280" y2="395" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <text x="270" y="278" font-size="13" fill="#374151" text-anchor="end">앱</text>
+  <rect x="280" y="260" width="509.1" height="26" rx="4" fill="#2563eb"/>
+  <text x="800" y="278" font-size="12" font-weight="bold" fill="#111">301,512원</text>
+
+  <text x="270" y="328" font-size="13" fill="#374151" text-anchor="end">매장</text>
+  <rect x="280" y="310" width="647.9" height="26" rx="4" fill="#93c5fd"/>
+  <text x="940" y="328" font-size="12" font-weight="bold" fill="#111">303,287원</text>
+
+  <text x="270" y="378" font-size="13" fill="#374151" text-anchor="end">웹</text>
+  <rect x="280" y="360" width="432.3" height="26" rx="4" fill="#60a5fa"/>
+  <text x="725" y="378" font-size="12" font-weight="bold" fill="#111">300,530원</text>
+
+  <!-- age composition grouped bars -->
+  <text x="66" y="432" font-size="17" font-weight="bold" fill="#111">연령대 구성비(%) — 앱(진한 파랑) vs 웹(연한 파랑), 6개 구간 모두 근접</text>
+  <line x1="100" y1="600" x2="1140" y2="600" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <rect x="135.5" y="571.8" width="59.5" height="28.2" fill="#2563eb"/>
+  <rect x="199.0" y="571.2" width="59.5" height="28.8" fill="#93c5fd"/>
+  <text x="195.0" y="618" font-size="12" fill="#6b7280" text-anchor="middle">10대이하</text>
+
+  <rect x="305.5" y="465" width="59.5" height="135.0" fill="#2563eb"/>
+  <rect x="369.0" y="466.9" width="59.5" height="133.1" fill="#93c5fd"/>
+  <text x="365.0" y="618" font-size="12" fill="#6b7280" text-anchor="middle">20대</text>
+
+  <rect x="475.5" y="502.1" width="59.5" height="97.9" fill="#2563eb"/>
+  <rect x="539.0" y="501.4" width="59.5" height="98.6" fill="#93c5fd"/>
+  <text x="535.0" y="618" font-size="12" fill="#6b7280" text-anchor="middle">30대</text>
+
+  <rect x="645.5" y="474.6" width="59.5" height="125.4" fill="#2563eb"/>
+  <rect x="709.0" y="475.8" width="59.5" height="124.2" fill="#93c5fd"/>
+  <text x="705.0" y="618" font-size="12" fill="#6b7280" text-anchor="middle">40대</text>
+
+  <rect x="815.5" y="470.7" width="59.5" height="129.3" fill="#2563eb"/>
+  <rect x="879.0" y="472" width="59.5" height="128.0" fill="#93c5fd"/>
+  <text x="875.0" y="618" font-size="12" fill="#6b7280" text-anchor="middle">50대</text>
+
+  <rect x="985.5" y="475.8" width="59.5" height="124.2" fill="#2563eb"/>
+  <rect x="1049.0" y="472" width="59.5" height="128.0" fill="#93c5fd"/>
+  <text x="1045.0" y="618" font-size="12" fill="#6b7280" text-anchor="middle">60대 이상</text>
+
+  <rect x="440" y="640" width="16" height="16" fill="#2563eb"/>
+  <text x="463" y="653" font-size="12" fill="#374151">앱</text>
+  <rect x="510" y="640" width="16" height="16" fill="#93c5fd"/>
+  <text x="533" y="653" font-size="12" fill="#374151">웹</text>
+
+  <!-- conclusion box -->
+  <rect x="60" y="686" width="1120" height="200" rx="14" fill="#fff5f5" stroke="#e53935" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="86" y="718" font-size="16" font-weight="bold" fill="#e53935">수정된 결론 — 심슨의 역설이 아니라, 애초에 숨길 차이가 없었다</text>
+  <text x="86" y="748" font-size="13.5" fill="#374151">앱 AOV(301,512원)와 웹 AOV(300,530원)의 차이는 z=0.61로 단순 비교 단계에서부터 통계적으로 무의미하다.</text>
+  <text x="86" y="770" font-size="13.5" fill="#374151">앱·웹의 연령대 구성은 6개 구간 모두 1%p 이내로 거의 동일해, 앱 AOV를 웹의 연령 구성으로 재가중해도</text>
+  <text x="86" y="792" font-size="13.5" fill="#374151">301,382원 → 301,372원(-10원)으로 사실상 바뀌지 않는다 — 보정할 만한 구성 차이 자체가 없었다는 뜻이다.</text>
+  <text x="86" y="822" font-size="13.5" font-weight="bold" fill="#111">"앱 고객이 웹 고객보다 객단가가 높다"는 이 데이터에서 재현되지 않는 주장이며, 객단가를 근거로</text>
+  <text x="86" y="844" font-size="13.5" font-weight="bold" fill="#111">마케팅 예산을 앱으로 옮길 근거는 없다. 예산 논의는 획득비용·전환율 등 다른 지표로 다시 시작해야 한다.</text>
+  <text x="86" y="868" font-size="12" fill="#6b7280">참고: 고객의 84.8%가 2개 이상 채널을 함께 쓰는 다채널 고객 — "앱 고객"은 배타적 집단이 아니다.</text>
+</svg>

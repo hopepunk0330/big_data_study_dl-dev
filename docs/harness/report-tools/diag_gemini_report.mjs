@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+await page.goto('file:///Users/aydana/dev/portfolio/bigdata/01-ML_mercari price_2608/docs/gemini/interactive_report/index.html', { waitUntil: 'load', timeout: 30000 });
+await page.waitForTimeout(1500);
+const title = await page.title();
+console.log('title:', title);
+await page.screenshot({ path: '/tmp/gemini_report_top.png' });
+const bodyText = await page.evaluate(() => document.body.innerText.slice(0, 2000));
+console.log('BODY TEXT PREVIEW:', bodyText);
+await browser.close();

@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1072" width="1240" height="1072" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow30" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="1072" fill="#f4f5f7"/>
+
+  <!-- title -->
+  <path d="M28,58 L28,34 L52,34 L52,44 L44,44 L44,58 Z" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linejoin="round"/>
+  <line x1="28" y1="58" x2="52" y2="58" stroke="#2563eb" stroke-width="2.2"/>
+  <text x="66" y="52" font-size="26" font-weight="bold" fill="#111">월간 마케팅 지표 자동화 파이프라인 — 이 책의 마무리</text>
+  <rect x="66" y="66" width="120" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- KPI cards -->
+  <rect x="60" y="92" width="360" height="92" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="82" y="118" font-size="13" fill="#6b7280">표준 원장 앵커(문제 01) 재현</text>
+  <text x="82" y="146" font-size="16" font-weight="bold" fill="#16a34a">46,608,821,601원 / 168,312건</text>
+  <text x="82" y="168" font-size="11.5" fill="#166534">완전 일치 — assert 통과</text>
+
+  <rect x="440" y="92" width="360" height="92" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="462" y="118" font-size="13" fill="#6b7280">5월·6월 각각 재실행</text>
+  <text x="462" y="150" font-size="22" font-weight="bold" fill="#16a34a">완전 동일 재현</text>
+  <text x="462" y="168" font-size="11.5" fill="#166534">.equals() 검증, 전역변수 없음</text>
+
+  <rect x="820" y="92" width="360" height="92" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="842" y="118" font-size="13" fill="#6b7280">M+1 리텐션 방향(고정)</text>
+  <text x="842" y="146" font-size="14.5" font-weight="bold" fill="#2563eb">전월 코호트 → 당월 재구매</text>
+  <text x="842" y="168" font-size="11.5" fill="#3b82f6">마지막 달(6월)도 항상 계산 가능</text>
+
+  <!-- pipeline -->
+  <text x="66" y="230" font-size="17" font-weight="bold" fill="#111">파이프라인 구조 — run_monthly_report(month) 하나로 실행</text>
+
+  <rect x="50" y="254" width="1140" height="222" rx="14" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <text x="70" y="272" font-size="11.5" fill="#6b7280">run_monthly_report(month)</text>
+
+  <rect x="70" y="284" width="140" height="80" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="140" y="316" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">적재</text>
+  <text x="140" y="336" font-size="10" fill="#3b82f6" text-anchor="middle">load_and_clean</text>
+  <text x="140" y="350" font-size="10" fill="#3b82f6" text-anchor="middle">_ledger()</text>
+
+  <line x1="210" y1="324" x2="238" y2="324" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow30)"/>
+
+  <rect x="238" y="284" width="140" height="80" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="308" y="316" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">정제</text>
+  <text x="308" y="336" font-size="10" fill="#3b82f6" text-anchor="middle">중복·타입·기간</text>
+  <text x="308" y="350" font-size="10" fill="#3b82f6" text-anchor="middle">·상태 규칙</text>
+
+  <!-- 정제 -> 월 순매출 (기존 연결) -->
+  <line x1="378" y1="324" x2="400" y2="324" stroke="#6b7280" stroke-width="2"/>
+  <line x1="400" y1="284" x2="400" y2="364" stroke="#6b7280" stroke-width="1.6"/>
+  <line x1="400" y1="324" x2="418" y2="324" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arrow30)"/>
+
+  <!-- 정제 -> 나머지 4개 지표 함수 (신규 연결: 위쪽 버스 라인으로 우회해 다른 박스를 가로지르지 않음) -->
+  <line x1="308" y1="284" x2="308" y2="266" stroke="#6b7280" stroke-width="1.6"/>
+  <line x1="308" y1="266" x2="962" y2="266" stroke="#6b7280" stroke-width="1.6"/>
+  <line x1="596" y1="266" x2="596" y2="284" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arrow30)"/>
+  <line x1="718" y1="266" x2="718" y2="284" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arrow30)"/>
+  <line x1="840" y1="266" x2="840" y2="284" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arrow30)"/>
+  <line x1="962" y1="266" x2="962" y2="284" stroke="#6b7280" stroke-width="1.6" marker-end="url(#arrow30)"/>
+
+  <rect x="418" y="284" width="112" height="80" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="474" y="318" font-size="12" font-weight="bold" fill="#374151" text-anchor="middle">월 순매출</text>
+  <text x="474" y="336" font-size="9.5" fill="#6b7280" text-anchor="middle">monthly_net</text>
+  <text x="474" y="348" font-size="9.5" fill="#6b7280" text-anchor="middle">_revenue()</text>
+
+  <rect x="540" y="284" width="112" height="80" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="596" y="318" font-size="12" font-weight="bold" fill="#374151" text-anchor="middle">채널별 AOV</text>
+  <text x="596" y="336" font-size="9.5" fill="#6b7280" text-anchor="middle">channel_aov()</text>
+
+  <rect x="662" y="284" width="112" height="80" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="718" y="312" font-size="11.5" font-weight="bold" fill="#374151" text-anchor="middle">신규매출</text>
+  <text x="718" y="328" font-size="11.5" font-weight="bold" fill="#374151" text-anchor="middle">비중</text>
+  <text x="718" y="348" font-size="9.5" fill="#6b7280" text-anchor="middle">new_rev_share()</text>
+
+  <rect x="784" y="284" width="112" height="80" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="840" y="318" font-size="12" font-weight="bold" fill="#374151" text-anchor="middle">M+1 리텐션</text>
+  <text x="840" y="336" font-size="9.5" fill="#6b7280" text-anchor="middle">retention_m</text>
+  <text x="840" y="348" font-size="9.5" fill="#6b7280" text-anchor="middle">_plus_1()</text>
+
+  <rect x="906" y="284" width="112" height="80" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="962" y="318" font-size="12" font-weight="bold" fill="#374151" text-anchor="middle">퍼널 전환율</text>
+  <text x="962" y="336" font-size="9.5" fill="#6b7280" text-anchor="middle">funnel</text>
+  <text x="962" y="348" font-size="9.5" fill="#6b7280" text-anchor="middle">_conversion()</text>
+
+  <line x1="474" y1="364" x2="474" y2="380" stroke="#9ca3af" stroke-width="1.4"/>
+  <line x1="596" y1="364" x2="596" y2="380" stroke="#9ca3af" stroke-width="1.4"/>
+  <line x1="718" y1="364" x2="718" y2="380" stroke="#9ca3af" stroke-width="1.4"/>
+  <line x1="840" y1="364" x2="840" y2="380" stroke="#9ca3af" stroke-width="1.4"/>
+  <line x1="962" y1="364" x2="962" y2="380" stroke="#9ca3af" stroke-width="1.4"/>
+  <line x1="474" y1="380" x2="962" y2="380" stroke="#9ca3af" stroke-width="1.4"/>
+  <line x1="718" y1="380" x2="718" y2="400" stroke="#9ca3af" stroke-width="1.4" marker-end="url(#arrow30)"/>
+
+  <rect x="598" y="400" width="240" height="60" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.2" filter="url(#cardShadow)"/>
+  <text x="718" y="426" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">저장: CSV(out_dir)</text>
+  <text x="718" y="444" font-size="10.5" fill="#166534" text-anchor="middle">monthly_report_{month}.csv</text>
+
+  <!-- summary table -->
+  <text x="66" y="516" font-size="17" font-weight="bold" fill="#111">5월 vs 6월 실행 결과 — 재실행 재현성 검증 완료</text>
+
+  <rect x="120" y="544" width="1000" height="300" rx="12" fill="#ffffff" stroke="#9ca3af" stroke-width="2" filter="url(#cardShadow)"/>
+
+  <rect x="120" y="544" width="1000" height="36" rx="12" fill="#eff6ff"/>
+  <rect x="120" y="562" width="1000" height="18" fill="#eff6ff"/>
+  <text x="390" y="568" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">지표</text>
+  <text x="760" y="568" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">2024-05</text>
+  <text x="1000" y="568" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">2024-06</text>
+  <line x1="120" y1="580" x2="1120" y2="580" stroke="#d1d5db" stroke-width="1.2"/>
+
+  <text x="150" y="604" font-size="13" fill="#374151">월 순매출</text>
+  <text x="860" y="604" font-size="13" fill="#111" text-anchor="end" font-weight="bold">92.3억원</text>
+  <text x="1100" y="604" font-size="13" fill="#111" text-anchor="end" font-weight="bold">101.1억원</text>
+  <line x1="120" y1="616" x2="1120" y2="616" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="150" y="640" font-size="13" fill="#374151">앱 AOV</text>
+  <text x="860" y="640" font-size="13" fill="#111" text-anchor="end">275,189원</text>
+  <text x="1100" y="640" font-size="13" fill="#111" text-anchor="end">275,061원</text>
+  <line x1="120" y1="652" x2="1120" y2="652" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="150" y="676" font-size="13" fill="#374151">웹 AOV</text>
+  <text x="860" y="676" font-size="13" fill="#111" text-anchor="end">278,529원</text>
+  <text x="1100" y="676" font-size="13" fill="#111" text-anchor="end">276,363원</text>
+  <line x1="120" y1="688" x2="1120" y2="688" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="150" y="712" font-size="13" fill="#374151">매장 AOV</text>
+  <text x="860" y="712" font-size="13" fill="#111" text-anchor="end">282,546원</text>
+  <text x="1100" y="712" font-size="13" fill="#111" text-anchor="end">279,690원</text>
+  <line x1="120" y1="724" x2="1120" y2="724" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="150" y="748" font-size="13" fill="#374151">신규 매출 비중</text>
+  <text x="860" y="748" font-size="13" fill="#111" text-anchor="end">0.53%</text>
+  <text x="1100" y="748" font-size="13" fill="#111" text-anchor="end">0.53%</text>
+  <line x1="120" y1="760" x2="1120" y2="760" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="150" y="784" font-size="13" fill="#374151">M+1 리텐션</text>
+  <text x="860" y="784" font-size="13" fill="#e53935" text-anchor="end" font-weight="bold">16.85%</text>
+  <text x="1100" y="784" font-size="13" fill="#e53935" text-anchor="end" font-weight="bold">0.59%</text>
+  <line x1="120" y1="796" x2="1120" y2="796" stroke="#e5e7eb" stroke-width="1"/>
+
+  <text x="150" y="820" font-size="13" fill="#374151">퍼널 전환율</text>
+  <text x="860" y="820" font-size="13" fill="#111" text-anchor="end">10.87%</text>
+  <text x="1100" y="820" font-size="13" fill="#111" text-anchor="end">10.73%</text>
+
+  <!-- closing capstone -->
+  <rect x="60" y="888" width="1120" height="160" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2.5" filter="url(#cardShadow)"/>
+  <circle cx="98" cy="922" r="16" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M91,922 L96,928 L107,914" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="126" y="928" font-size="16" font-weight="bold" fill="#111">문제 01 → 문제 30, 서른 개 문제 완주</text>
+  <text x="86" y="960" font-size="13.5" fill="#374151">문제 01의 상반기 순매출 46,608,821,601원과 유효 주문 168,312건은 이 노트북 어디서 다시 계산해도 흔들리지 않았다.</text>
+  <text x="86" y="984" font-size="13.5" fill="#374151">M+1 리텐션이 5월 16.85%에서 6월 0.59%로 급락한 것도 문제 07의 "후반 코호트일수록 품질이 낮다"는 결론과 같은 방향이다.</text>
+  <text x="86" y="1016" font-size="13" fill="#e53935" font-weight="bold">핵심: 같은 정의로 계산하면 언제, 어디서, 누가 다시 돌려도 같은 숫자가 나와야 한다 — 이 파이프라인은 그 원칙을 매달 자동으로 실행한다.</text>
+</svg>

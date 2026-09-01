@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="880" height="460" font-family="'Noto Sans KR','Malgun Gothic','AppleGothic',sans-serif">
+<defs>
+<clipPath id="clip-c5"><rect x="0" y="0" width="880" height="460" rx="14"/></clipPath>
+</defs>
+
+<text x="40" y="46" font-size="11.5" font-weight="700" fill="#1d4ed8" letter-spacing="1.6">5.5 HPO 세 차례의 여정</text>
+<text x="40" y="72" font-size="18" font-weight="800" fill="#14335c">넓게 훑고, 좁혀서, 정밀하게 확정하기까지</text>
+<text x="40" y="98" font-size="11.5" fill="#64748b">회차마다 탐색 범위를 좁혀 재확인할수록, 최적 alpha 추정치가 한 점(≈3.3)으로 수렴했다.</text>
+<line x1="60" y1="320" x2="760" y2="320" stroke="#dbe2ec" stroke-width="1.2"/>
+<line x1="60" y1="130" x2="60" y2="320" stroke="#dbe2ec" stroke-width="1.2"/>
+<path d="M 60.0,288.6 L 410.0,230.9 L 760.0,157.9" fill="none" stroke="#14335c" stroke-width="2.3"/>
+<circle cx="60.0" cy="288.6" r="3.4" fill="#14335c"/>
+<circle cx="410.0" cy="230.9" r="3.4" fill="#14335c"/>
+<circle cx="760.0" cy="157.9" r="3.4" fill="#14335c"/>
+<rect x="56" y="326" width="708" height="20" fill="#ffffff"/>
+<text x="60.0" y="342" font-size="9" fill="#64748b" text-anchor="middle">1차(0.01~100, 8회)</text>
+<text x="410.0" y="342" font-size="9" fill="#64748b" text-anchor="middle">2차(0.01~100, 10회)</text>
+<text x="760.0" y="342" font-size="9" fill="#64748b" text-anchor="middle">3차(0.5~15, 30회)</text>
+<text x="60.0" y="274.6" font-size="12" font-weight="800" fill="#14335c" text-anchor="middle">alpha=1.9307</text>
+<text x="410.0" y="216.9" font-size="12" font-weight="800" fill="#14335c" text-anchor="middle">alpha=2.5378</text>
+<text x="760.0" y="143.9" font-size="12" font-weight="800" fill="#14335c" text-anchor="middle">alpha=3.306</text>
+<text x="40" y="366" font-size="10.5" fill="#64748b">alpha 이동폭 — 1차→2차 약 +31%, 2차→3차 약 +30% · val RMSLE 개선폭 — 0.0006 → 0.0002(수확체감)</text>
+<text x="40" y="386" font-size="10.5" fill="#64748b">→ 범위를 좁힐수록 alpha가 한 점(≈3.2~3.3)에 수렴 — 이 지점을 최종 하이퍼파라미터로 확정</text>
+<line x1="40" y1="426" x2="840" y2="426" stroke="#dbe2ec" stroke-width="1"/>
+<text x="40" y="440" font-size="10" fill="#94a3b8">가격 제시 방식 UX 실험 결과 보고서</text>
+<text x="840" y="440" font-size="10" fill="#94a3b8" text-anchor="end">04_hpo_comparison_round1~3.ipynb 종합</text>
+</svg>

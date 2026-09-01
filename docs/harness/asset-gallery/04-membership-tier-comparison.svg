@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 648" width="1000" height="648" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="headerGrad4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="648" fill="#f4f5f7"/>
+  <rect x="20" y="20" width="960" height="608" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" filter="url(#cardShadow4)"/>
+
+  <!-- header -->
+  <rect x="20" y="20" width="960" height="104" rx="20" fill="url(#headerGrad4)"/>
+  <rect x="20" y="84" width="960" height="40" fill="url(#headerGrad4)"/>
+  <text x="52" y="56" font-size="14" fill="#bfdbfe" letter-spacing="1">문제 04 · 멤버십 등급제 설계</text>
+  <text x="52" y="90" font-size="26" font-weight="bold" fill="#ffffff">인원 고정(qcut) vs 금액 고정(cut)</text>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="44" y="148" width="280" height="100" rx="12" fill="#f3f4f6"/>
+    <text x="66" y="176" font-size="13" fill="#4b5563">중위 고객 상반기 순매출</text>
+    <text x="66" y="214" font-size="24" font-weight="bold" fill="#374151">359만 원</text>
+    <text x="66" y="234" font-size="11" fill="#6b7280">(VIP 고정 컷 100만 원의 3.6배)</text>
+
+    <rect x="348" y="148" width="280" height="100" rx="12" fill="#eff6ff"/>
+    <text x="370" y="176" font-size="13" fill="#1e40af">안 A · VIP 비중(인원 고정)</text>
+    <text x="370" y="214" font-size="26" font-weight="bold" fill="#2563eb">5.0%</text>
+
+    <rect x="652" y="148" width="280" height="100" rx="12" fill="#fef2f2"/>
+    <text x="674" y="176" font-size="13" fill="#991b1b">안 B · VIP 비중(금액 고정)</text>
+    <text x="674" y="214" font-size="26" font-weight="bold" fill="#e53935">84.4%</text>
+  </g>
+
+  <!-- chart section -->
+  <text x="52" y="288" font-size="18" font-weight="bold" fill="#111">등급별 인원 구성 비교</text>
+  <rect x="52" y="298" width="56" height="4" rx="2" fill="#2563eb"/>
+
+  <!-- legend -->
+  <rect x="700" y="278" width="14" height="14" rx="3" fill="#cbd5e1"/>
+  <text x="720" y="290" font-size="12" fill="#374151">실버</text>
+  <rect x="775" y="278" width="14" height="14" rx="3" fill="#dc2626"/>
+  <text x="795" y="290" font-size="12" fill="#374151">골드</text>
+  <rect x="850" y="278" width="14" height="14" rx="3" fill="#2563eb"/>
+  <text x="870" y="290" font-size="12" fill="#374151">VIP</text>
+
+  <!-- row1: 안 A -->
+  <text x="44" y="356" font-size="14" font-weight="bold" fill="#111">안 A</text>
+  <text x="44" y="372" font-size="11" fill="#6b7280">(qcut)</text>
+  <g font-size="11" text-anchor="middle">
+    <text x="452" y="326" fill="#4b5563">실버 80.0%</text>
+    <text x="822.5" y="326" fill="#1e3a5f">골드 15.0%</text>
+    <text x="900.5" y="326" fill="#1e40af">VIP 5.0%</text>
+  </g>
+  <rect x="140" y="332" width="624" height="40" fill="#cbd5e1"/>
+  <rect x="764" y="332" width="117" height="40" fill="#dc2626"/>
+  <rect x="881" y="332" width="39" height="40" fill="#2563eb"/>
+  <rect x="140" y="332" width="780" height="40" fill="none" stroke="#94a3b8" stroke-width="1"/>
+
+  <!-- row2: 안 B -->
+  <text x="44" y="436" font-size="14" font-weight="bold" fill="#111">안 B</text>
+  <text x="44" y="452" font-size="11" fill="#6b7280">(cut)</text>
+  <g font-size="11" text-anchor="middle">
+    <text x="172.9" y="402" fill="#4b5563">8.4%</text>
+    <text x="233.6" y="402" fill="#1e3a5f">7.1%</text>
+    <text x="590.7" y="402" fill="#1e40af">VIP 84.4%</text>
+  </g>
+  <rect x="140" y="408" width="65.9" height="40" fill="#cbd5e1"/>
+  <rect x="205.9" y="408" width="55.5" height="40" fill="#dc2626"/>
+  <rect x="261.4" y="408" width="658.7" height="40" fill="#2563eb" stroke="#e53935" stroke-width="2.5"/>
+  <path d="M572,472 L580,458 L588,472 Z" fill="#e53935"/>
+  <rect x="579" y="461" width="2" height="6" fill="#ffffff"/>
+  <circle cx="580" cy="469.5" r="1" fill="#ffffff"/>
+  <text x="594" y="480" font-size="13" font-weight="bold" fill="#e53935" text-anchor="start">사실상 고객 대부분이 VIP — 변별력 상실</text>
+
+  <!-- conclusion -->
+  <rect x="44" y="520" width="912" height="108" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="68" y="550" font-size="16" font-weight="bold" fill="#1e3a8a">결론</text>
+  <text x="68" y="578" font-size="15" fill="#1e293b">중위 고객이 이미 <tspan font-weight="bold">359만 원(H1)</tspan>을 쓰고 있어, 안 B의 "100만 원 이상 VIP"는 <tspan font-weight="bold" fill="#e53935">고객 84.4%를 VIP로 만들어버린다</tspan>.</text>
+  <text x="68" y="604" font-size="15" fill="#1e293b">안 A(qcut)는 등급별 인원이 5·15·80으로 항상 안정적이다 — 예산도 더 낮다(안A 매출대비 3.37% vs 안B 4.98%). <tspan font-weight="bold">권고: 안 A 채택.</tspan></text>
+</svg>

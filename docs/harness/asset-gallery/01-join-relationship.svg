@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="560" fill="#f4f5f7"/>
+  <text x="60" y="52" font-size="26" font-weight="bold" fill="#111">조인 관계 — order_items 기준 left 조인</text>
+  <rect x="60" y="66" width="88" height="5" rx="2.5" fill="#2563eb"/>
+
+  <!-- order_items box -->
+  <rect x="60" y="130" width="300" height="140" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <rect x="60" y="130" width="300" height="40" rx="14" fill="#2563eb"/>
+  <rect x="60" y="156" width="300" height="14" fill="#2563eb"/>
+  <text x="80" y="156" font-size="17" font-weight="bold" fill="#fff">order_items (라인)</text>
+  <text x="80" y="200" font-size="15" fill="#374151">50만 행</text>
+  <text x="80" y="225" font-size="14" fill="#6b7280">order_id로 orders와 연결</text>
+  <text x="80" y="248" font-size="14" fill="#16a34a" font-weight="bold">orphan 라인: 0건</text>
+
+  <!-- orders box -->
+  <rect x="60" y="330" width="300" height="140" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+  <rect x="60" y="330" width="300" height="40" rx="14" fill="#60a5fa"/>
+  <rect x="60" y="356" width="300" height="14" fill="#60a5fa"/>
+  <text x="80" y="356" font-size="17" font-weight="bold" fill="#fff">orders (헤더)</text>
+  <text x="80" y="400" font-size="15" fill="#374151">20만 행</text>
+  <text x="80" y="425" font-size="14" fill="#6b7280">customer_id·datetime·channel·status</text>
+  <text x="80" y="448" font-size="14" fill="#e53935" font-weight="bold">라인 없는 헤더: 16,149건</text>
+
+  <!-- arrows into ledger -->
+  <path d="M360,200 L480,280" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M360,400 L480,300" stroke="#60a5fa" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- labels offset to the perpendicular side of each arrow line, 20-25px+ clearance (see assets/README math) -->
+  <text x="400" y="193" font-size="13" fill="#2563eb" font-weight="bold">merge</text>
+  <text x="430" y="213" font-size="13" fill="#6b7280">on='order_id'</text>
+  <text x="408" y="397" font-size="13" fill="#2563eb" font-weight="bold">how='left'</text>
+
+  <!-- ledger result box -->
+  <rect x="500" y="230" width="330" height="170" rx="16" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5" filter="url(#cardShadow)"/>
+  <text x="665" y="270" font-size="19" font-weight="bold" fill="#111" text-anchor="middle">ledger</text>
+  <text x="665" y="294" font-size="14" fill="#374151" text-anchor="middle">라인 단위 매출 원장</text>
+  <text x="665" y="330" font-size="26" font-weight="bold" fill="#2563eb" text-anchor="middle">500,000행</text>
+  <text x="665" y="358" font-size="13" fill="#6b7280" text-anchor="middle">(정제 전, 병합 직후)</text>
+  <text x="665" y="382" font-size="13" fill="#e53935" text-anchor="middle">※ 16,149건 헤더는 여기 없음</text>
+
+  <!-- side callout -->
+  <rect x="880" y="150" width="270" height="290" rx="14" fill="#eef2f7"/>
+  <text x="905" y="185" font-size="16" font-weight="bold" fill="#1e3a5f">왜 left 조인인가</text>
+  <text x="905" y="215" font-size="13" fill="#334155">매출은 라인 금액에서만 계산 가능</text>
+  <text x="905" y="235" font-size="13" fill="#334155">→ 원장의 최소 단위는 '주문 라인'</text>
+  <text x="905" y="265" font-size="13" fill="#334155">orphan 라인이 0건이라 left/inner</text>
+  <text x="905" y="283" font-size="13" fill="#334155">결과는 지금 동일하지만,</text>
+  <text x="905" y="311" font-size="13" fill="#334155" font-weight="bold">방어적으로 left 선택</text>
+  <text x="905" y="329" font-size="13" fill="#334155">→ 혹시 생길 orphan도 결측으로</text>
+  <text x="905" y="347" font-size="13" fill="#334155">드러나게(조용히 사라지지 않게)</text>
+  <text x="905" y="380" font-size="13" fill="#dc2626" font-weight="bold">16,149건은 4번 '유효 주문수'에서</text>
+  <text x="905" y="398" font-size="13" fill="#dc2626" font-weight="bold">orders 헤더 기준으로 별도 집계</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <clipPath id="barClip"><rect x="40" y="530" width="1120" height="60" rx="10"/></clipPath>
+
+  <rect x="0" y="0" width="1200" height="800" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">"할인 의존"은 예외가 아니라 카탈로그 전체의 기본값이다</text>
+  <rect x="40" y="66" width="104" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">497개 상품의 할인판매비중 분포 — 80% 기준선을 그려도 전부 그 위에 있다</text>
+
+  <!-- distribution strip -->
+  <text x="1120" y="146" font-size="13" font-weight="bold" fill="#e53935" text-anchor="end">기준선 "80% 이상"은 이 축의 왼쪽 바깥(그래프 밖)에 위치한다</text>
+
+  <line x1="80" y1="220" x2="1120" y2="220" stroke="#d1d5db" stroke-width="2"/>
+  <g font-size="12" fill="#9ca3af" text-anchor="middle">
+    <text x="80" y="244">96%</text>
+    <text x="288" y="244">97%</text>
+    <text x="496" y="244">98%</text>
+    <text x="704" y="244">99%</text>
+    <text x="912" y="244">99.5%</text>
+    <text x="1120" y="244">100%</text>
+  </g>
+  <!-- min/median/max markers on 96~100 scale: min=96.5(x=98), median=99.0(x=704), max=100(x=1120) -->
+  <!-- 선을 먼저 그리고 마커(원)를 나중에 그려서 마커가 선 위에서 도드라지게 함 -->
+  <line x1="98" y1="220" x2="1120" y2="220" stroke="#93c5fd" stroke-width="6"/>
+  <circle cx="98" cy="220" r="8" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+  <text x="98" y="200" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">최솟값 96.5%</text>
+  <circle cx="704" cy="220" r="8" fill="#60a5fa" stroke="#ffffff" stroke-width="2"/>
+  <text x="704" y="200" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">중앙값 99.0%</text>
+  <circle cx="1120" cy="220" r="8" fill="#1d4ed8" stroke="#ffffff" stroke-width="2"/>
+  <text x="1120" y="200" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">최댓값 100%</text>
+
+  <!-- KPI tiles -->
+  <g>
+    <rect x="40" y="284" width="360" height="150" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2.5" filter="url(#cardShadow)"/>
+    <text x="64" y="316" font-size="14" fill="#6b7280">80% 기준 충족 상품</text>
+    <text x="64" y="368" font-size="40" font-weight="bold" fill="#dc2626">497 / 497</text>
+    <text x="64" y="404" font-size="13" fill="#374151">전체 카탈로그의 100%</text>
+    <text x="64" y="424" font-size="13" fill="#374151">— 최소판매량 컷(500개)도 아무도 못 거른다</text>
+  </g>
+  <g>
+    <rect x="420" y="284" width="360" height="150" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="444" y="316" font-size="14" fill="#6b7280">정가 라인 0건(단 한 번도 정가에 안 팔림)</text>
+    <text x="444" y="368" font-size="40" font-weight="bold" fill="#374151">15개</text>
+    <text x="444" y="404" font-size="13" fill="#374151">할인판매비중 정확히 100% — 표본이 적어서가 아니라 구조적</text>
+  </g>
+  <g>
+    <rect x="800" y="284" width="360" height="150" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2.5" filter="url(#cardShadow)"/>
+    <text x="824" y="316" font-size="14" fill="#6b7280">정가 라인 10건 미만 → 대조불가</text>
+    <text x="824" y="368" font-size="40" font-weight="bold" fill="#dc2626">403 / 497</text>
+    <text x="824" y="404" font-size="13" fill="#374151">할인 의존 상품의 81.1%는 정가 실적과 대조 자체가 불가능하다</text>
+  </g>
+
+  <!-- stacked bar: 대조가능 vs 대조불가 -->
+  <text x="40" y="480" font-size="20" font-weight="bold" fill="#111">정가 판매 실적 대조 가능 여부 (497개 상품)</text>
+  <rect x="40" y="492" width="88" height="5" rx="2.5" fill="#e53935"/>
+
+  <g clip-path="url(#barClip)">
+    <rect x="40" y="530" width="1120" height="60" fill="#f3f4f6"/>
+    <rect x="40" y="530" width="908" height="60" fill="#fca5a5"/>
+    <rect x="948" y="530" width="212" height="60" fill="#86efac"/>
+  </g>
+  <rect x="40" y="530" width="1120" height="60" rx="10" fill="none" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="494" y="566" font-size="16" font-weight="bold" fill="#7f1d1d" text-anchor="middle">대조불가 403개 (81.1%)</text>
+  <text x="1054" y="566" font-size="15" font-weight="bold" fill="#14532d" text-anchor="middle">대조가능 94개</text>
+
+  <!-- policy note -->
+  <rect x="40" y="618" width="1120" height="130" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="64" y="652" font-size="15" font-weight="bold" fill="#111">가격 정책 논점</text>
+  <text x="64" y="680" font-size="13" fill="#374151">"할인 없이는 안 팔린다"는 96.5%가 넘는 상품 전체의 구조적 현실이지 소수 상품의 예외가 아니다 — 개별 상품의 할인을 걷어내는</text>
+  <text x="64" y="702" font-size="13" fill="#374151">방식으로는 해결이 안 된다. 표본이 대조 가능한(정가 10건 이상) 94개 상품조차 할인판매비중이 80%를 넘는다는 점에서,</text>
+  <text x="64" y="724" font-size="14" font-weight="bold" fill="#dc2626">"정가 인하로 기준가 자체를 낮추고 할인폭을 줄이는" 구조적 접근이, 개별 상품 단위의 할인 중단보다 현실적이다.</text>
+</svg>

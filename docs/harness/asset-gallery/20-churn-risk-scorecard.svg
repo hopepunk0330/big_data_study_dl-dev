@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="900" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">이탈 위험 스코어카드 — 고위험 고객은 전부 저가치 고객이다</text>
+  <rect x="40" y="66" width="110" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">2024 H1 유효 주문 보유 고객 5,793명, recency·frequency·웹활동 3요소 0~2점 스코어카드</text>
+
+  <!-- 1) 스코어 규칙 -->
+  <text x="40" y="130" font-size="17" font-weight="bold" fill="#111">1) 스코어 규칙 — 3요소 각 0~2점</text>
+  <rect x="40" y="142" width="90" height="4" rx="2" fill="#2563eb"/>
+
+  <g>
+    <rect x="40" y="156" width="360" height="170" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="40" y="156" width="360" height="30" rx="12" fill="#2563eb"/>
+    <rect x="40" y="172" width="360" height="14" fill="#2563eb"/>
+    <text x="220" y="176" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">recency (최근성)</text>
+    <text x="64" y="216" font-size="13" fill="#111">0점 · 최근 10일 이내 구매</text>
+    <text x="64" y="261" font-size="13" fill="#111">1점 · 11~20일 무구매</text>
+    <text x="64" y="306" font-size="13" fill="#dc2626" font-weight="bold">2점 · 20일 초과 무구매</text>
+  </g>
+
+  <g>
+    <rect x="420" y="156" width="360" height="170" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="420" y="156" width="360" height="30" rx="12" fill="#60a5fa"/>
+    <rect x="420" y="172" width="360" height="14" fill="#60a5fa"/>
+    <text x="600" y="176" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">frequency (빈도)</text>
+    <text x="444" y="216" font-size="13" fill="#111">0점 · 상위 33%(19건 이상)</text>
+    <text x="444" y="261" font-size="13" fill="#111">1점 · 중위 33%(10~18건)</text>
+    <text x="444" y="306" font-size="13" fill="#dc2626" font-weight="bold">2점 · 하위 33%(9건 이하)</text>
+  </g>
+
+  <g>
+    <rect x="800" y="156" width="360" height="170" rx="12" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="800" y="156" width="360" height="30" rx="12" fill="#2563eb"/>
+    <rect x="800" y="172" width="360" height="14" fill="#2563eb"/>
+    <text x="980" y="176" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">웹활동(최근 30일=6월)</text>
+    <text x="824" y="216" font-size="13" fill="#111">0점 · 6월 방문 이력 있음</text>
+    <text x="824" y="261" font-size="13" fill="#111">1점 · 과거엔 방문, 6월엔 없음</text>
+    <text x="824" y="306" font-size="13" fill="#dc2626" font-weight="bold">2점 · 로그에 전혀 없음(웹 미사용)</text>
+  </g>
+
+  <!-- 2) 위험x가치 교차 -->
+  <text x="40" y="366" font-size="17" font-weight="bold" fill="#111">2) 위험×가치 교차 — 고위험(5~6점)은 전부 가치 최하위(Q1)</text>
+  <rect x="40" y="378" width="110" height="4" rx="2" fill="#dc2626"/>
+
+  <!-- 열 헤더 -->
+  <g font-size="13" font-weight="bold" fill="#374151" text-anchor="middle">
+    <text x="360" y="405">Q1(하위)</text>
+    <text x="490" y="405">Q2</text>
+    <text x="620" y="405">Q3</text>
+    <text x="750" y="405">Q4(상위)</text>
+  </g>
+
+  <!-- 행 라벨 -->
+  <g font-size="13" font-weight="bold" text-anchor="end">
+    <text x="270" y="451" fill="#1d4ed8">저위험(0~2점)</text>
+    <text x="270" y="521" fill="#dc2626">중위험(3~4점)</text>
+    <text x="270" y="591" fill="#dc2626">고위험(5~6점)</text>
+  </g>
+
+  <!-- row 1: 저위험 -->
+  <rect x="300" y="415" width="120" height="60" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <rect x="430" y="415" width="120" height="60" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <rect x="560" y="415" width="120" height="60" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <rect x="690" y="415" width="120" height="60" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <g font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">
+    <text x="360" y="451">319명</text>
+    <text x="490" y="451">1,050명</text>
+    <text x="620" y="451">1,314명</text>
+    <text x="750" y="451">1,446명</text>
+  </g>
+
+  <!-- row 2: 중위험 -->
+  <rect x="300" y="485" width="120" height="60" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="430" y="485" width="120" height="60" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="560" y="485" width="120" height="60" fill="#eef2f7" stroke="#dc2626" stroke-width="2.5"/>
+  <rect x="690" y="485" width="120" height="60" fill="#eef2f7" stroke="#dc2626" stroke-width="2.5"/>
+  <g font-size="14" font-weight="bold" fill="#374151" text-anchor="middle">
+    <text x="360" y="521">340명</text>
+    <text x="490" y="521">398명</text>
+  </g>
+  <g font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">
+    <text x="620" y="521">134명</text>
+    <text x="750" y="521">2명</text>
+  </g>
+
+  <!-- row 3: 고위험 -->
+  <rect x="300" y="555" width="120" height="60" fill="#fee2e2" stroke="#fca5a5" stroke-width="1.5"/>
+  <rect x="430" y="555" width="120" height="60" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="560" y="555" width="120" height="60" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="690" y="555" width="120" height="60" fill="#ffffff" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="360" y="591" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">790명</text>
+  <text x="490" y="591" font-size="14" font-weight="bold" fill="#374151" text-anchor="middle">0명</text>
+  <text x="620" y="591" font-size="14" font-weight="bold" fill="#374151" text-anchor="middle">0명</text>
+  <path d="M735,568 l30,0 l-15,20 z" fill="none" stroke="#dc2626" stroke-width="2"/>
+  <text x="750" y="583" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">!</text>
+  <text x="750" y="605" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">0명</text>
+
+  <!-- 우측 주석 박스 -->
+  <line x1="810" y1="515" x2="850" y2="515" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="850" y="485" width="300" height="60" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="866" y="507" font-size="12" font-weight="bold" fill="#dc2626">재정의: 중위험(3~4점) × 가치상위 50%</text>
+  <text x="866" y="527" font-size="12" font-weight="bold" fill="#dc2626">(Q3~Q4) → 우선관리군 136명</text>
+
+  <line x1="810" y1="585" x2="850" y2="585" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="850" y="555" width="300" height="60" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="866" y="577" font-size="12" font-weight="bold" fill="#dc2626">원래 정의(고위험×Q4)는 0명 —</text>
+  <text x="866" y="597" font-size="12" font-weight="bold" fill="#dc2626">이 기준으로는 목록을 만들 수 없다.</text>
+
+  <!-- 3) 우선관리군과 손실 -->
+  <text x="40" y="656" font-size="17" font-weight="bold" fill="#111">3) 우선 관리군과 예상 손실 (연 환산 가정)</text>
+  <rect x="40" y="668" width="110" height="4" rx="2" fill="#2563eb"/>
+
+  <g>
+    <rect x="40" y="686" width="550" height="150" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <circle cx="70" cy="712" r="9" fill="#2563eb"/>
+    <path d="M56,734 q14,-16 28,0 z" fill="#2563eb"/>
+    <text x="96" y="718" font-size="14" font-weight="bold" fill="#111">우선관리군 (재정의)</text>
+    <text x="64" y="770" font-size="30" font-weight="bold" fill="#1d4ed8">136명</text>
+    <text x="64" y="800" font-size="14" fill="#374151">상반기 순매출 합 596,928,497원</text>
+  </g>
+
+  <g>
+    <rect x="610" y="686" width="550" height="150" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+    <circle cx="640" cy="712" r="11" fill="#dc2626"/>
+    <text x="640" y="717" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">₩</text>
+    <text x="666" y="718" font-size="14" font-weight="bold" fill="#111">예상 매출 손실 (연 환산 x2)</text>
+    <text x="634" y="770" font-size="30" font-weight="bold" fill="#dc2626">1,193,856,994원</text>
+    <text x="634" y="800" font-size="13" fill="#374151">가정: 하반기도 상반기와 동일 규모로 구매했을 것</text>
+    <text x="634" y="818" font-size="12" fill="#6b7280">(예측이 아니라 상반기 실적을 그대로 연장한 참고치)</text>
+  </g>
+</svg>

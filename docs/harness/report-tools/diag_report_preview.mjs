@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1000, height: 1400 } });
+await page.goto('file:///Users/aydana/dev/portfolio/bigdata/01-ML_mercari price_2608/docs/reports/20260829_가격UX_결과보고서/report.html', { waitUntil: 'load', timeout: 30000 });
+await page.waitForTimeout(1000);
+await page.screenshot({ path: '/tmp/report_cover.png' });
+await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight * 0.05));
+await page.waitForTimeout(300);
+await page.screenshot({ path: '/tmp/report_toc.png' });
+await browser.close();

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="860" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">할인은 수량을 늘리지만, 20% 넘어가면 마진을 갉아먹는다</text>
+  <rect x="40" y="66" width="104" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">2024 H1 순매출 대상, 할인 구간 4단계 × 판매수량·순매출·마진율·평균판매단가</text>
+
+  <!-- 4 tier cards -->
+  <g>
+    <rect x="40" y="130" width="260" height="230" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="40" y="130" width="260" height="36" rx="14" fill="#2563eb"/>
+    <rect x="40" y="152" width="260" height="14" fill="#2563eb"/>
+    <text x="170" y="153" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">정가(0%)</text>
+    <text x="64" y="196" font-size="12" fill="#6b7280">판매수량</text>
+    <text x="64" y="218" font-size="18" font-weight="bold" fill="#111">13,105개</text>
+    <text x="64" y="246" font-size="12" fill="#6b7280">순매출</text>
+    <text x="64" y="268" font-size="16" font-weight="bold" fill="#111">6.35억 원</text>
+    <text x="64" y="296" font-size="12" fill="#6b7280">평균판매단가</text>
+    <text x="64" y="318" font-size="15" fill="#374151">49,784원</text>
+    <rect x="64" y="332" width="212" height="24" rx="12" fill="#dbeafe"/>
+    <text x="170" y="349" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">마진율 42%</text>
+  </g>
+
+  <g>
+    <rect x="313" y="130" width="260" height="230" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="313" y="130" width="260" height="36" rx="14" fill="#60a5fa"/>
+    <rect x="313" y="152" width="260" height="14" fill="#60a5fa"/>
+    <text x="443" y="153" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">0~10%</text>
+    <text x="337" y="196" font-size="12" fill="#6b7280">판매수량</text>
+    <text x="337" y="218" font-size="18" font-weight="bold" fill="#111">251,643개</text>
+    <text x="337" y="246" font-size="12" fill="#6b7280">순매출</text>
+    <text x="337" y="268" font-size="16" font-weight="bold" fill="#111">117.0억 원</text>
+    <text x="337" y="296" font-size="12" fill="#6b7280">평균판매단가</text>
+    <text x="337" y="318" font-size="15" fill="#374151">48,050원</text>
+    <rect x="337" y="332" width="212" height="24" rx="12" fill="#dbeafe"/>
+    <text x="443" y="349" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">마진율 39%</text>
+  </g>
+
+  <g>
+    <rect x="586" y="130" width="260" height="230" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="586" y="130" width="260" height="36" rx="14" fill="#dc2626"/>
+    <rect x="586" y="152" width="260" height="14" fill="#dc2626"/>
+    <text x="716" y="153" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">10~20%</text>
+    <text x="610" y="196" font-size="12" fill="#6b7280">판매수량</text>
+    <text x="610" y="218" font-size="18" font-weight="bold" fill="#111">252,736개</text>
+    <text x="610" y="246" font-size="12" fill="#6b7280">순매출</text>
+    <text x="610" y="268" font-size="16" font-weight="bold" fill="#111">105.1억 원</text>
+    <text x="610" y="296" font-size="12" fill="#6b7280">평균판매단가</text>
+    <text x="610" y="318" font-size="15" fill="#374151">42,876원</text>
+    <rect x="610" y="332" width="212" height="24" rx="12" fill="#eef2f7"/>
+    <text x="716" y="349" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">마진율 32%</text>
+  </g>
+
+  <g>
+    <rect x="859" y="130" width="260" height="230" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2.5" filter="url(#cardShadow)"/>
+    <rect x="859" y="130" width="260" height="36" rx="14" fill="#e53935"/>
+    <rect x="859" y="152" width="260" height="14" fill="#e53935"/>
+    <text x="989" y="153" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">20%초과</text>
+    <text x="883" y="196" font-size="12" fill="#6b7280">판매수량</text>
+    <text x="883" y="218" font-size="18" font-weight="bold" fill="#111">742,650개</text>
+    <text x="883" y="246" font-size="12" fill="#6b7280">순매출</text>
+    <text x="883" y="268" font-size="16" font-weight="bold" fill="#111">237.7억 원</text>
+    <text x="883" y="296" font-size="12" fill="#6b7280">평균판매단가</text>
+    <text x="883" y="318" font-size="15" fill="#374151">32,982원</text>
+    <rect x="883" y="332" width="212" height="24" rx="12" fill="#fee2e2"/>
+    <text x="989" y="349" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">마진율 11%</text>
+  </g>
+
+  <!-- trend line: 마진율 decay -->
+  <text x="40" y="404" font-size="18" font-weight="bold" fill="#111">구간이 깊어질수록 마진율은 급격히 무너진다</text>
+  <rect x="40" y="416" width="88" height="5" rx="2.5" fill="#e53935"/>
+
+  <!-- axis -->
+  <line x1="120" y1="620" x2="1120" y2="620" stroke="#d1d5db" stroke-width="1.5"/>
+  <!-- bars: margin rate scaled *400 -->
+  <rect x="150" y="452" width="150" height="168" fill="#2563eb"/>
+  <text x="225" y="440" font-size="15" font-weight="bold" fill="#2563eb" text-anchor="middle">42%</text>
+  <text x="225" y="644" font-size="13" fill="#374151" text-anchor="middle">정가</text>
+
+  <rect x="360" y="464" width="150" height="156" fill="#60a5fa"/>
+  <text x="435" y="452" font-size="15" font-weight="bold" fill="#2563eb" text-anchor="middle">39%</text>
+  <text x="435" y="644" font-size="13" fill="#374151" text-anchor="middle">0~10%</text>
+
+  <rect x="570" y="492" width="150" height="128" fill="#dc2626"/>
+  <text x="645" y="480" font-size="15" font-weight="bold" fill="#dc2626" text-anchor="middle">32%</text>
+  <text x="645" y="644" font-size="13" fill="#374151" text-anchor="middle">10~20%</text>
+
+  <rect x="780" y="576" width="150" height="44" fill="#e53935"/>
+  <text x="855" y="564" font-size="15" font-weight="bold" fill="#dc2626" text-anchor="middle">11%</text>
+  <text x="855" y="644" font-size="13" fill="#374151" text-anchor="middle">20%초과</text>
+
+  <!-- reverse margin annotation -->
+  <rect x="990" y="452" width="170" height="190" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <path d="M1075,468 l12,20 h-24 z" fill="#e53935"/>
+  <text x="1075" y="484" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">!</text>
+  <text x="1005" y="514" font-size="13" font-weight="bold" fill="#dc2626">역마진 라인</text>
+  <text x="1005" y="532" font-size="13" font-weight="bold" fill="#dc2626">67,354건 중</text>
+  <text x="1075" y="566" font-size="26" font-weight="bold" fill="#dc2626" text-anchor="middle">99.8%</text>
+  <text x="1005" y="592" font-size="12" fill="#6b7280">가 "20%초과" 구간에서</text>
+  <text x="1005" y="610" font-size="12" fill="#6b7280">발생(67,226건)</text>
+
+  <!-- policy box -->
+  <rect x="40" y="686" width="1120" height="140" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="64" y="720" font-size="15" font-weight="bold" fill="#111">관찰(인과 아님): 구간이 깊어질수록 평균판매단가는 49,784→48,050→42,876→32,982원으로 낮아지고, 판매수량은 13,105→742,650개로 늘어난다.</text>
+  <text x="64" y="746" font-size="13" fill="#6b7280">상품 구성이 구간마다 다를 수 있어 "할인이 수량을 늘렸다"는 단정은 금물 — 관찰적 상관관계로만 기록한다.</text>
+  <text x="64" y="782" font-size="14" font-weight="bold" fill="#dc2626">정책 제안: "20%초과" 구간은 마진율 11%로 가장 비효율적이고 역마진의 99.8%가 몰려 있다 — 프로모션 할인율 상한을 20%로 걸고,</text>
+  <text x="64" y="806" font-size="14" font-weight="bold" fill="#dc2626">그 이상은 카테고리 매니저 승인 등 별도 예외 절차를 거치도록 한다.</text>
+</svg>

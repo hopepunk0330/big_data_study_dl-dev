@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1020" width="1200" height="1020" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#e53935"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="1020" fill="#f4f5f7"/>
+  <text x="40" y="52" font-size="28" font-weight="bold" fill="#111">카테고리 3지표 매트릭스 — 매출 1위가 전략 1위는 아니다</text>
+  <rect x="40" y="66" width="104" height="5" rx="2.5" fill="#2563eb"/>
+  <text x="40" y="100" font-size="14" fill="#6b7280">6개 카테고리 × 순매출·마진율·반품률 → 순위 기반 종합점수 (가중치 매출0.4·마진율0.4·반품률0.2)</text>
+
+  <!-- ===== Row 1: 도서(1위) 전자(2위) 의류(3위) ===== -->
+  <!-- Card: 도서 -->
+  <g>
+    <rect x="40" y="140" width="360" height="170" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="40" y="140" width="360" height="40" rx="14" fill="#2563eb"/>
+    <rect x="40" y="166" width="360" height="14" fill="#2563eb"/>
+    <circle cx="64" cy="160" r="13" fill="#ffffff"/>
+    <text x="64" y="165" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle">1</text>
+    <text x="88" y="166" font-size="17" font-weight="bold" fill="#fff">도서</text>
+    <rect x="12" y="152" width="16" height="16" fill="none"/>
+    <!-- metric rows -->
+    <rect x="60" y="196" width="10" height="10" fill="#60a5fa"/>
+    <text x="80" y="205" font-size="14" fill="#374151">순매출 38.4억 원 (4위)</text>
+    <circle cx="65" cy="228" r="6" fill="#dc2626"/>
+    <text x="80" y="233" font-size="14" fill="#374151">마진율 <tspan font-weight="bold" fill="#1d4ed8">29.52%</tspan> (1위·압도적)</text>
+    <path d="M60,258 h10 M65,253 v10" stroke="#9ca3af" stroke-width="2"/>
+    <text x="80" y="261" font-size="14" fill="#374151">반품률 5.44% (2위)</text>
+    <rect x="60" y="278" width="120" height="24" rx="12" fill="#dbeafe"/>
+    <text x="120" y="294" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">종합 1위 · 확대</text>
+    <text x="360" y="294" font-size="12" fill="#9ca3af" text-anchor="end">매출단독 4위·유지</text>
+  </g>
+
+  <!-- Card: 전자 -->
+  <g>
+    <rect x="420" y="140" width="360" height="170" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="420" y="140" width="360" height="40" rx="14" fill="#2563eb"/>
+    <rect x="420" y="166" width="360" height="14" fill="#2563eb"/>
+    <circle cx="444" cy="160" r="13" fill="#ffffff"/>
+    <text x="444" y="165" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle">2</text>
+    <text x="468" y="166" font-size="17" font-weight="bold" fill="#fff">전자</text>
+    <rect x="440" y="196" width="10" height="10" fill="#60a5fa"/>
+    <text x="460" y="205" font-size="14" fill="#374151">순매출 <tspan font-weight="bold">199.2억 원</tspan> (1위)</text>
+    <circle cx="445" cy="228" r="6" fill="#dc2626"/>
+    <text x="460" y="233" font-size="14" fill="#374151">마진율 22.68% (4위)</text>
+    <path d="M440,258 h10 M445,253 v10" stroke="#9ca3af" stroke-width="2"/>
+    <text x="460" y="261" font-size="14" fill="#374151">반품률 5.54% (3위)</text>
+    <rect x="440" y="278" width="120" height="24" rx="12" fill="#dbeafe"/>
+    <text x="500" y="294" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">종합 2위 · 확대</text>
+    <text x="740" y="294" font-size="12" fill="#9ca3af" text-anchor="end">매출단독 1위·확대</text>
+  </g>
+
+  <!-- Card: 의류 -->
+  <g>
+    <rect x="800" y="140" width="360" height="170" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="800" y="140" width="360" height="40" rx="14" fill="#9ca3af"/>
+    <rect x="800" y="166" width="360" height="14" fill="#9ca3af"/>
+    <circle cx="824" cy="160" r="13" fill="#ffffff"/>
+    <text x="824" y="165" font-size="14" font-weight="bold" fill="#6b7280" text-anchor="middle">3</text>
+    <text x="848" y="166" font-size="17" font-weight="bold" fill="#fff">의류</text>
+    <rect x="820" y="196" width="10" height="10" fill="#60a5fa"/>
+    <text x="840" y="205" font-size="14" fill="#374151">순매출 40.1억 원 (3위)</text>
+    <circle cx="825" cy="228" r="6" fill="#dc2626"/>
+    <text x="840" y="233" font-size="14" fill="#374151">마진율 23.04% (3위)</text>
+    <path d="M820,258 h10 M825,253 v10" stroke="#9ca3af" stroke-width="2"/>
+    <text x="840" y="261" font-size="14" fill="#374151">반품률 5.61% (4위)</text>
+    <rect x="820" y="278" width="120" height="24" rx="12" fill="#f3f4f6"/>
+    <text x="880" y="294" font-size="13" font-weight="bold" fill="#4b5563" text-anchor="middle">종합 3위 · 유지</text>
+    <text x="1120" y="294" font-size="12" fill="#9ca3af" text-anchor="end">매출단독 3위·유지</text>
+  </g>
+
+  <!-- ===== Row 2: 식품(4위) 가구(5위) 뷰티(6위) ===== -->
+  <!-- Card: 식품 -->
+  <g>
+    <rect x="40" y="334" width="360" height="170" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="40" y="334" width="360" height="40" rx="14" fill="#9ca3af"/>
+    <rect x="40" y="360" width="360" height="14" fill="#9ca3af"/>
+    <circle cx="64" cy="354" r="13" fill="#ffffff"/>
+    <text x="64" y="359" font-size="14" font-weight="bold" fill="#6b7280" text-anchor="middle">4</text>
+    <text x="88" y="360" font-size="17" font-weight="bold" fill="#fff">식품</text>
+    <rect x="60" y="390" width="10" height="10" fill="#60a5fa"/>
+    <text x="80" y="399" font-size="14" fill="#374151">순매출 16.5억 원 (6위·최저)</text>
+    <circle cx="65" cy="422" r="6" fill="#dc2626"/>
+    <text x="80" y="427" font-size="14" fill="#374151">마진율 23.18% (2위)</text>
+    <path d="M60,452 h10 M65,447 v10" stroke="#9ca3af" stroke-width="2"/>
+    <text x="80" y="455" font-size="14" fill="#374151">반품률 5.42% (1위·최저)</text>
+    <rect x="60" y="472" width="120" height="24" rx="12" fill="#f3f4f6"/>
+    <text x="120" y="488" font-size="13" font-weight="bold" fill="#4b5563" text-anchor="middle">종합 4위 · 유지</text>
+    <text x="360" y="488" font-size="12" fill="#e53935" font-weight="bold" text-anchor="end">매출단독 6위·축소</text>
+  </g>
+
+  <!-- Card: 가구 (핵심 반전 사례) -->
+  <g>
+    <rect x="420" y="334" width="360" height="170" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2.5" filter="url(#cardShadow)"/>
+    <rect x="420" y="334" width="360" height="40" rx="14" fill="#e53935"/>
+    <rect x="420" y="360" width="360" height="14" fill="#e53935"/>
+    <circle cx="444" cy="354" r="13" fill="#ffffff"/>
+    <text x="444" y="359" font-size="14" font-weight="bold" fill="#e53935" text-anchor="middle">5</text>
+    <text x="468" y="360" font-size="17" font-weight="bold" fill="#fff">가구 (핵심 반전)</text>
+    <rect x="440" y="390" width="10" height="10" fill="#60a5fa"/>
+    <text x="460" y="399" font-size="14" fill="#374151">순매출 <tspan font-weight="bold">141.5억 원</tspan> (2위)</text>
+    <circle cx="445" cy="422" r="6" fill="#dc2626"/>
+    <text x="460" y="427" font-size="14" fill="#374151">마진율 <tspan font-weight="bold" fill="#e53935">21.56%</tspan> (6위·최저)</text>
+    <path d="M440,452 h10 M445,447 v10" stroke="#9ca3af" stroke-width="2"/>
+    <text x="460" y="455" font-size="14" fill="#374151">반품률 5.66% (5위)</text>
+    <rect x="440" y="472" width="120" height="24" rx="12" fill="#fee2e2"/>
+    <text x="500" y="488" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">종합 5위 · 축소</text>
+    <text x="740" y="488" font-size="12" fill="#1d4ed8" font-weight="bold" text-anchor="end">매출단독 2위·확대</text>
+  </g>
+
+  <!-- Card: 뷰티 -->
+  <g>
+    <rect x="800" y="334" width="360" height="170" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect x="800" y="334" width="360" height="40" rx="14" fill="#9ca3af"/>
+    <rect x="800" y="360" width="360" height="14" fill="#9ca3af"/>
+    <circle cx="824" cy="354" r="13" fill="#ffffff"/>
+    <text x="824" y="359" font-size="14" font-weight="bold" fill="#6b7280" text-anchor="middle">6</text>
+    <text x="848" y="360" font-size="17" font-weight="bold" fill="#fff">뷰티</text>
+    <rect x="820" y="390" width="10" height="10" fill="#60a5fa"/>
+    <text x="840" y="399" font-size="14" fill="#374151">순매출 30.5억 원 (5위)</text>
+    <circle cx="825" cy="422" r="6" fill="#dc2626"/>
+    <text x="840" y="427" font-size="14" fill="#374151">마진율 22.05% (5위)</text>
+    <path d="M820,452 h10 M825,447 v10" stroke="#9ca3af" stroke-width="2"/>
+    <text x="840" y="455" font-size="14" fill="#374151">반품률 5.70% (6위·최고)</text>
+    <rect x="820" y="472" width="120" height="24" rx="12" fill="#fee2e2"/>
+    <text x="880" y="488" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">종합 6위 · 축소</text>
+    <text x="1120" y="488" font-size="12" fill="#9ca3af" text-anchor="end">매출단독 5위·축소</text>
+  </g>
+
+  <!-- ===== 판단 변경 요약 패널 ===== -->
+  <text x="40" y="568" font-size="22" font-weight="bold" fill="#111">판단이 바뀐 카테고리 — 매출단독 vs 종합점수</text>
+  <rect x="40" y="580" width="88" height="5" rx="2.5" fill="#e53935"/>
+
+  <!-- row: 가구 -->
+  <g>
+    <rect x="40" y="604" width="1120" height="110" rx="14" fill="#ffffff" stroke="#fca5a5" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="64" y="638" font-size="16" font-weight="bold" fill="#111">가구</text>
+    <rect x="64" y="654" width="150" height="32" rx="16" fill="#dbeafe"/>
+    <text x="139" y="675" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">매출단독: 확대</text>
+    <line x1="230" y1="670" x2="330" y2="670" stroke="#e53935" stroke-width="3" marker-end="url(#arrowRed)"/>
+    <rect x="340" y="654" width="150" height="32" rx="16" fill="#fee2e2"/>
+    <text x="415" y="675" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">종합점수: 축소</text>
+    <text x="520" y="676" font-size="13" fill="#374151">마진율 최저(21.56%) + 반품률 상위(5.66%)가 매출 2위를 압도 → "많이 팔린다"≠"많이 남긴다"</text>
+  </g>
+
+  <!-- row: 도서 -->
+  <g>
+    <rect x="40" y="734" width="1120" height="110" rx="14" fill="#ffffff" stroke="#93c5fd" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="64" y="768" font-size="16" font-weight="bold" fill="#111">도서</text>
+    <rect x="64" y="784" width="150" height="32" rx="16" fill="#f3f4f6"/>
+    <text x="139" y="805" font-size="14" font-weight="bold" fill="#4b5563" text-anchor="middle">매출단독: 유지</text>
+    <line x1="230" y1="800" x2="330" y2="800" stroke="#2563eb" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <rect x="340" y="784" width="150" height="32" rx="16" fill="#dbeafe"/>
+    <text x="415" y="805" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">종합점수: 확대</text>
+    <text x="520" y="806" font-size="13" fill="#374151">매출은 4위지만 마진율 29.52%로 독보적 1위 → 적게 팔아도 가장 남는 카테고리</text>
+  </g>
+
+  <!-- row: 식품 -->
+  <g>
+    <rect x="40" y="864" width="1120" height="110" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="64" y="898" font-size="16" font-weight="bold" fill="#111">식품</text>
+    <rect x="64" y="914" width="150" height="32" rx="16" fill="#fee2e2"/>
+    <text x="139" y="935" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">매출단독: 축소</text>
+    <line x1="230" y1="930" x2="330" y2="930" stroke="#6b7280" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <rect x="340" y="914" width="150" height="32" rx="16" fill="#f3f4f6"/>
+    <text x="415" y="935" font-size="14" font-weight="bold" fill="#4b5563" text-anchor="middle">종합점수: 유지</text>
+    <text x="520" y="936" font-size="13" fill="#374151">매출은 최저지만 마진율 2위 · 반품률 1위(최저) → 매출만 보면 놓치는 "알짜" 카테고리</text>
+  </g>
+</svg>
