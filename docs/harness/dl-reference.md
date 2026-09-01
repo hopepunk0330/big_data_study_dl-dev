@@ -49,17 +49,18 @@
 
 이 절만은 지금 채울 수 있다. 학습 노트가 아니라 **이 저장소에서 직접 확인한 사실**이기 때문이다. 노트가 들어오면 사용자의 환경 구성 습관으로 보완한다.
 
-- **가상환경**: venv (이 학습 시리즈 관례 — ML은 Anaconda, DL은 venv). `uv`로 생성·관리한다.
+- **가상환경**: **conda**(Anaconda), 환경 이름 **`dl-dev`** — 사용자가 직접 구성해두었다.
   ```bash
-  uv venv --python 3.11 --seed     # pip 포함해 생성
-  uv pip install <패키지>           # 설치
-  uv pip list                       # 설치 목록 확인
-  .venv\Scripts\activate            # 활성화 (Windows)
+  conda activate dl-dev             # 활성화 (Anaconda Prompt)
+  conda list                        # 설치 목록 확인
+  # conda 는 PATH에 없다 — 전체 경로로 실행할 수도 있다:
+  # C:\Users\mega\anaconda3\envs\dl-dev\python.exe
   ```
 - **Python**: 3.11.16. 최신 버전을 기본값으로 삼지 않는다 — 딥러닝 프레임워크는 최신 파이썬 지원이 늦는 경우가 많다.
-- **프레임워크**: PyTorch. `test.ipynb` 실행 기록 기준 **PyTorch 2.5.1 / CUDA 11.8**.
+- **프레임워크**: **PyTorch 2.5.1** / torchvision 0.20.1 / torchaudio 2.5.1, **CUDA 11.8** — 이미 설치돼 있고 `torch.cuda.is_available()`이 True다.
 - **GPU**: NVIDIA GeForce GTX 1660 SUPER (**VRAM 6GB**) — 넉넉하지 않다. 배치 크기·중간 텐서 보존을 항상 의식한다.
-- **⚠️ 확인 필요**: 현재 `.venv`에는 **PyTorch가 설치돼 있지 않다**(ipykernel만). 위 2.5.1/CUDA 11.8은 다른 환경에서 실행된 기록이다. **PyTorch 설치는 수업에서 직접 진행하며, Claude가 임의로 설치하지 않는다**(`CLAUDE.md` 개발 환경 절).
+- **함께 설치된 것**: numpy 2.0.1, pandas 3.0.5, matplotlib, seaborn, scikit-learn 1.9.0, ipykernel. 주피터 커널 `dl-dev` 등록 완료.
+- **⚠️ 새 환경을 만들거나 패키지를 설치하기 전에는 `CLAUDE.md` 개발 환경 절의 확인 절차를 반드시 따른다** — `python`·`conda`가 PATH에 없다는 이유로 "설치 안 됨"이라 단정해 중복 환경을 만든 사고가 실제로 있었다.
 
 ### 환경 확인 코드
 

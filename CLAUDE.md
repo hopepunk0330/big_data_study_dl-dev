@@ -1,7 +1,7 @@
 # 프로젝트 안내
 
 ## 개요
-딥러닝 교재(chap01~10)를 따라가며 실습 노트북을 쌓는 학습용 저장소. `pandas_dev` → `ml-dev` → `dl-dev`로 이어지는 학습 시리즈의 세 번째 프로젝트다.
+딥러닝 교재(chap01~10)를 따라가며 실습 노트북을 쌓는 학습용 저장소. `pandas_dev` → `ml-dev` → `dl-dev`로 이어지는 **학습 시리즈**의 세 번째다(하네스는 그 사이 Mercari 가격예측 프로젝트를 거쳐 왔으므로 포크 계보는 4단계다 — `HARNESS_LOG.md` 참고).
 
 - 원격 저장소: https://github.com/hopepunk0330/big_data_study_dl-dev
 - **교재 PDF는 이 저장소 밖(`C:\big21\딥러닝 교재`, chap01~10.pdf)에 있고 저장소에 포함하지 않는다** — 저작권 자료이며 84MB로 저장소를 무겁게 만들기 때문. `.gitignore`의 `*.pdf`가 실수로 커밋되는 것을 막는다. 이 폴더는 읽기 참고만 하고 수정·이동·삭제하지 않는다(아래 금지 항목).
@@ -35,13 +35,33 @@ test.ipynb    # 환경 확인용(PyTorch/CUDA 인식, 기본 라이브러리 imp
 챕터별 실습 노트북의 폴더 구조(예: `DL/01_*.ipynb` 형태로 갈지)는 아직 정하지 않았다 — 첫 챕터 실습을 시작할 때 확정한다.
 
 ## 개발 환경
-- 가상환경: **venv** (이 학습 시리즈 관례 — ML은 Anaconda, DL은 venv). `uv`로 생성·관리한다: `uv venv --python 3.11 --seed`
-- Python 버전: **3.11** (최신 버전을 기본값으로 삼지 않는다 — 딥러닝 프레임워크는 최신 파이썬 지원이 늦는 경우가 많다. 버전을 올릴 필요가 생기면 먼저 확인). 현재 `.venv`는 3.11.16.
-- 프레임워크: **PyTorch**. `test.ipynb`의 실행 기록 기준 PyTorch 2.5.1 / CUDA 11.8 / GPU: NVIDIA GeForce GTX 1660 SUPER.
-  - **현재 `.venv`에는 PyTorch가 설치돼 있지 않다**(ipykernel만 설치됨). `test.ipynb`의 출력은 다른 환경에서 실행된 기록이다.
-  - **PyTorch 설치는 수업에서 직접 진행한다 — Claude가 임의로 설치하지 않는다**(2026-09-01 명시). CUDA 빌드 선택(cu118/cu121/CPU)이 학습 환경 구성의 일부이므로, 요청받기 전에 앞질러 설치하지 않는다.
-- 새 패키지를 추가하기 전에는 기존 환경에 이미 있는지(`uv pip list`)부터 확인한다.
-- VS Code는 `.vscode/settings.json`의 `python.defaultInterpreterPath`로 `.venv`를 자동 인식한다.
+
+**이 프로젝트는 conda(Anaconda) 환경을 쓴다. 사용자가 2026-09-01 오전에 직접 구성해두었고, 이미 완성된 상태다.**
+
+| 항목 | 값 |
+|---|---|
+| 가상환경 | **conda**, 환경 이름 **`dl-dev`** |
+| 경로 | `C:\Users\mega\anaconda3\envs\dl-dev` |
+| Python | **3.11.16** |
+| 프레임워크 | **PyTorch 2.5.1** / torchvision 0.20.1 / torchaudio 2.5.1 |
+| CUDA | **11.8** (`torch.cuda.is_available()` → True) |
+| GPU | NVIDIA GeForce GTX 1660 SUPER (**VRAM 6GB**) |
+| 기타 | numpy 2.0.1, pandas 3.0.5, matplotlib, seaborn, scikit-learn 1.9.0, ipykernel |
+| 주피터 커널 | `dl-dev` 등록 완료 |
+
+- 활성화: `conda activate dl-dev`. **`conda`는 PATH에 없으므로** Anaconda Prompt를 쓰거나 전체 경로(`C:\Users\mega\anaconda3\envs\dl-dev\python.exe`)로 실행한다.
+- VS Code는 `.vscode/settings.json`의 `python.defaultInterpreterPath`로 이 conda 환경을 인식한다(`.venv`가 아니다).
+- Python 버전은 3.11로 고정한다 — 최신 버전을 기본값으로 삼지 않는다. 딥러닝 프레임워크는 최신 파이썬 지원이 늦는 경우가 많다.
+- **새 패키지를 추가하기 전에 기존 환경에 이미 있는지부터 확인한다**(`conda list` 또는 해당 python으로 `-m pip list`). 이 환경에는 이미 상당수가 깔려 있다.
+
+### ⚠️ 환경을 새로 만들거나 패키지를 설치하기 전에 반드시 확인한다 (2026-09-01 신설)
+
+**이미 있는 환경을 못 찾고 새로 만드는 사고가 실제로 발생했다.** `python`·`conda`가 PATH에 없다는 이유로 "설치돼 있지 않다"고 단정해 `.venv`를 새로 만들었으나, 실제로는 위 conda 환경이 PyTorch까지 갖춘 채 존재하고 있었다. 재발 방지 규칙:
+
+- **PATH에 없다 = 설치 안 됨이 아니다.** Anaconda는 기본적으로 PATH에 등록되지 않는다. 반드시 다음까지 확인한다: `~/.conda/environments.txt`, `%USERPROFILE%\anaconda3`, `%USERPROFILE%\miniconda3`, `C:\ProgramData\anaconda3`, 그리고 등록된 주피터 커널(`%APPDATA%\jupyter\kernels`).
+- **확인 명령이 실패하면 "없음"으로 단정하지 않는다.** 검색이 실패했으면 "확인하지 못했다"고 사용자에게 그대로 보고한다 — 실패를 부재의 근거로 삼지 않는다.
+- **노트북의 커널 이름(`kernelspec.display_name`)은 기존 환경의 강력한 단서다.** 그 이름의 환경이 어디 있는지 먼저 찾는다.
+- 환경 생성·패키지 설치는 위 확인을 마치고, 사용자에게 **확인된 사실**을 제시한 뒤에만 진행한다.
 
 ## 코딩 규칙
 - 들여쓰기는 공백 4칸을 쓴다.
@@ -85,6 +105,9 @@ test.ipynb    # 환경 확인용(PyTorch/CUDA 인식, 기본 라이브러리 imp
 - 새 프로젝트를 시작하거나 저장소 구조·원격 연결을 정리할 때는 @docs/harness/git-workflow.md 의 체크리스트를 따른다.
 - 프로젝트 관리용 Notion 페이지에 기록·문서화 작업을 할 때는 @docs/harness/notion-workflow.md 를 따른다.
 - 머신러닝·딥러닝 분석 프로젝트(환경 세팅~평가)를 진행할 때는 @docs/harness/ml-project-workflow.md 의 체크리스트를 따른다 — "진단 → 전처리/규칙 → 대조" 워크플로우, 3-way 분할·데이터 누수 방지·공정한 하이퍼파라미터 비교·모델+전처리기 저장 원칙은 딥러닝에도 그대로 적용된다.
+  - **단 11절(ML/DL 프로젝트도 표준 계획 문서를 갖춘다)과 13절(계획 문서와 대조하기 전에는 다음 노트북에 착수하지 않는다)은 이 저장소의 수업 실습에 적용하지 않는다**(2026-09-01 결정). 두 절은 "왜 이렇게 전처리·모델링했는지를 코드 밖에 남긴다"는 목적의 실무 프로젝트 규칙이고, 교재 챕터를 따라가는 실습에는 대상이 되는 기획·설계 결정 자체가 없다. 이 저장소에는 `docs/planning/`이 없으며 **만들지 않는다** — 없는 문서를 찾다 멈추거나, 대조할 계획 문서를 스스로 지어내지 않는다. 챕터 실습에서 따르는 것은 위 본문의 워크플로우·데이터 누수 방지·재현성 원칙까지다.
+  - **전환 시점은 하네스 관리 방식과 동일하다** — 이 저장소가 수업용을 넘어 프로젝트성 작업(자체 주제 선정, 외부 제출·공유, 협업)을 시작하면 그때 11·13절을 적용하고 `docs/planning/`을 만든다. 성격 변화가 감지되면 미루지 말고 먼저 제안한다.
+  - 같은 이유로 `docs/planning/` 변경 시 `planning-doc-qa`를 자동 실행하라는 아래 규칙도 현재는 발동 대상이 없다 — 폴더가 생기는 시점부터 유효하다.
 - `app/`의 A/B 테스트 참여자 앱 구현 방식에 착수하기 전에는 @docs/harness/ab-test-app-workflow.md 에 따라 먼저 사용자에게 확인한다.
 - 하네스(`.claude/agents/`, `.claude/skills/`, `docs/harness/`)를 추가·수정하는 작업 라운드가 끝나면 @docs/harness/git-workflow.md 7절에 따라 물어보지 않고 바로 `data-harness-auditor`를 실행한다.
 - 여러 에이전트를 동시에 굴리는 동안 "지금 하는 것 끝나면 이어서 하겠다"고 약속하거나 사용자가 새로 지시한 할 일은, 그 즉시(같은 턴 안에) 태스크로 만든다 — 채팅 텍스트로만 남기지 않는다. 상세는 @docs/harness/git-workflow.md 11절 참고.
