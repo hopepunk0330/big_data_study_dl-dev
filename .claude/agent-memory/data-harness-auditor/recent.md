@@ -34,3 +34,14 @@ dl-dev 3차 감사 — 2차 감사(`8053668`) 이후 `87305bc`(환경 정정 + �
 - 부분 해결: 하드코딩 일반화가 `report-writer-contract.md`는 128행 한 줄만 손봐 `ML/assets/cleaned_*`·`docs/reference/reports/`·`docs/gemini/` 참조 6곳(30·34·79·84·85·227행)이 무조건문으로 남음 — 이 저장소에 실재하지 않는 경로다.
 - `memory-protocol.md:12`("각 에이전트 파일에 개별 명시하지 않는다")는 그대로인데 예외 표시는 `dl-expert.md:11`에만 달렸다 — 선언 문서 쪽을 안 고쳐 `full-stack-engineer.md:15`는 여전히 무표시 위반이고, 그 줄에만 있는 "값을 복제하지 말고 매번 CLAUDE.md에서 읽어라" 지시가 중복 정리 때 삭제될 위험이 남는다.
 - 환경 정정의 교훈이 이식 가능한 하네스로 전파되지 않음: "PATH에 없다 = 설치 안 됨이 아니다" 규칙이 `CLAUDE.md`·`dl-reference.md`(둘 다 프로젝트 전용)에만 있고 `ml-project-workflow.md` 0절에는 없다. 같은 0절 9행은 아직 "DL에는 venv를 관례로" — 이 저장소 사실과 반대. `HARNESS_LOG.md:20`도 "개발 환경(venv/…)"으로 낡음.
+
+### 2026-09-01 (4)
+
+dl-dev 4차 감사 — 3차 감사 이후 단일 커밋 `354ebec`(3차 findings 6건 대응, 10개 파일) 대상.
+
+- **완전 해결 5건**: (1) 삭제됐던 "PyTorch 설치·재설치는 수업에서" 결정이 `CLAUDE.md:56`·`dl-reference.md:66` 두 곳에 복원되고 재설치·CUDA 빌드 변경·업그레이드로 범위가 명시됨(두 사본 내용 일치, "확인 후 진행" 절차와도 충돌 없음 — 오히려 그 절차를 밟아도 예외라고 명시). (2) `git-workflow.md:49`의 4절 게이트가 `notion-workflow.md:35~38`과 동일한 3분할로 정정됨 — 명시된 소비자 3종(`ml-doc-writer.md:13`=4-2~4-5, `planning-doc-qa.md:12`=4절, `ml-project-workflow.md:86/88/90`=4-1) 실제 독해 확인. (3) `memory-protocol.md:12`가 per-agent 예외를 허용하고 `dl-expert.md`·`full-stack-engineer.md`를 실명으로 보호("예:"라 폐쇄 목록도 아님). (4) `report-writer-contract.md` 5~11행 스코핑 노트가 죽은 경로 최초 등장(38행)보다 위 — top-down 독해로 반드시 먼저 만남. (5) 소소한 4건(【절차】 태그, `dl-reference.md` 순환 경로 차단, `dl-expert.md:14` 빈 절 분기, `.gitignore` `git add -f` 문구 — `git check-ignore` exit=1로 부정 패턴 실동작 재확인).
+- **미해결**: `ml-reference.md:13`("딥러닝은 venv가 낫다")이 하네스에 남은 마지막 DL=venv 주장. 사용자 노트 인용이라 편집 대상은 아니지만 그 문서 자신의 ⚠️ 확인 필요 표기가 안 붙어 있다 — `ml-project-workflow.md:19`·`HARNESS_LOG.md:20`만 고치고 여기를 빠뜨렸다. **교훈: "이 주장이 하네스 어디에도 없는가"는 수정 대상 파일이 아니라 문자열로 grep해서 판정한다.**
+- **신규 위험(같은 커밋이 만든 것)**: `ml-project-workflow.md` 0절 5번이 "CLAUDE.md가 0절보다 우선"을 스스로 갖게 되면서, 같은 커밋이 `memory-protocol.md:12`에 적은 dl-expert 예외 정당화("0절보다 CLAUDE.md를 따른다는 도메인 고유 우선순위")가 더 이상 도메인 고유가 아니게 됨 — 정당화를 문자 그대로 검증하는 다음 정리 라운드가 `dl-expert.md:11`을 다시 지울 근거가 된다(finding 4와 동일한 실패 모드의 재발 경로).
+- 0절 잔여 모순: `패키지 설치 전 확인` 불릿이 여전히 무조건 `conda list` — 바로 위 `확인 순서` 불릿이 "conda가 PATH에 있을 때만 동작"이라 경고한 것과 어긋난다(`CLAUDE.md:55`는 `-m pip list` 대안을 병기).
+- 기록 누락 2건: 사용자 결정 목록에 있는 "uv로 설치한 파이썬은 유지한다"·"`.gitignore`의 `.venv/`는 의도된 위생 항목"이 저장소 어디에도 없음(`grep -rni uv` 무결과, `.gitignore:8`에 주석 없음) — `.vscode/settings.json`·agent-memory처럼 보호 주석을 받은 결정과 대비된다.
+- 참조 무결성 이상 없음 — `@`참조 전부·모든 인용 `.md` 경로 실재, 절 번호(git-workflow 1-1/6/7/8/11, ml-project-workflow 11/13, notion-workflow 4-1~4-5/8) 전부 실재, agent-memory 15종 index/recent 완비.
