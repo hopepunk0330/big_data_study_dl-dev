@@ -26,3 +26,20 @@ datasets/
 .idea/
 Thumbs.db
 desktop.ini
+
+# 하네스 — 에이전트 메모리는 세션 이력이라 커밋하지 않는다
+# (docs/harness/memory-protocol.md "하네스를 새 프로젝트로 포크할 때" 절)
+.claude/agent-memory/
+
+# 시크릿 (docs/harness/git-workflow.md 4절 기본값)
+secrets/
+.env
+.DS_Store
+
+# 딥러닝 학습 산출물
+runs/
+lightning_logs/
+wandb/
+checkpoints/
+*.onnx
+*.safetensors
