@@ -24,3 +24,13 @@ dl-dev 재감사 — 1차 감사(`010dc67`) 이후 7개 커밋(`8f246e8`·`2a71d
 - `dl-reference.md` 순환: 파일이 존재하지만 내용이 비어 있는데 `dl-expert.md:14`는 "파일이 없으면"으로만 분기하고, `dl-reference.md`의 ⚠️1은 다시 expert-contract "참고 문서가 없는 프로젝트라면"(=문서를 만들자고 제안하라)로 넘긴다.
 - 1차 감사 이월분 재평가: `.vscode/settings.json`은 `.gitignore`에 `.vscode/`가 있는데도 **실제로는 git 추적 중**(`git ls-files` 확인)이라 동작에는 문제 없음 — 진짜 위험은 나중 세션이 "gitignore 불일치"를 고치겠다고 `git rm --cached` 하는 것. agent-memory와 똑같은 상황인데 CLAUDE.md에 그 예외가 안 적혀 있다. `docs/planning/` 부재 + `ml-project-workflow.md` 11·13절 게이트는 `61a784d`가 손대지 않아 그대로 남음. CLAUDE.md:4 "세 번째" vs CLAUDE.md:13 4홉 계보는 이제 같은 파일 안에서 모순.
 - 참조 무결성 자체는 이상 없음 — `@`참조 6개 및 모든 `docs/harness/`·`.claude/` 경로 실재. 신규 파일 `dl-reference.md` 포함.
+
+### 2026-09-01 (3)
+
+dl-dev 3차 감사 — 2차 감사(`8053668`) 이후 `87305bc`(환경 정정 + 감사 수정)·`2c604d2`(잔여 감사 수정) 대상. 2차 findings 9건의 수정이 실제로 성립하는지 검증.
+
+- **완전 해결 6건**: `.gitignore` `.vscode/*` + `!.vscode/settings.json` 부정 패턴 실동작 확인(`git check-ignore` 결과 settings.json만 비무시, `.vscode/`에 다른 파일 없음) / `dl-expert.md:12`의 "54절" → "사용자 제공 참고 문서 활용" 절(실재) / 빈 참고문서 분기 추가 / 조건부 이식 목록 【제외】·【유지】 태그(내용과 일치) + 잔존 참조 grep 단계 신설 / `CLAUDE.md:4` 학습 시리즈 vs 포크 계보 구분 / conda 환경 실측 대조 전부 일치(Python 3.11.16, torch 2.5.1/CUDA 11.8/GTX 1660 SUPER, numpy 2.0.1, pandas 3.0.5, sklearn 1.9.0, 커널 `dl-dev` 등록, `.venv` 삭제됨).
+- **최대 미해결**: `notion-workflow.md` 4절 게이트는 쪼갰는데 그 게이트를 **복제해 갖고 있던** `git-workflow.md:49`를 같은 커밋에서 안 고쳤다 — 여전히 "4절(표준 문서 규격)만 PM 전용(그 절 자신에 표시돼 있다)"이라 적혀 있어, 다음 포크에서 4-1~4-5까지 통째로 끄는 원래 버그가 그대로 재현된다. **교훈: 게이트 문구가 두 문서에 복제돼 있으면 한쪽만 고치는 수정은 무효다 — 고치기 전에 그 문장을 인용하는 다른 문서를 먼저 grep한다.**
+- 부분 해결: 하드코딩 일반화가 `report-writer-contract.md`는 128행 한 줄만 손봐 `ML/assets/cleaned_*`·`docs/reference/reports/`·`docs/gemini/` 참조 6곳(30·34·79·84·85·227행)이 무조건문으로 남음 — 이 저장소에 실재하지 않는 경로다.
+- `memory-protocol.md:12`("각 에이전트 파일에 개별 명시하지 않는다")는 그대로인데 예외 표시는 `dl-expert.md:11`에만 달렸다 — 선언 문서 쪽을 안 고쳐 `full-stack-engineer.md:15`는 여전히 무표시 위반이고, 그 줄에만 있는 "값을 복제하지 말고 매번 CLAUDE.md에서 읽어라" 지시가 중복 정리 때 삭제될 위험이 남는다.
+- 환경 정정의 교훈이 이식 가능한 하네스로 전파되지 않음: "PATH에 없다 = 설치 안 됨이 아니다" 규칙이 `CLAUDE.md`·`dl-reference.md`(둘 다 프로젝트 전용)에만 있고 `ml-project-workflow.md` 0절에는 없다. 같은 0절 9행은 아직 "DL에는 venv를 관례로" — 이 저장소 사실과 반대. `HARNESS_LOG.md:20`도 "개발 환경(venv/…)"으로 낡음.

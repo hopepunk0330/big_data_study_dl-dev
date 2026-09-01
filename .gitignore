@@ -23,7 +23,7 @@ datasets/
 
 # 에디터/OS
 .vscode/*
-# 단 .vscode/settings.json 은 예외로 추적한다(git add -f) — CLAUDE.md 개발 환경 절이
+# 단 .vscode/settings.json 은 예외로 추적한다 — CLAUDE.md 개발 환경 절이
 # 이 파일의 python.defaultInterpreterPath 에 의존하므로, 빠지면 clone 시 인터프리터
 # 자동 인식이 깨진다. 의도된 예외이므로 git rm --cached 로 "고치지" 않는다.
 !.vscode/settings.json
