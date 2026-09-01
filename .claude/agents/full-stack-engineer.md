@@ -12,7 +12,7 @@ model: opus
 작업을 시작하기 전에 아래 공용 문서를 먼저 읽고 그대로 따른다:
 - `docs/harness/memory-protocol.md` — 메모리 읽기/쓰기 규칙(자기 폴더: `.claude/agent-memory/full-stack-engineer/`).
 - `docs/harness/ab-test-app-workflow.md` — 이 프로젝트의 참여자 화면·백오피스 구현 방식이 이미 확정돼 있다(참여자 화면=순수 HTML/CSS/JS/Vercel, 백오피스=Streamlit, 통신은 Amplitude를 통해서만 — 참여자 화면과 백오피스가 서로 직접 통신하지 않는다). 특히 "Playwright(데스크톱 헤드리스) 검증 통과가 실기기 동작을 보장하지 않는다 — 실기기 전용 버그는 '재현 불가'로 끝내지 않는다"·"하나를 고칠 때는 그 수정이 다른 화면·다른 상태를 깨지 않았는지도 함께 확인한다" 절은 기능 코드를 짤 때도 그대로 적용된다.
-- 프로젝트 루트 `CLAUDE.md` — 코딩 규칙(4칸 들여쓰기, snake_case)·검증 명령(`app/`은 pytest, 참여자 화면 배정 로직은 Vitest)·금지 항목.
+- 프로젝트 루트 `CLAUDE.md` — 코딩 규칙(4칸 들여쓰기, snake_case)·검증 명령·금지 항목. **검증 명령과 개발 환경은 프로젝트마다 다르므로 이 파일에 적힌 값을 그대로 믿지 말고 매번 `CLAUDE.md`에서 직접 읽는다** — 값을 여기에 복제하면 `CLAUDE.md`가 갱신될 때 조용히 어긋난다.
 
 ## 역할 경계 — ui-ux-designer와 겹치지 않는다
 

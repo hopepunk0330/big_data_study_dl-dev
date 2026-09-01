@@ -6,11 +6,15 @@
 - 원격 저장소: https://github.com/hopepunk0330/big_data_study_dl-dev
 - **교재 PDF는 이 저장소 밖(`C:\big21\딥러닝 교재`, chap01~10.pdf)에 있고 저장소에 포함하지 않는다** — 저작권 자료이며 84MB로 저장소를 무겁게 만들기 때문. `.gitignore`의 `*.pdf`가 실수로 커밋되는 것을 막는다. 이 폴더는 읽기 참고만 하고 수정·이동·삭제하지 않는다(아래 금지 항목).
 
-**이 프로젝트는 아직 별도의 진행상황·기획 관리 툴을 쓰지 않는다**(2026-09-01 확인) — 이전 프로젝트의 Notion 페이지는 그 프로젝트 전용이므로 여기서 참조하지 않는다. 나중에 관리 툴(Notion 등)을 도입하면 그 시점에 링크를 이 문단에 적어 넣는다(`docs/harness/git-workflow.md` 1-1절). 그때까지 `notion-workflow.md`는 이식된 상태로 두되 적용 대상이 없다.
+**이 프로젝트는 아직 별도의 진행상황·기획 관리 툴을 쓰지 않는다**(2026-09-01 확인) — 이전 프로젝트의 Notion 페이지는 그 프로젝트 전용이므로 여기서 참조하지 않는다. 나중에 관리 툴(Notion 등)을 도입하면 그 시점에 링크를 이 문단에 적어 넣는다(`docs/harness/git-workflow.md` 1-1절).
+
+**단 이는 `notion-workflow.md` 4절의 "프로젝트별 기획·진행 페이지"에만 해당한다.** 같은 문서 8절의 하네스 기록용 고정 페이지("JY-Data")는 프로젝트마다 새로 만들지 않고 모든 프로젝트가 공유하는 페이지이므로, 이 프로젝트에도 그대로 적용된다 — 하네스의 기조가 바뀌면 그 페이지도 갱신 대상이다.
 
 `.claude/`와 `docs/harness/`에는 pandas_dev → ml-dev → (Mercari 가격예측) → dl-dev로 이식된 재사용 멀티에이전트 하네스가 있다 — 도메인별 전문가 에이전트(`dl-expert` 등, 최상위 전문가 페르소나 — 명시적 요청 시 완성된 구현까지 직접 수행), 크로스도메인 검증 에이전트(`qa-reviewer`), 하네스 자체 정합성 감사 에이전트(`data-harness-auditor`)는 `.claude/agents/`에, 사람이 직접 읽고 관리하는 공용 규칙·레퍼런스 문서는 숨김 폴더가 아닌 `docs/harness/`에, 노트북 스타일 가이드는 `.claude/skills/notebook-toolkit`에 둔다. 포크 계보는 `docs/harness/HARNESS_LOG.md` 참고.
 
-**하네스는 이전 프로젝트에서 필요해서 통째로 이식해온 자산이다 — 지금 이 프로젝트에서 당장 안 쓰는 문서·스크립트·에이전트라도 임의로 삭제하지 않는다.** A/B 테스트·프론트엔드·보고서 관련 자산(`ab-test-app-workflow.md`, `report-tools/`의 검증 스크립트, `ui-ux-designer`·`dev-qa` 등)은 해당 워크스트림을 시작할 때 그대로 쓴다.
+**하네스는 이전 프로젝트에서 필요해서 통째로 이식해온 자산이다 — 지금 이 프로젝트에서 당장 안 쓰는 문서·스크립트·에이전트라도 임의로 삭제하지 않는다.** A/B 테스트·프론트엔드·보고서 관련 자산(`ab-test-app-workflow.md`, `ui-ux-designer`·`dev-qa` 등)은 해당 워크스트림을 시작할 때 참고한다.
+
+단 `docs/harness/report-tools/`는 **그대로 실행 가능한 것과 참고용으로만 남긴 것이 섞여 있다**. `git-workflow.md` 6절이 규정하듯 `verify_scr004_*.mjs`처럼 이전 프로젝트 고유 DOM(`.p3-sheet`·`#pv4-confirm` 등)에 강결합된 스크립트는 **이 저장소에서 실행해도 동작하지 않는다** — 기법 참고용으로 보존한 것이므로 그대로 돌리려 하지 말고 새로 작성한다. 범용 도구(`svg_to_png.mjs`·`html_to_pdf.mjs`·`inspect_svg.mjs`·`inspect_page.mjs`·`measure_pages.mjs`·`shot_pages.mjs`·`find_by_text.mjs`)만 그대로 재사용 가능하다.
 
 ### 하네스를 `main`에서 관리한다 — worktree 분리는 나중에 (2026-09-01 결정)
 
