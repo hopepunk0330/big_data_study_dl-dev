@@ -1,0 +1,28 @@
+# 교재/대용량 자료
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 데이터셋/모델 가중치
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.npz
+data/
+datasets/
+
+# 에디터/OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
