@@ -6,11 +6,13 @@
 - 원격 저장소: https://github.com/hopepunk0330/big_data_study_dl-dev
 - **교재 PDF는 이 저장소 밖(`C:\big21\딥러닝 교재`, chap01~10.pdf)에 있고 저장소에 포함하지 않는다** — 저작권 자료이며 84MB로 저장소를 무겁게 만들기 때문. `.gitignore`의 `*.pdf`가 실수로 커밋되는 것을 막는다. 이 폴더는 읽기 참고만 하고 수정·이동·삭제하지 않는다(아래 금지 항목).
 
-진행상황·의사결정 기록과 세부 계획은 **Notion 프로젝트 페이지**에서 관리한다(이전 프로젝트와 동일한 방식) — dl-dev용 페이지 링크는 아직 미정이므로, 정해지는 즉시 이 문장에 링크를 적어 넣는다(`docs/harness/git-workflow.md` 1-1절: 리셋 시 관리 툴을 다시 확인하고 링크를 CLAUDE.md에 기록한다).
+**이 프로젝트는 아직 별도의 진행상황·기획 관리 툴을 쓰지 않는다**(2026-09-01 확인) — 이전 프로젝트의 Notion 페이지는 그 프로젝트 전용이므로 여기서 참조하지 않는다. 나중에 관리 툴(Notion 등)을 도입하면 그 시점에 링크를 이 문단에 적어 넣는다(`docs/harness/git-workflow.md` 1-1절). 그때까지 `notion-workflow.md`는 이식된 상태로 두되 적용 대상이 없다.
 
 `.claude/`와 `docs/harness/`에는 pandas_dev → ml-dev → (Mercari 가격예측) → dl-dev로 이식된 재사용 멀티에이전트 하네스가 있다 — 도메인별 전문가 에이전트(`dl-expert` 등, 최상위 전문가 페르소나 — 명시적 요청 시 완성된 구현까지 직접 수행), 크로스도메인 검증 에이전트(`qa-reviewer`), 하네스 자체 정합성 감사 에이전트(`data-harness-auditor`)는 `.claude/agents/`에, 사람이 직접 읽고 관리하는 공용 규칙·레퍼런스 문서는 숨김 폴더가 아닌 `docs/harness/`에, 노트북 스타일 가이드는 `.claude/skills/notebook-toolkit`에 둔다. 포크 계보는 `docs/harness/HARNESS_LOG.md` 참고.
 
 **하네스는 이전 프로젝트에서 필요해서 통째로 이식해온 자산이다 — 지금 이 프로젝트에서 당장 안 쓰는 문서·스크립트·에이전트라도 임의로 삭제하지 않는다.** A/B 테스트·프론트엔드·보고서 관련 자산(`ab-test-app-workflow.md`, `report-tools/`의 검증 스크립트, `ui-ux-designer`·`dev-qa` 등)은 해당 워크스트림을 시작할 때 그대로 쓴다.
+
+**이 프로젝트에서 `.claude/agent-memory/`는 git 추적 상태로 그대로 둔다**(2026-09-01 결정) — `memory-protocol.md`와 `git-workflow.md` 2절은 이 폴더를 `.gitignore`로 빼도록 규정하지만, 이 저장소에서는 사용자가 추적 유지를 명시적으로 선택했다. `.gitignore`에 항목은 있으나 파일이 이미 추적 중이라 실효가 없는 상태이며, **이는 방치된 오류가 아니라 의도된 결정이다 — `git rm --cached`로 "고치지" 않는다.** 대신 학습 이력이 원격에 올라간다는 점을 인지하고, 민감한 내용을 메모리에 적지 않는다.
 
 ## 폴더 구조
 ```
@@ -24,7 +26,8 @@ test.ipynb    # 환경 확인용(PyTorch/CUDA 인식, 기본 라이브러리 imp
 - 가상환경: **venv** (이 학습 시리즈 관례 — ML은 Anaconda, DL은 venv). `uv`로 생성·관리한다: `uv venv --python 3.11 --seed`
 - Python 버전: **3.11** (최신 버전을 기본값으로 삼지 않는다 — 딥러닝 프레임워크는 최신 파이썬 지원이 늦는 경우가 많다. 버전을 올릴 필요가 생기면 먼저 확인). 현재 `.venv`는 3.11.16.
 - 프레임워크: **PyTorch**. `test.ipynb`의 실행 기록 기준 PyTorch 2.5.1 / CUDA 11.8 / GPU: NVIDIA GeForce GTX 1660 SUPER.
-  - **주의**: 현재 `.venv`에는 아직 PyTorch가 설치돼 있지 않다(ipykernel만 설치됨). `test.ipynb`의 출력은 다른 환경에서 실행된 것이다 — 설치 시 CUDA 빌드(cu118 등)를 명시적으로 골라야 하므로 먼저 확인한다.
+  - **현재 `.venv`에는 PyTorch가 설치돼 있지 않다**(ipykernel만 설치됨). `test.ipynb`의 출력은 다른 환경에서 실행된 기록이다.
+  - **PyTorch 설치는 수업에서 직접 진행한다 — Claude가 임의로 설치하지 않는다**(2026-09-01 명시). CUDA 빌드 선택(cu118/cu121/CPU)이 학습 환경 구성의 일부이므로, 요청받기 전에 앞질러 설치하지 않는다.
 - 새 패키지를 추가하기 전에는 기존 환경에 이미 있는지(`uv pip list`)부터 확인한다.
 - VS Code는 `.vscode/settings.json`의 `python.defaultInterpreterPath`로 `.venv`를 자동 인식한다.
 
