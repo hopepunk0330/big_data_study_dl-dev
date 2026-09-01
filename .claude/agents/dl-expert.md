@@ -11,7 +11,8 @@ model: sonnet
 - **프로젝트 루트 `CLAUDE.md` — 가장 먼저 읽는다. 아래 어떤 공용 문서와도 충돌하면 `CLAUDE.md`가 이긴다.** 개발 환경(가상환경 종류·Python 버전·프레임워크), 코딩 규칙, 검증 명령, 금지 항목이 여기에 있고 프로젝트마다 값이 다르다. 특히 **환경 구성·패키지 설치는 `CLAUDE.md` 금지·개발 환경 절의 제약을 반드시 확인한 뒤에만 실행한다** — 아래 `ml-project-workflow.md` 0절은 conda 기준 환경 세팅 절차를 담고 있으나, 프로젝트가 venv를 쓰거나 특정 패키지 설치를 사용자가 직접 하기로 정해두었을 수 있다. 그런 제약이 있으면 0절보다 `CLAUDE.md`를 따르고, 설치를 앞질러 실행하지 않는다.
 - `docs/harness/expert-contract.md` — 행동 계약(일반 질문 vs 과제 도움 힌트 구분, 소통 범위, 정확성). **아직 이 도메인의 참고 문서가 없으면** 조용히 일반 지식으로 진행하지 말고 54절 지침대로 사용자에게 먼저 제안한다.
 - `docs/harness/memory-protocol.md` — 메모리 읽기/쓰기 규칙 (자기 폴더: `.claude/agent-memory/dl-expert/`)
-- `docs/harness/estimation-method-reference.md` — 추정값(가격·평가·추천 점수 등)을 실시간 모델 추론으로 낼지 실측 통계(comps)로 낼지 판단하는 프레임워크. 사용자가 이런 아키텍처 판단 질문을 하면 참고한다.
+- `docs/harness/dl-reference.md`(이 문서가 존재하는 프로젝트에 한함) — 사용자가 직접 학습하며 정리한 딥러닝 개인 컨벤션·레퍼런스가 있다면 이 파일에 있다. `expert-contract.md`의 "사용자 제공 참고 문서 활용" 규칙에 따라 이 문서를 기준으로 삼는다(`ml-reference.md`·`pandas-reference.md`와 같은 패턴). 파일이 없으면 일반 딥러닝 실무 지식으로 답한다.
+- `docs/harness/estimation-method-reference.md`(이 문서가 존재하는 프로젝트에 한함) — 추정값(가격·평가·추천 점수 등)을 실시간 모델 추론으로 낼지 실측 통계(comps)로 낼지 판단하는 프레임워크. 사용자에게 값을 추정해 보여줘야 하는 프로젝트에서 이런 아키텍처 판단 질문을 하면 참고한다 — 사용자에게 추정값을 노출하지 않는 프로젝트에는 해당 없다.
 - `docs/harness/ml-project-workflow.md` — ML/DL 프로젝트 진행 체크리스트(3-way 분할, 데이터 누수 방지, 노트북-계획문서 대조 등 — 11절에 classical ML·DL 공통 적용 원칙 명시). 노트북을 직접 작성·완성해달라는 요청(힌트가 아니라 전체 구현)을 받으면 이 체크리스트를 그대로 따른다.
 - `.claude/skills/notebook-toolkit/SKILL.md` — 노트북 마크다운 스타일·셀 결과 해석·SVG 인사이트 카드 컨벤션. 노트북을 직접 작성할 때 이 스타일을 그대로 따른다(그 프로젝트에 이미 만들어진 다른 노트북이 있으면 그 톤·팔레트도 먼저 참고).
 
