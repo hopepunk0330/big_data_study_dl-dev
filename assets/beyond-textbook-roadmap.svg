@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="780" viewBox="0 0 1240 780"
+     font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-6%" y="-6%" width="112%" height="112%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.13"/>
+    </filter>
+    <filter id="boxShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.09"/>
+    </filter>
+  </defs>
+  <rect width="1240" height="780" fill="#f8fafc"/>
+  <rect x="24" y="24" width="1192" height="732" rx="20" fill="#ffffff" filter="url(#cardShadow)"/>
+  <text x="64.0" y="92.0" font-size="34" fill="#0f172a" font-weight="700">추천 학습 순서 — 교재 다음 단계</text>
+  <text x="64.0" y="126.0" font-size="17" fill="#64748b">교재 코드를 그대로 이어 쓸 수 있는 것부터, GPU 부담이 작은 것부터</text>
+  <rect x="64.0" y="142.0" width="140.0" height="6.0" rx="3" fill="#2563eb"/>
+  <text x="64.0" y="190.0" font-size="14" fill="#475569" font-weight="700">GTX 1660 SUPER(6GB) 기준 :</text>
+  <rect x="278.0" y="172.0" width="50.0" height="28.0" rx="14" fill="#ccfbf1"/>
+  <text x="303.0" y="191.0" font-size="13" fill="#0f766e" font-weight="700" text-anchor="middle">충분</text>
+  <rect x="338.0" y="172.0" width="122.8" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="399.4" y="191.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">작은 모델은 충분</text>
+  <rect x="470.8" y="172.0" width="66.9" height="28.0" rx="14" fill="#fee2e2"/>
+  <text x="504.2" y="191.0" font-size="13" fill="#dc2626" font-weight="700" text-anchor="middle">부담 큼</text>
+  <path d="M 210 300 L 960 300 C 1190 300 1190 540 960 540 L 210 540" fill="none" stroke="#dbeafe" stroke-width="12" stroke-linecap="round"/>
+  <polygon points="399.0,307.7 399.0,292.3 413.0,300.0" fill="#60a5fa"/>
+  <polygon points="411.0,532.3 411.0,547.7 397.0,540.0" fill="#60a5fa"/>
+  <polygon points="774.0,307.7 774.0,292.3 788.0,300.0" fill="#60a5fa"/>
+  <polygon points="786.0,532.3 786.0,547.7 772.0,540.0" fill="#60a5fa"/>
+  <polygon points="1125.3,406.0 1140.7,406.0 1133.0,420.0" fill="#60a5fa"/>
+  <circle cx="210" cy="300" r="30" fill="#0d9488" stroke="#ffffff" stroke-width="4"/>
+  <text x="210.0" y="308.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">1</text>
+  <text x="210.0" y="362.0" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">전이학습 (ResNet18)</text>
+  <text x="210.0" y="386.0" font-size="13" fill="#64748b" text-anchor="middle">교재 학습 루프 그대로, 실무 1순위</text>
+  <rect x="185.0" y="400.0" width="50.0" height="28.0" rx="14" fill="#ccfbf1"/>
+  <text x="210.0" y="419.0" font-size="13" fill="#0f766e" font-weight="700" text-anchor="middle">충분</text>
+  <circle cx="600" cy="300" r="30" fill="#2563eb" stroke="#ffffff" stroke-width="4"/>
+  <text x="600.0" y="308.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">2</text>
+  <text x="600.0" y="362.0" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">ResNet 구조 직접 구현</text>
+  <text x="600.0" y="386.0" font-size="13" fill="#64748b" text-anchor="middle">chap08 CNN의 다음 단계</text>
+  <rect x="575.0" y="400.0" width="50.0" height="28.0" rx="14" fill="#ccfbf1"/>
+  <text x="600.0" y="419.0" font-size="13" fill="#0f766e" font-weight="700" text-anchor="middle">충분</text>
+  <circle cx="960" cy="300" r="30" fill="#2563eb" stroke="#ffffff" stroke-width="4"/>
+  <text x="960.0" y="308.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">3</text>
+  <text x="960.0" y="362.0" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">어텐션 · 작은 트랜스포머</text>
+  <text x="960.0" y="386.0" font-size="13" fill="#64748b" text-anchor="middle">chap09 RNN과 비교하며 이해</text>
+  <rect x="898.6" y="400.0" width="122.8" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="960.0" y="419.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">작은 모델은 충분</text>
+  <circle cx="960" cy="540" r="30" fill="#2563eb" stroke="#ffffff" stroke-width="4"/>
+  <text x="960.0" y="548.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">4</text>
+  <text x="960.0" y="602.0" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">객체 탐지 (YOLO)</text>
+  <text x="960.0" y="626.0" font-size="13" fill="#64748b" text-anchor="middle">결과가 눈에 보여 이해가 빠름</text>
+  <rect x="898.6" y="640.0" width="122.8" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="960.0" y="659.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">작은 모델은 충분</text>
+  <circle cx="600" cy="540" r="30" fill="#2563eb" stroke="#ffffff" stroke-width="4"/>
+  <text x="600.0" y="548.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">5</text>
+  <text x="600.0" y="602.0" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">생성 모델 (GAN → 디퓨전)</text>
+  <text x="600.0" y="626.0" font-size="13" fill="#64748b" text-anchor="middle">chap10 오토인코더의 확장</text>
+  <rect x="566.5" y="640.0" width="66.9" height="28.0" rx="14" fill="#fee2e2"/>
+  <text x="600.0" y="659.0" font-size="13" fill="#dc2626" font-weight="700" text-anchor="middle">부담 큼</text>
+  <circle cx="210" cy="540" r="30" fill="#2563eb" stroke="#ffffff" stroke-width="4"/>
+  <text x="210.0" y="548.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">6</text>
+  <text x="210.0" y="602.0" font-size="17" fill="#0f172a" font-weight="700" text-anchor="middle">언어모델 파인튜닝 (LoRA)</text>
+  <text x="210.0" y="626.0" font-size="13" fill="#64748b" text-anchor="middle">요즘 가장 수요가 많은 기술</text>
+  <rect x="176.6" y="640.0" width="66.9" height="28.0" rx="14" fill="#fee2e2"/>
+  <text x="210.0" y="659.0" font-size="13" fill="#dc2626" font-weight="700" text-anchor="middle">부담 큼</text>
+  <text x="210.0" y="256.0" font-size="13" fill="#0f766e" font-weight="700" text-anchor="middle">여기서 시작</text>
+  <rect x="64.0" y="692.0" width="1112.0" height="56.0" rx="10" fill="#eef2f7"/>
+  <rect x="64.0" y="692.0" width="6.0" height="56.0" rx="3" fill="#1e3a5f"/>
+  <text x="92.0" y="727.0" font-size="16" fill="#1e3a5f" font-weight="700">1번(전이학습)만 해도, 교재에서 배운 실력으로 실무형 이미지 분류 모델을 만들 수 있다.</text>
+</svg>

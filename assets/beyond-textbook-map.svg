@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1410" viewBox="0 0 1240 1410"
+     font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-6%" y="-6%" width="112%" height="112%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.13"/>
+    </filter>
+    <filter id="boxShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.09"/>
+    </filter>
+  </defs>
+  <rect width="1240" height="1410" fill="#f8fafc"/>
+  <rect x="24" y="24" width="1192" height="1362" rx="20" fill="#ffffff" filter="url(#cardShadow)"/>
+  <text x="64.0" y="92.0" font-size="34" fill="#0f172a" font-weight="700">교재 밖의 딥러닝 — 한눈에 보는 7가지</text>
+  <text x="64.0" y="126.0" font-size="17" fill="#64748b">교재에서 배운 뼈대 위에 무엇이 쌓였는지, 원리가 보이게 그렸다</text>
+  <rect x="64.0" y="142.0" width="140.0" height="6.0" rx="3" fill="#2563eb"/>
+  <rect x="56.0" y="176.0" width="1128.0" height="64.0" rx="14" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1.2"/>
+  <text x="84.0" y="215.0" font-size="16" fill="#1e3a5f" font-weight="700">교재에서 배운 뼈대</text>
+  <rect x="250.0" y="194.0" width="138.7" height="28.0" rx="14" fill="#ffffff"/>
+  <text x="319.3" y="213.0" font-size="13" fill="#1e3a5f" font-weight="700" text-anchor="middle">신경망  chap02–05</text>
+  <rect x="400.7" y="194.0" width="99.7" height="28.0" rx="14" fill="#ffffff"/>
+  <text x="450.5" y="213.0" font-size="13" fill="#1e3a5f" font-weight="700" text-anchor="middle">CNN  chap08</text>
+  <rect x="512.3" y="194.0" width="99.7" height="28.0" rx="14" fill="#ffffff"/>
+  <text x="562.1" y="213.0" font-size="13" fill="#1e3a5f" font-weight="700" text-anchor="middle">RNN  chap09</text>
+  <rect x="624.0" y="194.0" width="142.0" height="28.0" rx="14" fill="#ffffff"/>
+  <text x="695.0" y="213.0" font-size="13" fill="#1e3a5f" font-weight="700" text-anchor="middle">오토인코더  chap10</text>
+  <text x="1160.0" y="215.0" font-size="14" fill="#64748b" text-anchor="end">이 위에 쌓인 것들 ↓</text>
+  <rect x="56.0" y="276.0" width="552.0" height="250.0" rx="16" fill="#ffffff" stroke="#dbe3ee" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <circle cx="94" cy="314" r="16" fill="#2563eb"/>
+  <text x="94.0" y="320.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">1</text>
+  <text x="120.0" y="321.0" font-size="20" fill="#0f172a" font-weight="700">트랜스포머·어텐션</text>
+  <text x="82.0" y="364.0" font-size="14" fill="#475569">문장 전체를 한 번에 보고</text>
+  <text x="82.0" y="388.0" font-size="14" fill="#475569">단어끼리 관련도를 계산한다</text>
+  <text x="82.0" y="412.0" font-size="14" fill="#475569">(ChatGPT·Claude의 기반)</text>
+  <rect x="80.0" y="472.0" width="125.7" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="142.8" y="491.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">chap09 RNN 다음</text>
+  <rect x="340.0" y="302.0" width="244.0" height="198.0" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <path d="M 548.0 434.0 Q 461.0 322.0 374.0 434.0" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-opacity="0.55" stroke-linecap="round"/>
+  <path d="M 548.0 434.0 Q 490.0 356.0 432.0 434.0" fill="none" stroke="#2563eb" stroke-width="1.3" stroke-opacity="0.4" stroke-linecap="round"/>
+  <path d="M 548.0 434.0 Q 519.0 376.0 490.0 434.0" fill="none" stroke="#2563eb" stroke-width="5.5" stroke-opacity="0.95" stroke-linecap="round"/>
+  <rect x="348.0" y="434.0" width="52.0" height="30.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="374.0" y="454.0" font-size="13" fill="#0f172a" text-anchor="middle">나는</text>
+  <rect x="406.0" y="434.0" width="52.0" height="30.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="432.0" y="454.0" font-size="13" fill="#0f172a" text-anchor="middle">오늘</text>
+  <rect x="464.0" y="434.0" width="52.0" height="30.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="490.0" y="454.0" font-size="13" fill="#0f172a" text-anchor="middle">밥을</text>
+  <rect x="522.0" y="434.0" width="52.0" height="30.0" rx="8" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="548.0" y="454.0" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle">먹었다</text>
+  <text x="462.0" y="326.0" font-size="12" fill="#64748b" text-anchor="middle">선이 굵을수록 관련이 크다</text>
+  <text x="462.0" y="492.0" font-size="12" fill="#2563eb" font-weight="700" text-anchor="middle">먹었다 → 밥을 과 가장 관련</text>
+  <rect x="632.0" y="276.0" width="552.0" height="250.0" rx="16" fill="#ffffff" stroke="#dbe3ee" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <circle cx="670" cy="314" r="16" fill="#2563eb"/>
+  <text x="670.0" y="320.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">2</text>
+  <text x="696.0" y="321.0" font-size="20" fill="#0f172a" font-weight="700">ResNet·ViT</text>
+  <text x="658.0" y="364.0" font-size="14" fill="#475569">층을 건너뛰는 지름길로</text>
+  <text x="658.0" y="388.0" font-size="14" fill="#475569">수백 층도 학습된다</text>
+  <text x="658.0" y="412.0" font-size="14" fill="#475569">(ViT: 이미지도 트랜스포머로)</text>
+  <rect x="656.0" y="472.0" width="125.7" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="718.8" y="491.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">chap08 CNN 확장</text>
+  <rect x="916.0" y="302.0" width="244.0" height="198.0" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <rect x="946.0" y="402.0" width="44.0" height="56.0" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="968.0" y="435.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">층</text>
+  <rect x="1016.0" y="402.0" width="44.0" height="56.0" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="1038.0" y="435.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">층</text>
+  <rect x="1086.0" y="402.0" width="44.0" height="56.0" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="1108.0" y="435.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">층</text>
+  <line x1="924.0" y1="430.0" x2="937.0" y2="430.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="937.0,433.9 937.0,426.1 944.0,430.0" fill="#2563eb"/>
+  <line x1="992.0" y1="430.0" x2="1007.0" y2="430.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="1007.0,433.9 1007.0,426.1 1014.0,430.0" fill="#2563eb"/>
+  <line x1="1062.0" y1="430.0" x2="1077.0" y2="430.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="1077.0,433.9 1077.0,426.1 1084.0,430.0" fill="#2563eb"/>
+  <line x1="1132.0" y1="430.0" x2="1147.0" y2="430.0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+  <polygon points="1147.0,433.9 1147.0,426.1 1154.0,430.0" fill="#2563eb"/>
+  <path d="M 934.0 426.0 C 934.0 360.0 1142.0 360.0 1142.0 418.0" fill="none" stroke="#0d9488" stroke-width="2.5"/>
+  <polygon points="1136.5,416.0 1147.5,416.0 1142.0,426.0" fill="#0d9488"/>
+  <text x="1038.0" y="352.0" font-size="14" fill="#0f766e" font-weight="700" text-anchor="middle">+x  지름길</text>
+  <text x="1038.0" y="488.0" font-size="12" fill="#64748b" text-anchor="middle">기울기가 지름길로 바로 전달</text>
+  <rect x="56.0" y="550.0" width="552.0" height="250.0" rx="16" fill="#ffffff" stroke="#dbe3ee" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <circle cx="94" cy="588" r="16" fill="#2563eb"/>
+  <text x="94.0" y="594.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">3</text>
+  <text x="120.0" y="595.0" font-size="20" fill="#0f172a" font-weight="700">전이학습·파인튜닝</text>
+  <text x="82.0" y="638.0" font-size="14" fill="#475569">남이 학습한 모델을 가져와</text>
+  <text x="82.0" y="662.0" font-size="14" fill="#475569">마지막 층만 새로 학습한다</text>
+  <text x="82.0" y="686.0" font-size="14" fill="#475569">(실무에서 가장 많이 씀)</text>
+  <rect x="80.0" y="746.0" width="164.7" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="162.3" y="765.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">chap02–05 루프 그대로</text>
+  <rect x="340.0" y="576.0" width="244.0" height="198.0" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <rect x="354.0" y="622.0" width="150.0" height="106.0" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="429.0" y="672.0" font-size="14" fill="#475569" font-weight="700" text-anchor="middle">사전학습 모델</text>
+  <text x="429.0" y="694.0" font-size="11" fill="#64748b" text-anchor="middle">(대량 데이터로 학습)</text>
+  <path d="M 475.0 646.0 v -6 a 7 7 0 0 1 14 0 v 6" fill="none" stroke="#64748b" stroke-width="2"/>
+  <rect x="471.0" y="646.0" width="22.0" height="16.0" rx="3" fill="#64748b"/>
+  <line x1="508.0" y1="675.0" x2="522.0" y2="675.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="522.0,679.4 522.0,670.6 530.0,675.0" fill="#2563eb"/>
+  <rect x="532.0" y="648.0" width="44.0" height="54.0" rx="10" fill="#2563eb"/>
+  <text x="554.0" y="672.0" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle">새</text>
+  <text x="554.0" y="690.0" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle">층</text>
+  <text x="429.0" y="754.0" font-size="12" fill="#64748b" text-anchor="middle">고정 (그대로 씀)</text>
+  <text x="554.0" y="754.0" font-size="12" fill="#2563eb" font-weight="700" text-anchor="middle">학습</text>
+  <rect x="632.0" y="550.0" width="552.0" height="250.0" rx="16" fill="#ffffff" stroke="#dbe3ee" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <circle cx="670" cy="588" r="16" fill="#2563eb"/>
+  <text x="670.0" y="594.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">4</text>
+  <text x="696.0" y="595.0" font-size="20" fill="#0f172a" font-weight="700">생성 모델</text>
+  <text x="658.0" y="638.0" font-size="14" fill="#475569">노이즈에서 그림을 만든다</text>
+  <text x="658.0" y="662.0" font-size="14" fill="#475569">GAN: 위조범 vs 감정사</text>
+  <text x="658.0" y="686.0" font-size="14" fill="#475569">디퓨전: 노이즈 제거 반복</text>
+  <rect x="656.0" y="746.0" width="168.0" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="740.0" y="765.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">chap10 오토인코더 확장</text>
+  <rect x="916.0" y="576.0" width="244.0" height="198.0" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <rect x="926.0" y="646.0" width="48.0" height="48.0" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <circle cx="943.0" cy="656.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="956.0" cy="652.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="951.4" cy="664.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="932.3" cy="670.3" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="931.5" cy="667.3" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="932.8" cy="653.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="947.0" cy="683.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="935.0" cy="658.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="955.1" cy="687.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="953.1" cy="665.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="969.1" cy="651.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="964.3" cy="661.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="935.8" cy="654.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="942.3" cy="682.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="937.2" cy="673.3" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="955.6" cy="664.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="951.9" cy="652.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="932.4" cy="658.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="957.2" cy="667.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="942.6" cy="673.4" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="948.1" cy="662.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="961.8" cy="678.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="939.8" cy="673.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="951.0" cy="685.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="959.2" cy="661.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="969.2" cy="654.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="946.7" cy="680.3" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="936.1" cy="669.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="931.6" cy="676.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="960.6" cy="672.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="965.0" cy="662.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="957.8" cy="673.8" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="953.2" cy="668.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="963.6" cy="687.8" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="949.0" cy="676.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="932.4" cy="678.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="955.9" cy="689.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="962.9" cy="661.4" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="945.4" cy="676.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="930.9" cy="668.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="936.7" cy="654.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="932.4" cy="680.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="935.2" cy="659.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="945.6" cy="684.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="933.2" cy="668.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="952.0" cy="685.3" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="962.8" cy="684.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="941.1" cy="666.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="944.4" cy="685.4" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="968.3" cy="656.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="937.0" cy="659.3" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="939.3" cy="669.4" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="953.6" cy="660.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="930.2" cy="666.8" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="944.8" cy="672.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="968.1" cy="677.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="950.6" cy="674.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="957.0" cy="652.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="966.0" cy="681.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="965.0" cy="681.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <rect x="985.0" y="646.0" width="48.0" height="48.0" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <circle cx="1009.0" cy="670.0" r="13" fill="#0d9488" fill-opacity="0.25"/>
+  <polygon points="998.0,660.0 1002.0,650.0 1006.0,659.0" fill="#0d9488" fill-opacity="0.25"/>
+  <polygon points="1012.0,659.0 1016.0,650.0 1020.0,660.0" fill="#0d9488" fill-opacity="0.25"/>
+  <circle cx="1004.7" cy="666.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="993.1" cy="675.4" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="991.5" cy="652.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="997.4" cy="656.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1002.6" cy="652.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="989.0" cy="656.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="993.1" cy="664.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="990.0" cy="685.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1013.6" cy="655.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="999.1" cy="663.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1003.6" cy="654.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1023.0" cy="689.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1007.6" cy="669.4" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="992.4" cy="654.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1002.7" cy="660.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1022.2" cy="656.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="989.9" cy="688.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1010.1" cy="655.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1010.7" cy="651.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1010.1" cy="689.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1023.5" cy="677.8" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="999.4" cy="664.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="995.7" cy="680.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1010.3" cy="681.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1002.2" cy="658.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1021.5" cy="689.4" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1023.1" cy="682.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1021.7" cy="679.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="998.1" cy="670.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1003.2" cy="651.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="990.1" cy="661.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="999.4" cy="677.7" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1027.3" cy="667.9" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1026.5" cy="689.5" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <rect x="1044.0" y="646.0" width="48.0" height="48.0" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <circle cx="1068.0" cy="670.0" r="13" fill="#0d9488" fill-opacity="0.6"/>
+  <polygon points="1057.0,660.0 1061.0,650.0 1065.0,659.0" fill="#0d9488" fill-opacity="0.6"/>
+  <polygon points="1071.0,659.0 1075.0,650.0 1079.0,660.0" fill="#0d9488" fill-opacity="0.6"/>
+  <circle cx="1086.2" cy="664.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1056.8" cy="659.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1055.9" cy="658.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1073.0" cy="686.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1081.6" cy="669.2" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1074.1" cy="682.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1051.4" cy="676.4" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1084.4" cy="681.3" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1078.0" cy="669.1" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1055.1" cy="681.6" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1061.3" cy="682.0" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <circle cx="1086.9" cy="665.8" r="1.6" fill="#64748b" fill-opacity="0.7"/>
+  <rect x="1103.0" y="646.0" width="48.0" height="48.0" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <circle cx="1127.0" cy="670.0" r="13" fill="#0d9488" fill-opacity="1.0"/>
+  <polygon points="1116.0,660.0 1120.0,650.0 1124.0,659.0" fill="#0d9488" fill-opacity="1.0"/>
+  <polygon points="1130.0,659.0 1134.0,650.0 1138.0,660.0" fill="#0d9488" fill-opacity="1.0"/>
+  <line x1="976.0" y1="670.0" x2="977.0" y2="670.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+  <polygon points="977.0,673.3 977.0,666.7 983.0,670.0" fill="#2563eb"/>
+  <line x1="1035.0" y1="670.0" x2="1036.0" y2="670.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+  <polygon points="1036.0,673.3 1036.0,666.7 1042.0,670.0" fill="#2563eb"/>
+  <line x1="1094.0" y1="670.0" x2="1095.0" y2="670.0" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/>
+  <polygon points="1095.0,673.3 1095.0,666.7 1101.0,670.0" fill="#2563eb"/>
+  <text x="950.0" y="634.0" font-size="12" fill="#64748b" text-anchor="middle">노이즈</text>
+  <text x="1127.0" y="634.0" font-size="12" fill="#0f766e" font-weight="700" text-anchor="middle">그림</text>
+  <text x="1038.0" y="726.0" font-size="12" fill="#64748b" text-anchor="middle">노이즈를 조금씩 걷어내는 걸</text>
+  <text x="1038.0" y="746.0" font-size="12" fill="#64748b" text-anchor="middle">수십 번 반복하면 그림이 된다</text>
+  <rect x="56.0" y="824.0" width="552.0" height="250.0" rx="16" fill="#ffffff" stroke="#dbe3ee" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <circle cx="94" cy="862" r="16" fill="#2563eb"/>
+  <text x="94.0" y="868.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">5</text>
+  <text x="120.0" y="869.0" font-size="20" fill="#0f172a" font-weight="700">객체 탐지·분할</text>
+  <text x="82.0" y="912.0" font-size="14" fill="#475569">무엇이냐가 아니라</text>
+  <text x="82.0" y="936.0" font-size="14" fill="#475569">어디에 무엇이 있냐</text>
+  <text x="82.0" y="960.0" font-size="14" fill="#475569">(YOLO26 · U-Net · SAM)</text>
+  <rect x="80.0" y="1020.0" width="125.7" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="142.8" y="1039.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">chap08 CNN 응용</text>
+  <rect x="340.0" y="850.0" width="244.0" height="198.0" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <rect x="350.0" y="876.0" width="106.0" height="120.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="468.0" y="876.0" width="106.0" height="120.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <circle cx="403.0" cy="948.0" r="24" fill="#ffffff" fill-opacity="1" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="383.0,936.0 387.0,914.0 398.0,926.0" fill="#ffffff" fill-opacity="1" stroke="#475569" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="408.0,926.0 419.0,914.0 423.0,936.0" fill="#ffffff" fill-opacity="1" stroke="#475569" stroke-width="1.8" stroke-linejoin="round"/>
+  <rect x="373.0" y="906.0" width="60.0" height="70.0" rx="4" fill="none" stroke="#dc2626" stroke-width="2"/>
+  <rect x="373.0" y="892.0" width="44.0" height="16.0" rx="3" fill="#dc2626"/>
+  <text x="395.0" y="904.0" font-size="10" fill="#ffffff" font-weight="700" text-anchor="middle">고양이</text>
+  <circle cx="521.0" cy="948.0" r="24" fill="#0d9488" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.8"/>
+  <polygon points="501.0,936.0 505.0,914.0 516.0,926.0" fill="#0d9488" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="526.0,926.0 537.0,914.0 541.0,936.0" fill="#0d9488" fill-opacity="0.55" stroke="#0f766e" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="403.0" y="1022.0" font-size="13" fill="#dc2626" font-weight="700" text-anchor="middle">탐지: 상자</text>
+  <text x="521.0" y="1022.0" font-size="13" fill="#0f766e" font-weight="700" text-anchor="middle">분할: 픽셀</text>
+  <rect x="632.0" y="824.0" width="552.0" height="250.0" rx="16" fill="#ffffff" stroke="#dbe3ee" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <circle cx="670" cy="862" r="16" fill="#2563eb"/>
+  <text x="670.0" y="868.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">6</text>
+  <text x="696.0" y="869.0" font-size="20" fill="#0f172a" font-weight="700">강화학습·RLHF</text>
+  <text x="658.0" y="912.0" font-size="14" fill="#475569">정답 대신 보상으로 배운다</text>
+  <text x="658.0" y="936.0" font-size="14" fill="#475569">RLHF: 사람의 평가로</text>
+  <text x="658.0" y="960.0" font-size="14" fill="#475569">챗봇 답변을 다듬는다</text>
+  <rect x="656.0" y="1020.0" width="109.8" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="710.9" y="1039.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">손실 대신 보상</text>
+  <rect x="916.0" y="850.0" width="244.0" height="198.0" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <circle cx="968.0" cy="948.0" r="28" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="968.0" y="953.0" font-size="12" fill="#1d4ed8" font-weight="700" text-anchor="middle">학습자</text>
+  <rect x="1084.0" y="920.0" width="64.0" height="56.0" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="1116.0" y="953.0" font-size="13" fill="#475569" font-weight="700" text-anchor="middle">환경</text>
+  <path d="M 986.0 926.0 Q 1036.0 894.0 1078.0 928.0" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="1072.1,928.1 1079.1,921.1 1082.0,931.0" fill="#2563eb"/>
+  <text x="1034.0" y="890.0" font-size="13" fill="#2563eb" font-weight="700" text-anchor="middle">행동</text>
+  <path d="M 1084.0 970.0 Q 1036.0 1002.0 994.0 968.0" fill="none" stroke="#0d9488" stroke-width="2"/>
+  <polygon points="999.9,967.9 992.9,974.9 990.0,965.0" fill="#0d9488"/>
+  <polygon points="1020.0,1004.0 1022.1,1009.1 1027.6,1009.5 1023.4,1013.1 1024.7,1018.5 1020.0,1015.6 1015.3,1018.5 1016.6,1013.1 1012.4,1009.5 1017.9,1009.1" fill="#0d9488"/>
+  <text x="1034.0" y="1017.0" font-size="13" fill="#0f766e" font-weight="700">보상</text>
+  <text x="1038.0" y="1040.0" font-size="12" fill="#64748b" text-anchor="middle">보상이 커지는 행동을 늘린다</text>
+  <rect x="56.0" y="1098.0" width="552.0" height="250.0" rx="16" fill="#ffffff" stroke="#dbe3ee" stroke-width="1.5" filter="url(#boxShadow)"/>
+  <circle cx="94" cy="1136" r="16" fill="#2563eb"/>
+  <text x="94.0" y="1142.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">7</text>
+  <text x="120.0" y="1143.0" font-size="20" fill="#0f172a" font-weight="700">자기지도학습</text>
+  <text x="82.0" y="1186.0" font-size="14" fill="#475569">데이터 일부를 가리고</text>
+  <text x="82.0" y="1210.0" font-size="14" fill="#475569">스스로 맞히며 사전학습한다</text>
+  <text x="82.0" y="1234.0" font-size="14" fill="#475569">(BERT · MAE)</text>
+  <rect x="80.0" y="1294.0" width="142.0" height="28.0" rx="14" fill="#dbeafe"/>
+  <text x="151.0" y="1313.0" font-size="13" fill="#1d4ed8" font-weight="700" text-anchor="middle">chap10 비지도 확장</text>
+  <rect x="340.0" y="1124.0" width="244.0" height="198.0" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+  <rect x="352.0" y="1174.0" width="68.0" height="34.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="386.0" y="1196.0" font-size="13" fill="#0f172a" text-anchor="middle">나는</text>
+  <rect x="428.0" y="1174.0" width="68.0" height="34.0" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 3"/>
+  <text x="462.0" y="1197.0" font-size="17" fill="#dc2626" font-weight="700" text-anchor="middle">?</text>
+  <rect x="504.0" y="1174.0" width="68.0" height="34.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="538.0" y="1196.0" font-size="13" fill="#0f172a" text-anchor="middle">먹었다</text>
+  <text x="462.0" y="1162.0" font-size="12" fill="#dc2626" font-weight="700" text-anchor="middle">가리기</text>
+  <line x1="462.0" y1="1214.0" x2="462.0" y2="1238.0" stroke="#0d9488" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="457.6,1238.0 466.4,1238.0 462.0,1246.0" fill="#0d9488"/>
+  <rect x="428.0" y="1250.0" width="68.0" height="34.0" rx="8" fill="#0d9488"/>
+  <text x="462.0" y="1272.0" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle">밥을</text>
+  <text x="508.0" y="1236.0" font-size="12" fill="#0f766e" font-weight="700">스스로 맞히기</text>
+  <text x="462.0" y="1312.0" font-size="12" fill="#64748b" text-anchor="middle">정답을 사람이 안 달아도 된다</text>
+  <rect x="632.0" y="1098.0" width="552.0" height="250.0" rx="16" fill="#eef2f7"/>
+  <rect x="632.0" y="1098.0" width="6.0" height="250.0" rx="3" fill="#1e3a5f"/>
+  <text x="666.0" y="1146.0" font-size="20" fill="#1e3a5f" font-weight="700">7가지 모두 같은 뼈대 위에 있다</text>
+  <circle cx="690" cy="1202" r="20" fill="#2563eb"/>
+  <text x="690.0" y="1210.0" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">&#931;</text>
+  <text x="726.0" y="1198.0" font-size="15" fill="#1e3a5f" font-weight="700">층의 계산</text>
+  <text x="726.0" y="1220.0" font-size="14" fill="#475569">행렬곱 + 활성함수</text>
+  <path d="M 706.0 1268.0 A 16 16 0 1 1 693.0 1252.0" fill="none" stroke="#0d9488" stroke-width="3"/>
+  <polygon points="703.0,1247.0 703.0,1257.0 694.0,1252.0" fill="#0d9488"/>
+  <text x="726.0" y="1264.0" font-size="15" fill="#1e3a5f" font-weight="700">학습 4단계</text>
+  <text x="726.0" y="1286.0" font-size="14" fill="#475569">순전파 → 손실 → 역전파 → 옵티마이저</text>
+  <text x="666.0" y="1324.0" font-size="14" fill="#1e3a5f" font-weight="700">교재에서 쓴 코드가 이 7가지에도 그대로 쓰인다</text>
+</svg>
